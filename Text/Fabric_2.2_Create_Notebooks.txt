@@ -3,11 +3,11 @@
 ***Notebooks*** are a very useful tool to perform specific operations on data using programming languages like Python or R.
 When a new notebook is created, in the main hub, it is possible to select the language (default: *PySpark - Python*); alternatively, the language can be changed inside the script by using the so-called *magic command*: the syntax is ***%%language_name***.
 
-> *Spark exists to clean, transform, analyze, and make prediction on **big data**. Spark distributes big datasets analyzed in a Spark session on several servers (i.e. it splits the dataset). It performs multiple tasks in parallel (on each dataset split) making it very fast. It is possible to use 5 languages in the Spark Core & Spark SQL Engine (Scala, SQL, Python, Java, R). On top of the Spark Core & Spark SQL Engine, there are 4 libraries:*
->  - *Spark SQL end Dataframes (to work with tables and dataframe, like Pandas).*
->  - *Spark Streaming (for real-time/streaming data).*
->  - *Machine Learning MLib (at the heart of the Data Science experience, along with other libraries).*
->  - *Graph Processing (Graph X - for graph database).*
+>> *Spark exists to clean, transform, analyze, and make prediction on **big data**. Spark distributes big datasets analyzed in a Spark session on several servers (i.e. it splits the dataset). It performs multiple tasks in parallel (on each dataset split) making it very fast. It is possible to use 5 languages in the Spark Core & Spark SQL Engine (Scala, SQL, Python, Java, R). On top of the Spark Core & Spark SQL Engine, there are 4 libraries:*
+>>  - *Spark SQL end Dataframes (to work with tables and dataframe, like Pandas).*
+>>  - *Spark Streaming (for real-time/streaming data).*
+>>  - *Machine Learning MLib (at the heart of the Data Science experience, along with other libraries).*
+>>  - *Graph Processing (Graph X - for graph database).*
 
 The main commands of the notebook are exactly those used in **Visual Studio Code** (e.g. to create markdown cells, to create/delte cells, to run cells, etc.). It is possible to connect a Notebook to an existing *Lakehouse* using the appropriate menu on the left. Here, it is also possible to manage ***resources*** (e.g., *.py* files with functions, codes, images, etc. up to 500 MB)
 
