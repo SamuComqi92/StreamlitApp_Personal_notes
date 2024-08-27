@@ -269,7 +269,7 @@ elif selected == "Microsoft Fabric" :
             }
         )
 
-# ---------------------------------------------------------------------------------------------------
+# =============================================================================================================================================================================
 ########### Qlik ############
 elif selected == "Qlik to Power BI (WIP)":
 
@@ -304,7 +304,7 @@ elif selected == "Qlik to Power BI (WIP)":
         )
 
     
-    elif menu_fabric == "2. Semantic model" :
+    elif menu_qlik == "2. Semantic model" :
 
         st.write("Navigate in one of these pages:")
         selected_lakehouse = option_menu(
@@ -320,7 +320,7 @@ elif selected == "Qlik to Power BI (WIP)":
         )
 
 
-    elif menu_fabric == "3. Visualizations and report layout" :
+    elif menu_qlik == "3. Visualizations and report layout" :
 
         st.write("Navigate in one of these pages:")
         selected_lakehouse = option_menu(
@@ -336,7 +336,7 @@ elif selected == "Qlik to Power BI (WIP)":
         )
 
 
-    elif menu_fabric == "4. Measures and Expressions" :
+    elif menu_qlik == "4. Measures and Expressions" :
 
         st.write("Navigate in one of these pages:")
         selected_lakehouse = option_menu(
@@ -352,7 +352,7 @@ elif selected == "Qlik to Power BI (WIP)":
         )
 
 
-    elif menu_fabric == "5. Advanced functionalities" :
+    elif menu_qlik == "5. Advanced functionalities" :
 
         st.write("Navigate in one of these pages:")
         selected_lakehouse = option_menu(
