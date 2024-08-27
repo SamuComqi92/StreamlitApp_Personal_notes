@@ -63,6 +63,7 @@ with st.sidebar:
 
 # --------------------------------------------------------------------------------------------------------------------------------------------------------
 # Text loader
+Fabric_0_Introduction = load_text("Text/Fabric_0_Introduction.txt")
 Fabric_1_OneLake = load_text("Text/Fabric_1_OneLake.txt")
 Fabric_2_Data_Engineering_Lakehouse = load_text("Text/Fabric_2_Data_Engineering_Lakehouse.txt")
 Fabric_2_1_Create_a_Lakehouse = load_text("Text/Fabric_2.1_Create_a_Lakehouse.txt")
@@ -70,22 +71,7 @@ Fabric_2_2_Create_Notebooks = load_text("Text/Fabric_2.2_Create_Notebooks.txt")
 
 ########### Microsoft Fabric ############
 if selected == "Microsoft Fabric" :
-
-    # General notes description
-    st.markdown("""
-    ## Microsoft Fabric
-    
-    **Notes description**
-    
-    **Microsoft Fabric** is *web-based platform all-in-one solution* to work with data, from the ingestion to the data trasformation and the final visualization and delivery. 
-    It offers the possibility to see and work with every aspect of data, including the possibility to implement Machine Learning models.
-
-    These notes have been collected after following the Microsoft eLearning materials and while exploring the main *Fabric* features using a *Trial licence*.
-
-    ---
-
-    Use the below menus to navigation between each section and sub-sections.
-    """)
+    st.markdown(Fabric_0_Introduction)
 
     menu_fabric = option_menu(
         None, 
