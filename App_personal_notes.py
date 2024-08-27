@@ -32,7 +32,7 @@ with st.sidebar:
         menu_icon = Menu_icon, 
         default_index = 0,
         styles = {
-            "nav-link": {"font-size": "15px", "text-align": "left", "margin":"0px", "--hover-color": "#eee"},
+            "nav-link": {"font-size": "18px", "text-align": "left", "margin":"0px", "--hover-color": "lightgrey"},
             "nav-link-selected": {"background-color": "#479e92"},
         }
     )
@@ -46,7 +46,7 @@ if selected == "Microsoft Fabric" :
         orientation = "horizontal",
         styles={
             "container": {"padding": "0!important", "background-color": "lightgrey"},
-            "nav-link": {"font-size": "15px", "text-align": "center", "margin":"0px", "--hover-color": "lightgrey"},
+            "nav-link": {"font-size": "17px", "text-align": "center", "margin":"0px", "--hover-color": "lightgrey"},
             "nav-link-selected": {"background-color": "#239583"},
         }
     )
@@ -63,7 +63,7 @@ elif selected == "Qlik":
         orientation = "horizontal",
         styles={
             "container": {"padding": "0!important", "background-color": "lightgrey"},
-            "nav-link": {"font-size": "15px", "text-align": "center", "margin":"0px", "--hover-color": "lightgrey"},
+            "nav-link": {"font-size": "17px", "text-align": "center", "margin":"0px", "--hover-color": "lightgrey"},
             "nav-link-selected": {"background-color": "#6eb241"},
         }
     )
