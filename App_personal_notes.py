@@ -76,7 +76,7 @@ if selected == "Microsoft Fabric" :
 
     st.divider() 
     
-    if menu_fabric == "Fabric section 1" :
+    if menu_fabric == "Fabric OneLake" :
         st.markdown("""
         ### OneLake
 
