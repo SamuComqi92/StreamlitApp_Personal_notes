@@ -41,11 +41,10 @@ st.markdown(
 
 # Section navigation style
 Nav_styles = {
-    "container": {"padding": "0!important", "background-color": "#dbdbdb"},
+    "container": {"padding": "2!important", "background-color": "#dbdbdb"},
     "nav-link": {"font-size": "16px", "text-align": "center", "margin": "3px", "--hover-color": "#c7c5c5"},
     "nav-link-selected": {"background-color": "#239583"},
 }
-
 
 # --------------------------------------------------------------------------------------------------------------------------------------------
 # Menu laterale
