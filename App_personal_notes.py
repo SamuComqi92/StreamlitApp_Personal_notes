@@ -96,6 +96,19 @@ if selected == "Microsoft Fabric" :
         st.markdown(Fabric_1_OneLake)
         
     if menu_fabric == "2. Data Engineering - Lakehouse" :
+
+        selected_lakehouse = option_menu(
+            None, 
+            ["Introduction", "2.1 Create a Lakehouse"], 
+            icons = ["list", "file-earmark"], 
+            default_index = 0,
+            styles = {
+                "nav-link": {"font-size": "13px", "text-align": "left", "margin": "0px", "--hover-color": "#dbdbdb"},
+                "nav-link-selected": {"background-color": "#479e92"},
+            }
+        )
+    
+            
         st.markdown(Fabric_2_Data_Engineering_Lakehouse)
         st.markdown(Fabric_2_1_Create_a_Lakehouse)
 
