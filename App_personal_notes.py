@@ -32,7 +32,7 @@ st.set_page_config(layout = "wide")
 st.markdown( """<style>section[data-testid = "stSidebar"] {width: 400px !important;}</style>""", unsafe_allow_html = True )
 
 # Radio button background color 
-with open('style.css') as f:
+with open('Other files/style.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html = True) 
     
 # Section navigation style
