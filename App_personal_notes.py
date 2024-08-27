@@ -16,7 +16,7 @@ def load_text(filename):
 # --------------------------------------------------------------------------------------------------------------------------------------------
 # Titles & Icons
 Menu_icon = "menu-up"
-Main_topics = ["Landing page", "Microsoft Fabric", 'Qlik (work in progress)']
+Main_topics = ["Landing page", "Microsoft Fabric", 'Qlik to Power BI (WIP)']
 Main_icons = ['house', 'clipboard-data', 'graph-up-arrow']
 Section_Fabric = ["1. Fabric OneLake", "2. Data Engineering - Lakehouse"]
 Section_Fabric_icons = ['caret-right-fill', 'caret-right-fill']
@@ -201,7 +201,7 @@ elif selected == "Microsoft Fabric" :
 
 # ---------------------------------------------------------------------------------------------------
 ########### Qlik ############
-elif selected == "Qlik (work in progress)":
+elif selected == "Qlik to Power BI (WIP)":
     menu_qlik = option_menu(
         None, 
         Section_Qlik, 
