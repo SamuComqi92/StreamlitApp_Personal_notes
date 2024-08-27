@@ -170,7 +170,12 @@ elif selected == "Microsoft Fabric" :
 
             if selected_notebook == "Introduction" :
                 st.markdown(Fabric_2_2_Create_Notebooks)
-            #elif selected_notebook == "2.1 Create a Lakehouse" :
+            elif selected_notebook == "Create tables" :
+                code = 
+                """def hello():
+                    print("Hello, Streamlit!")
+                """
+                st.code(code, language = "python")
             #    st.markdown(Fabric_2_1_Create_a_Lakehouse)
             #elif selected_notebook == "2.2 Create Notebooks" :
             #    st.markdown(Fabric_2_2_Create_Notebooks)
