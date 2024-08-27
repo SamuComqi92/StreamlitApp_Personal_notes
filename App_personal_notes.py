@@ -119,9 +119,11 @@ if selected == "Landing page" :
     st.image(Image.open(r'images/Logo_Fabric_2.png'), width = 150)
     st.markdown(Fabric_0_Introduction)
 
+    st.write("")
+    
     # Qlik to Power BI introduction
     st.image(Image.open(r'images/Qlik_to_PBI.png'), width = 150)
-    st.markdown(Fabric_0_Introduction)
+    st.markdown(Qlik2PBI_0_Introduction)
 
 
 ########### Microsoft Fabric ############
