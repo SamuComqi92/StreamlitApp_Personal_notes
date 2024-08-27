@@ -140,7 +140,7 @@ elif selected == "Microsoft Fabric" :
     if menu_fabric == "2. Data Engineering - Lakehouse" :
 
         selected_lakehouse = option_menu(
-            None, 
+            "Navigate one of these pages", 
             ["Introduction", "2.1 Create a Lakehouse", "2.2 Create Notebooks"], 
             icons = ["list", "file-earmark", "file-earmark"], 
             default_index = 0,
