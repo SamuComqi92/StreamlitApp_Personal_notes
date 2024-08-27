@@ -66,7 +66,14 @@ Fabric_2_2_Create_Notebooks = load_text("Text/Fabric_2.2_Create_Notebooks.txt")
 if selected == "Microsoft Fabric" :
 
     # Title and logo
-    st.image(Image.open(r'images/Logo_Fabric.png'), width = 700)
+    col1, col2, col3 = st.columns(3)
+    #with col1:
+    #st.write(' ')
+    with col2:
+        st.image(Image.open(r'images/Logo_Fabric.png'), width = 700)
+    #with col3:
+    #st.write(' ')
+    
 
     # Introduction
     st.markdown(Fabric_0_Introduction)
