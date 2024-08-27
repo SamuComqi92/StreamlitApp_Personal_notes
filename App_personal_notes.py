@@ -14,7 +14,7 @@ Main_icons = ['clipboard-data', 'graph-up-arrow']
 Section_Fabric = ["Fabric section 1", "Fabric section 2"]
 Section_Fabric_icons = ['caret-right-fill', 'caret-right-fill']
 Section_Qlik = ["Qlik section 1", "Qlik section 2"]
-Section_Qlik_icons = ['house', 'gear']
+Section_Qlik_icons = ['caret-right-fill', 'caret-right-fill']
 
 
 # --------------------------------------------------------------------------------------------------------------------------------------------
@@ -32,6 +32,13 @@ st.markdown(
     """,
     unsafe_allow_html = True,
 )
+
+# Section navigation style
+Nav_styles = {
+    "container": {"padding": "0!important", "background-color": "#dbdbdb"},
+    "nav-link": {"font-size": "17px", "text-align": "center", "margin":"0px", "--hover-color": "#c7c5c5"},
+    "nav-link-selected": {"background-color": "#239583"},
+}
 
 
 # --------------------------------------------------------------------------------------------------------------------------------------------
@@ -53,14 +60,10 @@ if selected == "Microsoft Fabric" :
     menu_3 = option_menu(
         None, 
         Section_Fabric, 
-        icons = "caret-right-fill",#Section_Fabric_icons, 
+        icons = Section_Fabric_icons, 
         default_index = 0, 
         orientation = "horizontal",
-        styles={
-            "container": {"padding": "0!important", "background-color": "#dbdbdb"},
-            "nav-link": {"font-size": "17px", "text-align": "center", "margin":"0px", "--hover-color": "#c7c5c5"},
-            "nav-link-selected": {"background-color": "#239583"},
-        }
+        styles = Nav_styles
     )
     
     st.write("Text Text Text")
@@ -73,11 +76,7 @@ elif selected == "Qlik":
         icons = Section_Qlik_icons, 
         default_index = 0, 
         orientation = "horizontal",
-        styles={
-            "container": {"padding": "0!important", "background-color": "#dbdbdb"},
-            "nav-link": {"font-size": "17px", "text-align": "center", "margin":"0px", "--hover-color": "#c7c5c5"},
-            "nav-link-selected": {"background-color": "#6eb241"},
-        }
+        styles = Nav_styles
     )
 
     st.write("Text Text Text")
