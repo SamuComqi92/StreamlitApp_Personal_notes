@@ -31,9 +31,7 @@ st.set_page_config(layout = "wide")
 # Sidebar width
 st.markdown( """<style>section[data-testid = "stSidebar"] {width: 400px !important;}</style>""", unsafe_allow_html = True )
 
-# Radio button background color 
-#with open('Other files/style.css') as f:
-#    st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html = True) 
+# Radio button formatting
 st.html("""
     <style>
         /* convert radio to list of buttons */
@@ -41,9 +39,9 @@ st.html("""
             flex-direction:row;
         }
         input[type="radio"] + div {
-            background: #63ADD2  !important;
+            background: #ffffff  !important;
             color: #FFF;
-            border-radius: 38px !important;
+            border-radius: 25px !important;
             padding: 8px 18px !important;
         }
         input[type="radio"][tabindex="0"] + div {
