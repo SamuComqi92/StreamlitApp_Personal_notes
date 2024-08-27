@@ -1,3 +1,4 @@
+# --------------------------------------------------------------------------------------------------------------------------------------------
 # Usefull libraries
 import streamlit as st
 from functions import footer
@@ -5,6 +6,7 @@ from streamlit_option_menu import option_menu
 from htbuilder import HtmlElement, div, hr, a, p, img, styles
 from htbuilder.units import percent, px
 
+# --------------------------------------------------------------------------------------------------------------------------------------------
 # Titles & Icons
 Menu_icon = "menu-up"
 Main_topics = ["Microsoft Fabric", 'Qlik']
@@ -13,6 +15,12 @@ Section_Fabric = ["Fabric section 1", "Fabric section 2"]
 Section_Fabric_icons = ['house', 'gear']
 Section_Qlik = ["Qlik section 1", "Qlik section 2"]
 Section_Qlik_icons = ['house', 'gear']
+
+
+# --------------------------------------------------------------------------------------------------------------------------------------------
+# Page settings
+st.set_page_config(layout="wide").
+
 
 # --------------------------------------------------------------------------------------------------------------------------------------------
 # Menu laterale
