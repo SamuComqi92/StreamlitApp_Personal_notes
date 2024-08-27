@@ -11,7 +11,7 @@ When a new notebook is created, in the main hub, it is possible to select the la
 
 The main commands of the notebook are exactly those used in **Visual Studio Code** (e.g. to create markdown cells, to create/delte cells, to run cells, etc.). It is possible to connect a Notebook to an existing *Lakehouse* using the appropriate menu on the left. Here, it is also possible to manage ***resources*** (e.g., *.py* files with functions, codes, images, etc. up to 500 MB)
 
->> ***Note on resources: missing***
+>> ***Notes on resources: missing***
 
 A query inside a notebook can be visualized as a *table* or as a *chart*, by selecting the appropriate button in the cell output. When "chart" is selected, it is possible to choose the visualization chart and the set of fields and properties in the right pane.[^1]
 
