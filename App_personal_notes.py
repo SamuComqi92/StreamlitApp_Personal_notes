@@ -115,8 +115,8 @@ if selected == "Landing page" :
 
     st.divider()
 
-    st.image(Image.open(r'images/Logo_Fabric.png'), width = 100)
-    # Introduction
+    # Fabric introduction
+    st.image(Image.open(r'images/Logo_Fabric_2.png'), width = 150)
     st.markdown(Fabric_0_Introduction)
 
 
