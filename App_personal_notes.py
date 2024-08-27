@@ -46,18 +46,18 @@ st.html("""
         }
         input[type="radio"][tabindex="0"] + div {
             background: #239583 !important;
-            color: #17455C !important;
+            color: #000000 !important;
         }
-        input[type="radio"][tabindex="0"] + div p {
-            color: #17455C !important;
+        input[type = "radio"][tabindex="0"] + div p {
+            color: #000000 !important;
         }
-        div[role="radiogroup"] label > div:first-child {
+        div[role = "radiogroup"] label > div:first-child {
             display: none !important;
         }
-        div[role="radiogroup"] label {
+        div[role = "radiogroup"] label {
             margin-right: 0px !important;
         }
-        div[role="radiogroup"] {
+        div[role = "radiogroup"] {
             gap: 12px;
         }
     </style>
