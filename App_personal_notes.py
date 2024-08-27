@@ -82,7 +82,7 @@ if selected == "Microsoft Fabric" :
     
     if menu_fabric == "1. Fabric OneLake" :
         st.markdown("""
-        ### OneLake
+        ## OneLake
 
         ***OneLake*** is a single, unified *data lake* for the whole organization.
         It hosts only **one copy of data** for the entire organization to use in multiple analytica engines.[^1]
@@ -110,7 +110,7 @@ if selected == "Microsoft Fabric" :
         
     if menu_fabric == "2. Data Engineering - Lakehouse" :
         st.markdown("""
-        ### Data Engineering - Lakehouse
+        ## Data Engineering - Lakehouse
 
         **Data engineering** in Microsoft Fabric enables users to design, build, and maitain infrastructures and systems that enable thier organizations to collect, store, process, and analyze large volumes of data.
 
@@ -128,7 +128,7 @@ if selected == "Microsoft Fabric" :
         4. Through *Pipelines* (using the **Copy activity** in *Data Factory*).
 
 
-        #### 2.1 Create a Lakehouse
+        ##### 2.1 Create a Lakehouse
 
         First, to create a Lakehouse, one must have a **Premium/Fabric Workspace**.
         Once created, on the bottom left, there is an icon to switch between the different services providede by Microsoft Fabric.
