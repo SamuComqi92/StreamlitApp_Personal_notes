@@ -52,22 +52,24 @@ with st.sidebar:
             "nav-link-selected": {"background-color": "#479e92"},
         }
     )
+
+
+########### Landing page ############
+if selected == "Landing page" :
+    st.markdown("""
+    #### **Welcome to My Digital Notebook**
     
-# Landing page
-st.markdown("""
-#### **Welcome to My Digital Notebook**
-
-I designed this space to collect *my notes* on different topics, from programming to machine learning and systems dedicated to data management, manipulation and visualization.
-
-I have collected a lot of notes over the last 2-3 years and decided to collect them here in an orderly manner.
-
-Obviously, it will take some time to write everything down and what I include will be subject to future changes and additions, based on my explorations and testing.
-
-The web page is public so anyone can have access.
-
-Enjoy 😃
-"""
-)
+    I designed this space to collect *my notes* on different topics, from programming to machine learning and systems dedicated to data management, manipulation and visualization.
+    
+    I have collected a lot of notes over the last 2-3 years and decided to collect them here in an orderly manner.
+    
+    Obviously, it will take some time to write everything down and what I include will be subject to future changes and additions, based on my explorations and testing.
+    
+    The web page is public so anyone can have access.
+    
+    Enjoy 😃
+    """
+    )
 
 # --------------------------------------------------------------------------------------------------------------------------------------------------------
 # Text loader
@@ -78,7 +80,7 @@ Fabric_2_1_Create_a_Lakehouse = load_text("Text/Fabric_2.1_Create_a_Lakehouse.tx
 Fabric_2_2_Create_Notebooks = load_text("Text/Fabric_2.2_Create_Notebooks.txt")
 
 ########### Microsoft Fabric ############
-if selected == "Microsoft Fabric" :
+elif selected == "Microsoft Fabric" :
 
     # Title and logo
     col1, col2, col3 = st.columns(3)
