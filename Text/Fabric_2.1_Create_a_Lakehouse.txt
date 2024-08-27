@@ -13,9 +13,6 @@ The main hub will display a list of objects in two *main folders*: the ***Tables
 - ***Files***: for files like *.csv*, *.xlsx*, etc. To see data, select the appropriate folder and navigate the list by clikcing on the three dots next to the folder name. Moreover, it is possible to create *sub-folders* by clicking on the three dots.
 - Both in Tables and Files, it is possible to create *sub-folders* and *shortcuts* i.e. objects on OneLake that point to other storage location, like a sort of *link* towards OneLake, ADLS Gen 2, Amazon S3 or Dataverse).[^3]
 
-
-
-
 [^1] Note: once a table is created, it is automatically added to the default semantic model. This can be disabled in the *Lakehouse settings*.
 
 [^2] Delta Tables are in *Parquet format*, labelled with a small black delta symbol.
