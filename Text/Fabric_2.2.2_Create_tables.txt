@@ -2,23 +2,20 @@ It is possible to create Delta tables using **Notebooks** (see Next) that will b
 Using **Python** (*PySpark*), some examples of code for read/write data are the following:
 
 ```python
-from pyomo.environ import *
-model = Concretemodel()
-
-# Load a file into a dataframe
-df = spark.read.load('Files/mydata.csv', format='csv', header=True)
+# Load a file and store data into a dataframe (using PySpark)
+df = spark.read.load('Files/mydata.csv', format = 'csv', header = True)
 df = spark.read.csv('path', inferSchema = True)
 df = spark.read.parquet("Files/Sub_folder/table.parquet")
-df = spark.read.parquet("Files/*.parquet") 	#Combine parquet files with the same schema 
+df = spark.read.parquet("Files/*.parquet") 	# Combine parquet files with the same schema 
 df = spark.read.json("Files/Sub_folder/json_file")
 
-#Python
+# Python
 df = pd.read_parquet("/lakehouse/default/"+"Files/Sub_folder/table.parquet") 
 				 
-# If I want to use Pandas dataframe
+# From Spark to Pandas
 df_pandas = df.toPandas()				
 
-##########################################################################################
+#######################################################################################################
 # Save the dataframe as a delta table
 # MANAGED TABLE (in Tables)
 df.write.format("delta").saveAsTable("mytable")
@@ -26,10 +23,10 @@ df.write.format("delta").saveAsTable("mytable")
 # EXTERNAL TABLE (in Files)
 df.write.format("delta").saveAsTable("mytable", path=”Files/folder”)
 
-# In the specified path
+# In a specified path
 df.write.format("delta").save(path)		
 
 # Other type of files
-df.write.json("path", mode = …)
-df.write.parquet("path", mode = …)
+df.write.json("path", mode = ...)	 # Specify the writing mode (e.g. append, overwrite,...)
+df.write.parquet("path", mode = ...)
 ```
