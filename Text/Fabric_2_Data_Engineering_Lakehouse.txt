@@ -16,9 +16,3 @@ Data can be added to the Lakehouse (i.e. ingestion) in 4 ways:
 4. Through *Pipelines* (using the **Copy activity** in *Data Factory*).
 
 .
-
-##### 2.1 Create a Lakehouse
-
-First, to create a Lakehouse, one must have a **Premium/Fabric Workspace**.
-Once created, on the bottom left, there is an icon to switch between the different services providede by Microsoft Fabric.
-In this case, "***Data Engineering***" is the appropriate one to create a new Lakehouse.
