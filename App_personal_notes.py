@@ -5,43 +5,35 @@ from streamlit_option_menu import option_menu
 from htbuilder import HtmlElement, div, hr, a, p, img, styles
 from htbuilder.units import percent, px
 
+# Titles & Icons
+Menu_icon = "menu-up"
+Main_topics = ["Microsoft Fabric", 'Qlik']
+Main_icons = ['clipboard-data', 'graph-up-arrow']
+Section_Fabric = ["Fabric section 1", "Fabric section 2"]
+Section_Qlik_icons = ['house', 'gear']
+Section_Qlik = ["Qlik section 1", "Qlik section 2"]
+Section_Qlik_icons = ['house', 'gear']
+
+# --------------------------------------------------------------------------------------------------------------------------------------------
 # Menu laterale
 with st.sidebar:
     selected = option_menu(
         "Topics", 
-        ["Microsoft Fabric", 'Qlik'], 
-        icons = ['house', 'gear'], 
-        menu_icon = "cast", 
+        Main_topics, 
+        icons = Main_icons, 
+        menu_icon = Menu_icon, 
         default_index = 0,
         styles = {
             "nav-link": {"font-size": "15px", "text-align": "left", "margin":"0px", "--hover-color": "#eee"},
             "nav-link-selected": {"background-color": "#479e92"},
         }
     )
-    
-if selected == "Qlik":
-    menu_2 = option_menu(
-        None, 
-        ["Qlik 1", "Qlik 2"], 
-        icons = ['house', 'gear'], 
-        menu_icon = "cast", 
-        default_index = 0, 
-        orientation = "horizontal",
-        styles={
-            "container": {"padding": "0!important", "background-color": "lightgrey"},
-            "nav-link": {"font-size": "15px", "text-align": "center", "margin":"0px", "--hover-color": "lightgrey"},
-            "nav-link-selected": {"background-color": "#6eb241"},
-        }
-    )
 
-    st.write("Vediamo che succede")
-
-elif selected == "Microsoft Fabric" :
+if selected == "Microsoft Fabric" :
     menu_3 = option_menu(
         None, 
-        ["Fabric 1", "Fabric 2"], 
-        icons = ['house', 'gear'], 
-        menu_icon = "cast", 
+        Section_Fabric, 
+        icons = Section_Fabric_icons, 
         default_index = 0, 
         orientation = "horizontal",
         styles={
@@ -51,9 +43,28 @@ elif selected == "Microsoft Fabric" :
         }
     )
     
-    st.write("Vediamo Fabric")
+    st.write("Text Text Text")
 
 
+elif selected == "Qlik":
+    menu_2 = option_menu(
+        None, 
+        Section_Qlik, 
+        icons = Section_Qlik_icons, 
+        default_index = 0, 
+        orientation = "horizontal",
+        styles={
+            "container": {"padding": "0!important", "background-color": "lightgrey"},
+            "nav-link": {"font-size": "15px", "text-align": "center", "margin":"0px", "--hover-color": "lightgrey"},
+            "nav-link-selected": {"background-color": "#6eb241"},
+        }
+    )
+
+    st.write("Text Text Text")
+
+
+
+# --------------------------------------------------------------------------------------------------------------------------------------------------------
 # --------------------------------------------------------------------------------------------------------------------------------------------------------
 # Footer (le funzioni utilizzate sono in functions.py)
 if __name__ == "__main__":
