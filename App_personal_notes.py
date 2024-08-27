@@ -102,8 +102,9 @@ if selected == "Microsoft Fabric" :
             ["Introduction", "2.1 Create a Lakehouse"], 
             icons = ["list", "file-earmark"], 
             default_index = 0,
+            orientation = "horizontal",
             styles = {
-                "nav-link": {"font-size": "13px", "text-align": "left", "margin": "0px", "--hover-color": "#dbdbdb"},
+                "nav-link": {"font-size": "12px", "text-align": "center", "margin": "0px", "--hover-color": "#dbdbdb"},
                 "nav-link-selected": {"background-color": "#479e92"},
             }
         )
