@@ -119,3 +119,37 @@ USING DELTA
 LOCATION 'Files/mydata'
 AS SELECT ... (add fields) ... FROM ... (add table) ...
 ```
+
+In the first case (and the Python example), the produced table is a ***Managed table***: data and metadata are both managed by Spark in the Lakehouse – if the table is deleted, everything will be deleted. In the second case, the produced table is an ***External table***: the table definition is in the *Tables* folder but data, in Parquet format, is stored in the *Files* folder; if the table is deleted, data will be preserved in the *Files* folder. 
+
+> Important: external tables are not visible in the SQL Endpoint of the Lakehouse!
+
+**Within a Notebook, it is possible to write a query to modify and/or add new items to an existing table, using SQL** (it is not possible to do it from the Lakehouse *SQL EndPoint* because it is **read-only**!):
+
+```sql
+%%sql
+ALTER TABLE table_name ADD COLUMN col_name int
+
+UPDATE table_name SET col_name = 10
+```
+
+Data can be **overwritten** or **appended**. To do that using PySpark, one must use a script like the following:
+
+```python
+new_df.write.format("delta").mode("overwrite").save(path) 		# Overwrite
+new_rows_df.write.format("delta").mode("append").save(path)   		# Append    
+```
+
+In general, there are other two modes to write tables:
+
+- *error mode*: it throws an error if data already exists.
+- *ignore mode*: it fails if data already exists. It is possible to handle the case.
+
+Finally, it is possible to store data in the *Files* folders with ***partitions***. To do that, the syntax is the following:
+
+```python
+# Partitions
+df.write.partitionBy(“col_date”, ”col_month”, ...).mode(“overwrite”).parquet(“Files/Partition_folder”)
+```
+
+In this way, the dataframe will be splitted based on the columns defined in *partitionBy*, and Spark automatically creates **folders** and **subfolders** whose names contain Year, Month, and other specified values.
