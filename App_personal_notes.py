@@ -18,8 +18,8 @@ def load_text(filename):
 Menu_icon = "menu-up"
 Main_topics = ["Landing page", "Microsoft Fabric", 'Qlik to Power BI (WIP)']
 Main_icons = ['house', 'clipboard-data', 'graph-up-arrow']
-Section_Fabric = ["1. Fabric OneLake", "2. Data Engineering - Lakehouse"]
-Section_Fabric_icons = ['caret-right-fill', 'caret-right-fill']
+Section_Fabric = ["1. Fabric OneLake", "2. Data Engineering - Lakehouse", "3. Data Engineering – Data Factory: Pipelines", "4. Data Engineering – Data Factory: Dataflows", "5. Data Warehouse", "6. Data Science", "7. Real-Time Analytics", "8. Data Activator", "9. Administration aspects of Microsoft Fabric"]
+Section_Fabric_icons = ['caret-right-fill', 'caret-right-fill', 'caret-right-fill', 'caret-right-fill', 'caret-right-fill', 'caret-right-fill', 'caret-right-fill', 'caret-right-fill', 'caret-right-fill']
 Section_Qlik = [""]
 Section_Qlik_icons = ['caret-right-fill', 'caret-right-fill']
 
