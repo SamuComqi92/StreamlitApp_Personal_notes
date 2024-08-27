@@ -53,7 +53,7 @@ if selected == "Microsoft Fabric" :
     menu_3 = option_menu(
         None, 
         Section_Fabric, 
-        icons = Section_Fabric_icons, 
+        icons = "caret-right-fill",#Section_Fabric_icons, 
         default_index = 0, 
         orientation = "horizontal",
         styles={
