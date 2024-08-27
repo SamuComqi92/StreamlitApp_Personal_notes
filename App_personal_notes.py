@@ -113,6 +113,12 @@ if selected == "Landing page" :
     """
     )
 
+    st.divider()
+
+    st.image(Image.open(r'images/Logo_Fabric.png'), width = 100)
+    # Introduction
+    st.markdown(Fabric_0_Introduction)
+
 
 ########### Microsoft Fabric ############
 elif selected == "Microsoft Fabric" :
