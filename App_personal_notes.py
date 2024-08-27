@@ -108,9 +108,10 @@ if selected == "Microsoft Fabric" :
             }
         )
     
-            
-        st.markdown(Fabric_2_Data_Engineering_Lakehouse)
-        st.markdown(Fabric_2_1_Create_a_Lakehouse)
+        if selected_lakehouse == "Introduction" :
+            st.markdown(Fabric_2_Data_Engineering_Lakehouse)
+        elif selected_lakehouse == "2.1 Create a Lakehouse" :
+            st.markdown(Fabric_2_1_Create_a_Lakehouse)
 
 
 # ---------------------------------------------------------------------------------------------------
