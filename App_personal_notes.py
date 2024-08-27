@@ -12,7 +12,11 @@ with st.sidebar:
         ["Microsoft Fabric", 'Qlik'], 
         icons = ['house', 'gear'], 
         menu_icon = "cast", 
-        default_index = 0
+        default_index = 0,
+        styles = {
+            "nav-link": {"font-size": "15px", "text-align": "left", "margin":"0px", "--hover-color": "#eee"},
+            "nav-link-selected": {"background-color": "#479e92"},
+        }
     )
     
 if selected == "Qlik":
