@@ -31,7 +31,7 @@ st.set_page_config(layout = "wide")
 # Sidebar width
 st.markdown( """<style>section[data-testid = "stSidebar"] {width: 400px !important;}</style>""", unsafe_allow_html = True )
 
-# Radio button formatting
+# Radio button formatting (from web)
 st.html("""
     <style>
         /* convert radio to list of buttons */
@@ -44,12 +44,12 @@ st.html("""
             border-radius: 10px !important;
             padding: 8px 18px !important;
         }
-        input[type="radio"][tabindex="0"] + div {
+        input[type="radio"][tabindex = "0"] + div {
             background: #239583 !important;
             color: #000000 !important;
         }
-        input[type = "radio"][tabindex="0"] + div p {
-            color: #000000 !important;
+        input[type = "radio"][tabindex = "0"] + div p {
+            color: #ffffff !important;
         }
         div[role = "radiogroup"] label > div:first-child {
             display: none !important;
@@ -167,17 +167,6 @@ elif selected == "Microsoft Fabric" :
                 label_visibility = "collapsed",
                 horizontal = True
             )
-            #option_menu(
-            #    None, 
-            #    ["Introduction", "Create tables", "Time travel", "Print and display", "Update a table", "Add columns", "Use SQL", "Data Wrangler", "Sempy (Semantic link)", "Other Spark functions & utilities"], 
-            #    icons = ["list", "file-earmark", "file-earmark", "file-earmark", "file-earmark", "file-earmark", "file-earmark", "file-earmark", "file-earmark", "file-earmark"], 
-            #    default_index = 0,
-            #    orientation = "horizontal",
-            #    styles = {
-            #        "nav-link": {"font-size": "10px", "text-align": "center", "margin": "0px", "--hover-color": "#dbdbdb"},
-            #        "nav-link-selected": {"background-color": "#479e92"},
-            #    }
-            #)
 
             if selected_notebook == "Introduction" :
                 st.markdown(Fabric_2_2_Create_Notebooks)
