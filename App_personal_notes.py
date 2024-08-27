@@ -87,8 +87,6 @@ if selected == "Microsoft Fabric" :
     Use the below menus to navigation between each section and sub-sections.
     """)
 
-    st.divider() 
-
     menu_fabric = option_menu(
         None, 
         Section_Fabric, 
