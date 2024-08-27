@@ -147,11 +147,11 @@ elif selected == "Microsoft Fabric" :
             #    }
             #)
 
-            if selected_lakehouse == "Introduction" :
+            if selected_notebook == "Introduction" :
                 st.markdown(Fabric_2_2_Create_Notebooks)
-            #elif selected_lakehouse == "2.1 Create a Lakehouse" :
+            #elif selected_notebook == "2.1 Create a Lakehouse" :
             #    st.markdown(Fabric_2_1_Create_a_Lakehouse)
-            #elif selected_lakehouse == "2.2 Create Notebooks" :
+            #elif selected_notebook == "2.2 Create Notebooks" :
             #    st.markdown(Fabric_2_2_Create_Notebooks)
 
 
