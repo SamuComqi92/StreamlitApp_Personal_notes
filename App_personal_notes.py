@@ -77,7 +77,7 @@ Fabric_1_OneLake = load_text("Text/Fabric_1_OneLake.txt")
 Fabric_2_Data_Engineering_Lakehouse = load_text("Text/Fabric_2_Data_Engineering_Lakehouse.txt")
 Fabric_2_1_Create_a_Lakehouse = load_text("Text/Fabric_2.1_Create_a_Lakehouse.txt")
 Fabric_2_2_Create_Notebooks = load_text("Text/Fabric_2.2_Create_Notebooks.txt")
-Fabric_2_2_Create_tables = load_text("Text/Fabric_2.2.2_Create_tables.txt")
+Fabric_2_2_1_Create_tables = load_text("Text/Fabric_2.2.1_Create_tables.txt")
 
 
 # --------------------------------------------------------------------------------------------------------------------------------------------
@@ -169,7 +169,7 @@ elif selected == "Microsoft Fabric" :
             if selected_notebook == "Introduction" :
                 st.markdown(Fabric_2_2_Create_Notebooks)
             elif selected_notebook == "Create tables" :
-                st.markdown(Fabric_2_2_Create_tables)
+                st.markdown(Fabric_2_2_1_Create_tables)
                 
                 #code_python = """
                 #def hello():
