@@ -55,9 +55,9 @@ with st.sidebar:
     
 # Landing page
 st.markdown("""
-**Welcome to My Digital Notebook**
+#### **Welcome to My Digital Notebook**
 
-I designed this space to collect my notes on different topics, from programming to systems dedicated to data management, manipulation and visualization.
+I designed this space to collect *my notes* on different topics, from programming to machine learning and systems dedicated to data management, manipulation and visualization.
 
 I have collected a lot of notes over the last 2-3 years and decided to collect them here in an orderly manner.
 
@@ -65,7 +65,7 @@ Obviously, it will take some time to write everything down and what I include wi
 
 The web page is public so anyone can have access.
 
-Enjoy :)
+Enjoy 😃
 """
 )
 
