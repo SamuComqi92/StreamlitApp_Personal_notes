@@ -68,12 +68,12 @@ if selected == "Microsoft Fabric" :
 
     # General notes description
     st.markdown("""
-    These notes describe the main ***Microsoft Fabric*** features with **code snippets** and external links.
+    # These notes describe the main ***Microsoft Fabric*** features with **code snippets** and external links.
     """)
     if menu_fabric == "Fabric section 1" :
         st.write("gnigni")
     if menu_fabric == "Fabric section 2" :
-        st.write("gnigni")
+        st.write("gnigni2")
 
 
 elif selected == "Qlik":
