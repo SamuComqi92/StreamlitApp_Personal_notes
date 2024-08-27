@@ -1,1 +1,3 @@
-
+**Qlik** is a very *powerful tool* to orchestrate ETLs, transform data, and create reports. 
+I started taking notes during a migration to **Power BI**, highlighting pros and cons along with differences between the two tools.
+A migration from one tool to the other is not a trivial task, especially when the underline capabilities can reproduce the same outputs but with completly different approaches.
