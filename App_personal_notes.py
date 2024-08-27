@@ -171,7 +171,7 @@ elif selected == "Microsoft Fabric" :
             st.write("Navigate in one of these sections:")
             selected_notebook = st.radio(
                 "",
-                ["Introduction", "Create tables", "Time travel", "Print and display", "Update a table", "Add columns", "Use SQL", "Data Wrangler", "Sempy", "Other functions & utilities"],
+                ["Introduction", "Create tables", "Time travel", "Print and display", "Update a table", "Add columns", "Use SQL", "Data Wrangler", "Sempy", "Other functions"],
                 label_visibility = "collapsed",
                 horizontal = True
             )
