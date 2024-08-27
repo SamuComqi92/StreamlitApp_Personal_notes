@@ -10,7 +10,7 @@ with st.sidebar:
     selected = option_menu(
         "Topics", 
         ["Microsoft Fabric", 'Qlik'], 
-        icons = ['✅house', 'gear'], 
+        icons = ['house', 'gear'], 
         menu_icon = "cast", 
         default_index = 0,
         styles = {
