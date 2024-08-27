@@ -57,7 +57,7 @@ with st.sidebar:
     )
 
 if selected == "Microsoft Fabric" :
-    menu_3 = option_menu(
+    menu_fabric = option_menu(
         None, 
         Section_Fabric, 
         icons = Section_Fabric_icons, 
@@ -65,12 +65,19 @@ if selected == "Microsoft Fabric" :
         orientation = "horizontal",
         styles = Nav_styles
     )
-    
-    st.write("Text Text Text")
+
+    # General notes description
+    st.markdown("""
+    These notes describe the main ***Microsoft Fabric*** features with **code snippets** and external links.
+    """)
+    if menu_fabric == "Fabric section 1" :
+        st.write("gnigni")
+    if menu_fabric == "Fabric section 2" :
+        st.write("gnigni")
 
 
 elif selected == "Qlik":
-    menu_2 = option_menu(
+    menu_qlik = option_menu(
         None, 
         Section_Qlik, 
         icons = Section_Qlik_icons, 
