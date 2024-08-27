@@ -152,8 +152,8 @@ elif selected == "Microsoft Fabric" :
         st.write("Navigate in one of these pages:")
         selected_lakehouse = option_menu(
             None,
-            ["Introduction", "2.1 Create a Lakehouse", "2.2 Create Notebooks"], 
-            icons = ["list", "file-earmark", "file-earmark"], 
+            ["Introduction", "2.1 Create a Lakehouse", "2.2 Create Notebooks", "2.3 SQL Endpoint", "2.4 Create a report"], 
+            icons = ["list", "file-earmark", "file-earmark", "file-earmark", "file-earmark"], 
             default_index = 0,
             orientation = "horizontal",
             styles = {
