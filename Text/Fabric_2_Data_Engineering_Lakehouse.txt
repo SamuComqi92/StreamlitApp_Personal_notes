@@ -14,5 +14,3 @@ Data can be added to the Lakehouse (i.e. ingestion) in 4 ways:
 2. Using *Dataflows*, for additional data transformations (with Power Query Online - see next).
 3. Using *Notebooks* (in an *Apache Soark pool*); notebooks can be used to manipulated table using SQL.
 4. Through *Pipelines* (using the **Copy activity** in *Data Factory*).
-
-.
