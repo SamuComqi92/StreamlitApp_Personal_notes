@@ -23,7 +23,7 @@ df_pandas = df.toPandas()
 df.write.format("delta").saveAsTable("mytable")
 
 # EXTERNAL TABLE (in Files)
-df.write.format("delta").saveAsTable("mytable", path=”Files/folder”)
+df.write.format("delta").saveAsTable("mytable", path = ”Files/folder”)
 
 # In a specified path
 df.write.format("delta").save(path)		
@@ -51,10 +51,32 @@ df = df.withColumn("column_name", to_timestamp(col("column_name))			#DateTime
 df = df.withColumn("column_name", col("datetype_column_name).cast(TimestampType()))	#DateTime  
 ```
 
->> The function ***withColumn*** is used to define new columns or to modify existing ones:
+> The function ***withColumn*** is used to define new columns or to modify existing ones:
 
->> ```python
->> df.withColumn("name", expression)
->> ```
+> ```python
+> df.withColumn("name", expression)
+> ```
 
 Alternatively, it is possible to define a ***schema*** before reading a file, using a code like the following:
+
+```python
+from pyspark.sql.types import * 			# Import data types
+From pyspark.sql.functions import * 			# Import useful functions
+
+# Define schema
+productSchema = StructType([ 
+	StructField("ProductName", StringType(), True),
+	StructField("ListPrice", FloatType(), False),
+	...
+]) 
+
+# Use the schema while reading data into a dataframe
+df = spark.read.load('/data/product-data.csv', format = 'csv', schema = productSchema, ...)
+
+# To create a dataframe from data
+df = spark.createDataFrame(data = your_data, schema = productSchema)
+
+# To print the schema of a dataframe (columns, data types, true/false for nulls)
+df.printSchema()
+
+```
