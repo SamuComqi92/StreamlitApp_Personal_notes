@@ -31,9 +31,10 @@ st.set_page_config(layout = "wide")
 # Sidebar width
 st.markdown( """<style>section[data-testid = "stSidebar"] {width: 400px !important;}</style>""", unsafe_allow_html = True )
 
-# Radio button
-st.markdown( """<style>.stRadio [role=radiogroup]{align-items: center; justify-content: center;}</style>""", unsafe_allow_html = True)
-
+# Radio button background color 
+with open('style.css') as f:
+    st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html = True) 
+    
 # Section navigation style
 Nav_styles = {
     "nav-link": {"font-size": "17px", "text-align": "center", "margin": "3px", "--hover-color": "#c7c5c5"},
