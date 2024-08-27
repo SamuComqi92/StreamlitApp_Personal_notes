@@ -18,7 +18,7 @@ def load_text(filename):
 Menu_icon = "menu-up"
 Main_topics = ["Landing page", "Microsoft Fabric", 'Qlik to Power BI (WIP)']
 Main_icons = ['house', 'clipboard-data', 'graph-up-arrow']
-Section_Fabric = ["1. Fabric OneLake", "2. Data Engineering - Lakehouse", "3. Data Engineering – Data Factory: Pipelines", "4. Data Engineering – Data Factory: Dataflows", "5. Data Warehouse", "6. Data Science", "7. Real-Time Analytics", "8. Data Activator", "9. Administration aspects of Microsoft Fabric"]
+Section_Fabric = ["1. Fabric OneLake", "2. Data Engineering - Lakehouse", "3. Data Engineering - Data Factory: Pipelines", "4. Data Engineering - Data Factory: Dataflows", "5. Data Warehouse", "6. Data Science", "7. Real-Time Analytics", "8. Data Activator", "9. Administration aspects of Microsoft Fabric"]
 Section_Fabric_icons = ['caret-right-fill', 'caret-right-fill', 'caret-right-fill', 'caret-right-fill', 'caret-right-fill', 'caret-right-fill', 'caret-right-fill', 'caret-right-fill', 'caret-right-fill']
 Section_Qlik = [""]
 Section_Qlik_icons = ['caret-right-fill', 'caret-right-fill']
@@ -181,7 +181,8 @@ elif selected == "Microsoft Fabric" :
             elif selected_notebook == "Create tables" :
                 st.markdown(Fabric_2_2_1_Create_tables)
 
-    if menu_fabric == "3. Data Engineering – Data Factory: Pipelines" :
+    
+    if menu_fabric == "3. Data Engineering - Data Factory: Pipelines" :
 
         st.write("Navigate in one of these pages:")
         selected_lakehouse = option_menu(
@@ -197,7 +198,7 @@ elif selected == "Microsoft Fabric" :
         )
 
 
-    if menu_fabric == "4. Data Engineering – Data Factory: Dataflows" :
+    if menu_fabric == "4. Data Engineering - Data Factory: Dataflows" :
 
         st.write("Navigate in one of these pages:")
         selected_lakehouse = option_menu(
@@ -211,8 +212,62 @@ elif selected == "Microsoft Fabric" :
                 "nav-link-selected": {"background-color": "#479e92"},
             }
         )
-               
 
+
+    if menu_fabric == "5. Data Warehouse" :
+
+        st.write("Navigate in one of these pages:")
+        selected_lakehouse = option_menu(
+            None,
+            ["Introduction", "5.1 Create a Warehouse", "5.2 Create a data model", "Connection to SSMS", "5.4 Security"], 
+            icons = ["list", "file-earmark", "file-earmark", "file-earmark", "file-earmark"], 
+            default_index = 0,
+            orientation = "horizontal",
+            styles = {
+                "nav-link": {"font-size": "12px", "text-align": "center", "margin": "0px", "--hover-color": "#dbdbdb"},
+                "nav-link-selected": {"background-color": "#479e92"},
+            }
+        )
+
+
+    if menu_fabric == "6. Data Science" :
+
+        st.write("Navigate in one of these pages:")
+        selected_lakehouse = option_menu(
+            None,
+            ["Introduction", "6.1 Create a data science model inside a Notebook", "6.2 Validation and metrics"], 
+            icons = ["list", "file-earmark", "file-earmark"], 
+            default_index = 0,
+            orientation = "horizontal",
+            styles = {
+                "nav-link": {"font-size": "12px", "text-align": "center", "margin": "0px", "--hover-color": "#dbdbdb"},
+                "nav-link-selected": {"background-color": "#479e92"},
+            }
+        )
+
+
+    if menu_fabric == "7. Real-Time Analytics" :
+        st.markdown("***Notes on Real-Time Analytics: missing***")
+
+
+    if menu_fabric == "8. Data Activator" :
+        st.markdown("***Notes on Data Activator: missing***")
+
+
+    if menu_fabric == "9. Administration aspects of Microsoft Fabric" :
+        
+        st.write("Navigate in one of these pages:")
+        selected_lakehouse = option_menu(
+            None,
+            ["Introduction", "9.1 Licensing and Pricing"], 
+            icons = ["list", "file-earmark"], 
+            default_index = 0,
+            orientation = "horizontal",
+            styles = {
+                "nav-link": {"font-size": "12px", "text-align": "center", "margin": "0px", "--hover-color": "#dbdbdb"},
+                "nav-link-selected": {"background-color": "#479e92"},
+            }
+        )
 
 # ---------------------------------------------------------------------------------------------------
 ########### Qlik ############
