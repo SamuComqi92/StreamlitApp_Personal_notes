@@ -58,7 +58,7 @@ st.html("""
             margin-right: 0px !important;
         }
         div[role = "radiogroup"] {
-            gap: 12px;
+            gap: 10px;
         }
     </style>
 """)
