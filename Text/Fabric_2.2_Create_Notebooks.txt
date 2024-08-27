@@ -13,4 +13,15 @@ The main commands of the notebook are exactly those used in **Visual Studio Code
 
 >> ***Note on resources: missing***
 
-A query inside a notebook can be visualized as a *table* or as a *chart*.
+A query inside a notebook can be visualized as a *table* or as a *chart*, by selecting the appropriate button in the cell output. When "chart" is selected, it is possible to choose the visualization chart and the set of fields and properties in the right pane.[^1]
+
+If a notebook is ready, in the *Settings* section (top left menu) it is possible to choose a name, set the sensitivity label, or schedule an execution time. Once saved, a notebook can be used by going in "*Open notebook*" and selecting "*Existing notebook*" (a list will appear).
+
+When using notebooks, it is crucial to avoid *pip install* because it consumes resources and makes the notebook run longer. To avoid that, it is possible to define an ***Environment*** (*preview*), even from a notebook, where libraries (even custom ones - only *.whl* or *.jar* files) can be handled and defined. In the Workspace Settings, go to "Data Engineering/Science", then "Spark settings", and finally "*Environment*": here, it is possible to see detauls about libraries. When an environment is defined, it is not necessary to install libraries each time a notebook runs.[^2]
+
+
+
+
+[^1]: In a Notebook, in section “Run”, the default option is “*Standard Session*”. It is possible to run multiple notebooks (up to 5) by selecting “**New high concurrency session**”: after the initialization of the session in one notebook, it is possible to open a new notebook and in the “Run” session, select the existing high concurrency session to run the two notebooks together.
+
+[^2]: An *environment* can be used in different Notebooks.
