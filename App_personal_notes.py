@@ -11,7 +11,7 @@ from htbuilder.units import percent, px
 Menu_icon = "menu-up"
 Main_topics = ["Microsoft Fabric", 'Qlik (work in progress)']
 Main_icons = ['clipboard-data', 'graph-up-arrow']
-Section_Fabric = ["Fabric OneLake", "Fabric section 2"]
+Section_Fabric = ["1. Fabric OneLake", "2. Data Engineering - Lakehouse"]
 Section_Fabric_icons = ['caret-right-fill', 'caret-right-fill']
 Section_Qlik = [""]
 Section_Qlik_icons = ['caret-right-fill', 'caret-right-fill']
@@ -36,7 +36,7 @@ st.markdown(
 # Section navigation style
 Nav_styles = {
     "container": {"padding": "0!important", "background-color": "#dbdbdb"},
-    "nav-link": {"font-size": "17px", "text-align": "center", "margin":"0px", "--hover-color": "#c7c5c5"},
+    "nav-link": {"font-size": "17px", "text-align": "center", "margin": "0px", "--hover-color": "#c7c5c5"},
     "nav-link-selected": {"background-color": "#239583"},
 }
 
@@ -51,7 +51,7 @@ with st.sidebar:
         menu_icon = Menu_icon, 
         default_index = 0,
         styles = {
-            "nav-link": {"font-size": "18px", "text-align": "left", "margin":"0px", "--hover-color": "#dbdbdb"},
+            "nav-link": {"font-size": "18px", "text-align": "left", "margin": "0px", "--hover-color": "#dbdbdb"},
             "nav-link-selected": {"background-color": "#479e92"},
         }
     )
@@ -78,7 +78,7 @@ if selected == "Microsoft Fabric" :
 
     st.divider() 
     
-    if menu_fabric == "Fabric OneLake" :
+    if menu_fabric == "1. Fabric OneLake" :
         st.markdown("""
         ### OneLake
 
@@ -106,7 +106,7 @@ if selected == "Microsoft Fabric" :
         [^1]: OneLake is similar to an *Azure Data Lake Storage*.
         """)
         
-    if menu_fabric == "Fabric section 2" :
+    if menu_fabric == "2. Data Engineering - Lakehouse" :
         st.write("gnigni2")
 
 
