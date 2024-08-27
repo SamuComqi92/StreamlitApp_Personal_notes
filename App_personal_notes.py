@@ -68,7 +68,9 @@ if selected == "Microsoft Fabric" :
 
     # General notes description
     st.markdown("""
-    These notes describe the main ***Microsoft Fabric*** features with **code snippets** and external links.
+    **Notes description**
+    
+    These notes *describe* the main ***Microsoft Fabric*** features with **code snippets** and external links.
     """)
 
     st.divider() 
