@@ -30,3 +30,9 @@ df.write.format("delta").save(path)
 df.write.json("path", mode = ...)	 # Specify the writing mode (e.g. append, overwrite,...)
 df.write.parquet("path", mode = ...)
 ```
+
+**Pay attention: this is the way to save data when dealing with a Spark dataframe!** For Pandas *dataframes*, some other functions are required (for example: *to_csv, to_xlsx, to_parquet, to_json*)! For Pandas dataframes, the ***ABFS path*** of the final folder must be used in the *destination* path string (it is possible to retrieve the path from the folder itself – left menu and three dots). 
+
+>> *For CSV files, the **inferSchema** option will let Spark identify the table schema. Otherwise, everything is read as “string” (see next to define a Schema).*
+
+In general,........
