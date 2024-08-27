@@ -7,6 +7,17 @@ from htbuilder import HtmlElement, div, hr, a, p, img, styles
 from htbuilder.units import percent, px
 
 # --------------------------------------------------------------------------------------------------------------------------------------------
+# Usefull functions
+def load_text(filename):
+    with open(filename, 'r') as f:
+        return f.read()
+
+Fabric_1_OneLake = load_text("Fabric_1_OneLake.txt")
+Fabric_2_Data_Engineering_Lakehouse = load_text("Fabric_2_Data_Engineering_Lakehouse.txt")
+
+#    st.markdown(page3_text)
+    
+# --------------------------------------------------------------------------------------------------------------------------------------------
 # Titles & Icons
 Menu_icon = "menu-up"
 Main_topics = ["Microsoft Fabric", 'Qlik (work in progress)']
@@ -81,32 +92,7 @@ if selected == "Microsoft Fabric" :
     st.divider() 
     
     if menu_fabric == "1. Fabric OneLake" :
-        st.markdown("""
-        ## OneLake
-
-        ***OneLake*** is a single, unified *data lake* for the whole organization.
-        It hosts only **one copy of data** for the entire organization to use in multiple analytica engines.[^1]
-
-        OneLake is built on top of the *Azure Data Lake Storage (ADLS) Gen 2* and can support any type of file (structured or unstructured).
-        All items are stored in the **Delta Parquet format** (columnar).
-        It is also possible to create *shortcuts* for copying data from different locations (data stays in the original source).
-
-        it is possible to use different *engines* to connect to data, using different languages (e.g. T-SQL, Python) and tools/services (e.g. Pipelines, Notebooks):
-        
-        - **T-SQL** (Warehousing)
-        - **Spark** (Synapse Data Engineering & Data Science)
-        - **Analysis Services** (for Power BI)
-        - **KQL** (real-time analytics).
-
-        Moreover, Microsoft Fabric can be integrated with **Git (Azure DevOps)** to manage Deployment Pipelines and *versioning*.
-        Finally, it is possible to use ***Microsoft Purview*** to have details on Fabric Workspaces and data.
-        In Fabric, it is possible to use ***Data Activator*** to set up alerts (e.g. from Power BI reports).
-
-        Each process in Fabric (e.g. refreshes, notebooks, pipelines) can be monitored in the ***Monitoring Hub***.
-        There is also an app called *Microsoft Fabric Capacity Metrics* ([link to the app](https://appsource.microsoft.com/en-us/product/power-bi/pbi_pcmm.microsoftpremiumfabricpreviewreport?tab=Overview)) to monitor resources usage across the Tenant (only for Admins).
-        
-        [^1]: OneLake is similar to an *Azure Data Lake Storage*.
-        """)
+        st.markdown(Fabric_1_OneLake)
         
     if menu_fabric == "2. Data Engineering - Lakehouse" :
         st.markdown("""
