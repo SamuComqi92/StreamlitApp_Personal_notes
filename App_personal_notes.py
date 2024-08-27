@@ -10,7 +10,7 @@ Menu_icon = "menu-up"
 Main_topics = ["Microsoft Fabric", 'Qlik']
 Main_icons = ['clipboard-data', 'graph-up-arrow']
 Section_Fabric = ["Fabric section 1", "Fabric section 2"]
-Section_Qlik_icons = ['house', 'gear']
+Section_Fabric_icons = ['house', 'gear']
 Section_Qlik = ["Qlik section 1", "Qlik section 2"]
 Section_Qlik_icons = ['house', 'gear']
 
