@@ -127,6 +127,11 @@ if selected == "Microsoft Fabric" :
         3. Using *Notebooks* (in an *Apache Soark pool*); notebooks can be used to manipulated table using SQL.
         4. Through *Pipelines* (using the **Copy activity** in *Data Factory*).
 
+        .
+
+        .
+
+        .
 
         ##### 2.1 Create a Lakehouse
 
