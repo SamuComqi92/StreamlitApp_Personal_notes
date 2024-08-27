@@ -171,11 +171,25 @@ elif selected == "Microsoft Fabric" :
             if selected_notebook == "Introduction" :
                 st.markdown(Fabric_2_2_Create_Notebooks)
             elif selected_notebook == "Create tables" :
-                code = """
+                code_python = """
                 def hello():
                     print("Hello, Streamlit!")
                 """
-                st.code(code, language = "python")
+                st.code(code_python, language = "python")
+
+                code_sql = """
+                SELECT * FROM database.schema.table_name
+                WHERE name = "Samuele"
+                """
+                st.code(code_sql, language = "sql")
+
+                code_dax = """
+                CALCULATE(
+                    SUM(table[column]),
+                    table_dim[column_dim] IN {"casa", "chiesa"}
+                )
+                """
+                st.code(code_dax, language = "dax")
             #    st.markdown(Fabric_2_1_Create_a_Lakehouse)
             #elif selected_notebook == "2.2 Create Notebooks" :
             #    st.markdown(Fabric_2_2_Create_Notebooks)
