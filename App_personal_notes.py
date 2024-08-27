@@ -285,7 +285,6 @@ elif selected == "Qlik to Power BI (WIP)":
             Section_Qlik, 
             icons = Section_Qlik_icons, 
             default_index = 0, 
-            orientation = "horizontal",
             styles = Nav_styles
         )
 
