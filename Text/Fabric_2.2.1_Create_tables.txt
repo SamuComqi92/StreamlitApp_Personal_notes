@@ -7,12 +7,12 @@ Using **Python** (*PySpark*), some examples of code for read/write data are the 
 # Load a file and store data into a dataframe (using PySpark)
 df = spark.read.load('Files/mydata.csv', format = 'csv', header = True)
 df = spark.read.csv('path', inferSchema = True)
-df = spark.read.parquet("Files/Sub_folder/table.parquet")
-df = spark.read.parquet("Files/*.parquet") 	# Combine parquet files with the same schema 
-df = spark.read.json("Files/Sub_folder/json_file")
+df = spark.read.parquet('Files/Sub_folder/table.parquet')
+df = spark.read.parquet('Files/*.parquet') 	# Combine parquet files with the same schema 
+df = spark.read.json('Files/Sub_folder/json_file')
 
 # Python
-df = pd.read_parquet("/lakehouse/default/"+"Files/Sub_folder/table.parquet") 
+df = pd.read_parquet('/lakehouse/default/' + 'Files/Sub_folder/table.parquet') 
 				 
 # From Spark to Pandas
 df_pandas = df.toPandas()				
@@ -20,17 +20,17 @@ df_pandas = df.toPandas()
 #######################################################################################################
 # Save the dataframe as a delta table
 # MANAGED TABLE (in Tables)
-df.write.format("delta").saveAsTable("mytable")
+df.write.format('delta').saveAsTable('mytable')
 
 # EXTERNAL TABLE (in Files)
-df.write.format("delta").saveAsTable("mytable", path = ”Files/folder”)
+df.write.format('delta').saveAsTable('mytable', path = 'Files/folder')
 
 # In a specified path
-df.write.format("delta").save(path)		
+df.write.format('delta').save(path)		
 
 # Other type of files
-df.write.json("path", mode = ...)	 # Specify the writing mode (e.g. append, overwrite,...)
-df.write.parquet("path", mode = ...)
+df.write.json('path', mode = ...)	 # Specify the writing mode (e.g. append, overwrite,...)
+df.write.parquet('path', mode = ...)
 ```
 
 **Pay attention: this is the way to save data when dealing with a Spark dataframe!** For Pandas *dataframes*, some other functions are required (for example: *to_csv, to_xlsx, to_parquet, to_json*)! For Pandas dataframes, the ***ABFS path*** of the final folder must be used in the *destination* path string (it is possible to retrieve the path from the folder itself – left menu and three dots). 
@@ -47,8 +47,8 @@ from pyspark.sql.types import IntegerType, DateType, FloatType
 df = df.withColumn("column_name", col("column_name").cast(IntegerType()))		#Integers
 df = df.withColumn("column_name", col("column_name").cast(FloatType()))			#Floats   
 df = df.withColumn("column_name", to_date(col("column_name")).cast(DateType()))		#Dates
-df = df.withColumn("column_name", to_timestamp(col("column_name))			#DateTime  
-df = df.withColumn("column_name", col("datetype_column_name).cast(TimestampType()))	#DateTime  
+df = df.withColumn("column_name", to_timestamp(col("column_name"))			#DateTime  
+df = df.withColumn("column_name", col("datetype_column_name").cast(TimestampType()))	#DateTime  
 ```
 
 > The function ***withColumn*** is used to define new columns or to modify existing ones:
@@ -149,7 +149,7 @@ Finally, it is possible to store data in the *Files* folders with ***partitions*
 
 ```python
 # Partitions
-df.write.partitionBy(“col_date”, ”col_month”, ...).mode(“overwrite”).parquet(“Files/Partition_folder”)
+df.write.partitionBy('col_date', 'col_month', ...).mode('overwrite').parquet('Files/Partition_folder')
 ```
 
 In this way, the dataframe will be splitted based on the columns defined in *partitionBy*, and Spark automatically creates **folders** and **subfolders** whose names contain Year, Month, and other specified values.
