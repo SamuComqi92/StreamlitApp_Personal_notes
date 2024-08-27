@@ -16,7 +16,7 @@ def load_text(filename):
 # --------------------------------------------------------------------------------------------------------------------------------------------
 # Titles & Icons
 Menu_icon = "menu-up"
-Main_topics = ["Microsoft Fabric", 'Qlik (work in progress)']
+Main_topics = ["Landing page", "Microsoft Fabric", 'Qlik (work in progress)']
 Main_icons = ['clipboard-data', 'graph-up-arrow']
 Section_Fabric = ["1. Fabric OneLake", "2. Data Engineering - Lakehouse"]
 Section_Fabric_icons = ['caret-right-fill', 'caret-right-fill']
@@ -46,7 +46,7 @@ with st.sidebar:
         Main_topics, 
         icons = Main_icons, 
         menu_icon = Menu_icon, 
-        default_index = None,
+        default_index = 0,
         styles = {
             "nav-link": {"font-size": "18px", "text-align": "left", "margin": "0px", "--hover-color": "#dbdbdb"},
             "nav-link-selected": {"background-color": "#479e92"},
