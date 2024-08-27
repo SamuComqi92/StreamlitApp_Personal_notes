@@ -13,6 +13,32 @@ The main hub will display a list of objects in two *main folders*: the ***Tables
 - ***Files***: for files like *.csv*, *.xlsx*, etc. To see data, select the appropriate folder and navigate the list by clikcing on the three dots next to the folder name. Moreover, it is possible to create *sub-folders* by clicking on the three dots.
 - Both in Tables and Files, it is possible to create *sub-folders* and *shortcuts* i.e. objects on OneLake that point to other storage location, like a sort of *link* towards OneLake, ADLS Gen 2, Amazon S3 or Dataverse).[^3]
 
+Delta tables are part of the ***Delta Lake***, an open-source relational storage method for Spark to support *Parquet-format tables* (it uses the relational database semantics on Spark processes). This format supports *CRUD operations*, *ACID properties*, and *data versioning* (the so-called **time-travel**), and it is possible to read it in a faster way compared to other formats. It is possible to create Delta tables using *Notebooks* (see next).
+
+In the Lakehouse main hub, the main buttons are:
+
+- Refresh button (also for the *Tables* and "Files" folders).
+- "*Get Data*" section to connect to different data sources.
+- "*New Power BI semantic model*", to create a new model with specific tables. Tables inside the model are connected
+ to the OneLake with the so-called ***DirectLake connection***.
+"*Open Notebook*" (a new or an existing one).
+
+A file/folder in *Files* can be uploaded by clicking on the three dots next to the *Files* folder name and then "*Upload a file/folder*". A file in a folder cna be **loaded as a table** (Delta format) by clicking on the three dots next to its name and then "*Load to Tables*". At this point:
+
+- The file will be in the *Tables* folder (not in the *Files* folder anymore).
+- It will be possible to expand the list of columns.
+- It will be possible to see a preview of the data.
+- In "View Files", it will be possible to see the created files, i.e., the Parquet files and the JSON *_delta_log* file containing the modifictions log.
+
+Using Lakehouses (or even Warehouses - see next), it is possible to implement the ***Medallion architecture*** within Fabric to mange each data level (i.e. *bronze, silver, gold*). Microsoft suggests two patterns:
+
+1. Create a Lakehouse for each data level;
+2. Create a Lakehouse for bronze and silver layers, a *Warehouse* for the gold level.
+
+Moreover, Microsoft suggests to create a separate Workspace for each Lakehouse/Warehouse location and use Delta tables for silver and gold levels to enhance the overall performance.
+
+
+
 [^1]: Note: once a table is created, it is automatically added to the default semantic model. This can be disabled in the *Lakehouse settings*.
 
 [^2]: Delta Tables are in *Parquet format*, labelled with a small black delta symbol.
