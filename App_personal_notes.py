@@ -39,6 +39,22 @@ Nav_styles = {
 
 
 # --------------------------------------------------------------------------------------------------------------------------------------------
+# Landingpage
+st.markdown("""
+**Welcome to My Digital Notebook**
+
+I designed this space to collect my notes on different topics, from programming to systems dedicated to data management, manipulation and visualization.
+
+I have collected a lot of notes over the last 2-3 years and decided to collect them here in an orderly manner.
+
+Obviously, it will take some time to write everything down and what I include will be subject to future changes and additions, based on my explorations and testing.
+
+The web page is public so anyone can have access.
+
+Enjoy :)
+"""
+)
+
 # Menu laterale
 with st.sidebar:
     selected = option_menu(
