@@ -82,7 +82,17 @@ if selected == "Microsoft Fabric" :
 
         ***OneLake*** is a single, unified *data lake* for the whole organization.
         It hosts only **one copy of data** for the entire organization to use in multiple analytica engines.[^1]
+
+        OneLake is built on top of the *Azure Data Lake Storage (ADLS) Gen 2* and can support any type of file (structured or unstructured).
+        All items are stored in the **Delta Parquet format** (columnar).
+        It is also possible to create *shortcuts* for copying data from different locations (data stays in the original source).
+
+        it is possible to use different *engines* to connect to data, using different languages (e.g. T-SQL, Python) and tools/services (e.g. Pipelines, Notebooks):
         
+        - **T-SQL** (Warehousing)
+        - **Spark** (Synapse Data Engineering & Data Science)
+        - **Analysis Services** (for Power BI)
+        - **KSQL** (real-time analytics).
         
         
         [^1]: OneLake is similar to an *Azure Data Lake Storage*.
