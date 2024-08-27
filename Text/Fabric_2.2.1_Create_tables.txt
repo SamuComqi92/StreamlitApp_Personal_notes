@@ -37,4 +37,24 @@ df.write.parquet("path", mode = ...)
 
 >> *For CSV files, the **inferSchema** option will let Spark identify the table schema. Otherwise, everything is read as “string” (see next to define a Schema).*
 
-In general,........
+In general, it is possible to *drag & drop* the table into the Notebook to generate an automatic piece of code. Reading a file in this way may set a wrong data type for the table columns (i.e., string type for all). To change data type, this code can be used (with the function ***cast***):
+
+```python
+# Utilities
+from pyspark.sql.functions import col, to_timestamp
+from pyspark.sql.types import IntegerType, DateType, FloatType
+
+df = df.withColumn("column_name", col("column_name").cast(IntegerType()))		#Integers
+df = df.withColumn("column_name", col("column_name").cast(FloatType()))			#Floats   
+df = df.withColumn("column_name", to_date(col("column_name")).cast(DateType()))		#Dates
+df = df.withColumn("column_name", to_timestamp(col("column_name))			#DateTime  
+df = df.withColumn("column_name", col("datetype_column_name).cast(TimestampType()))	#DateTime  
+```
+
+>> The function ***withColumn*** is used to define new columns or to modify existing ones:
+
+>> ```python
+>> df.withColumn("name", expression)
+>> ```
+
+Alternatively, it is possible to define a ***schema*** before reading a file, using a code like the following:
