@@ -181,7 +181,7 @@ elif selected == "Microsoft Fabric" :
             elif selected_notebook == "Create tables" :
                 st.markdown(Fabric_2_2_1_Create_tables)
 
-    if menu_fabric == "3. Data Engineering - Data Factory: Pipelines" :
+    if menu_fabric == "3. Data Engineering – Data Factory: Pipelines" :
 
         st.write("Navigate in one of these pages:")
         selected_lakehouse = option_menu(
@@ -197,7 +197,7 @@ elif selected == "Microsoft Fabric" :
         )
 
 
-    if menu_fabric == "4. Data Engineering - Data Factory: Dataflows" :
+    if menu_fabric == "4. Data Engineering – Data Factory: Dataflows" :
 
         st.write("Navigate in one of these pages:")
         selected_lakehouse = option_menu(
