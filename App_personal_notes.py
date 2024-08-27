@@ -129,17 +129,21 @@ elif selected == "Microsoft Fabric" :
             st.markdown(Fabric_2_1_Create_a_Lakehouse)
         elif selected_lakehouse == "2.2 Create Notebooks" :
 
-            selected_notebook = option_menu(
-                None, 
-                ["Introduction", "Create tables", "Time travel", "Print and display", "Update a table", "Add columns", "Use SQL", "Data Wrangler", "Sempy (Semantic link)", "Other Spark functions & utilities"], 
-                icons = ["list", "file-earmark", "file-earmark", "file-earmark", "file-earmark", "file-earmark", "file-earmark", "file-earmark", "file-earmark", "file-earmark"], 
-                default_index = 0,
-                orientation = "horizontal",
-                styles = {
-                    "nav-link": {"font-size": "10px", "text-align": "center", "margin": "0px", "--hover-color": "#dbdbdb"},
-                    "nav-link-selected": {"background-color": "#479e92"},
-                }
+            selected_notebook = st.radio(
+                None,
+                ["Introduction", "Create tables", "Time travel", "Print and display", "Update a table", "Add columns", "Use SQL", "Data Wrangler", "Sempy (Semantic link)", "Other Spark functions & utilities"],
             )
+            #option_menu(
+            #    None, 
+            #    ["Introduction", "Create tables", "Time travel", "Print and display", "Update a table", "Add columns", "Use SQL", "Data Wrangler", "Sempy (Semantic link)", "Other Spark functions & utilities"], 
+            #    icons = ["list", "file-earmark", "file-earmark", "file-earmark", "file-earmark", "file-earmark", "file-earmark", "file-earmark", "file-earmark", "file-earmark"], 
+            #    default_index = 0,
+            #    orientation = "horizontal",
+            #    styles = {
+            #        "nav-link": {"font-size": "10px", "text-align": "center", "margin": "0px", "--hover-color": "#dbdbdb"},
+            #        "nav-link-selected": {"background-color": "#479e92"},
+            #    }
+            #)
 
             if selected_lakehouse == "Introduction" :
                 st.markdown(Fabric_2_2_Create_Notebooks)
