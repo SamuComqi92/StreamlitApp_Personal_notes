@@ -12,7 +12,8 @@ with st.sidebar:
         ["Microsoft Fabric", 'Qlik'], 
         icons = ['house', 'gear'], 
         menu_icon = "cast", 
-        default_index = 0
+        default_index = 0,
+        styles = { "container": {"padding": "0!important", "border-radius": "10px"} }
     )
     
 if selected == "Qlik":
