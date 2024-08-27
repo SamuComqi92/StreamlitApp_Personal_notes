@@ -68,6 +68,7 @@ with st.sidebar:
 Fabric_1_OneLake = load_text("Text/Fabric_1_OneLake.txt")
 Fabric_2_Data_Engineering_Lakehouse = load_text("Text/Fabric_2_Data_Engineering_Lakehouse.txt")
 Fabric_2_1_Create_a_Lakehouse = load_text("Text/Fabric_2.1_Create_a_Lakehouse.txt")
+Fabric_2_2_Create_Notebooks = load_text("Text/Fabric_2.2_Create_Notebooks.txt")
 
 ########### Microsoft Fabric ############
 if selected == "Microsoft Fabric" :
@@ -99,7 +100,7 @@ if selected == "Microsoft Fabric" :
 
         selected_lakehouse = option_menu(
             None, 
-            ["Introduction", "2.1 Create a Lakehouse"], 
+            ["Introduction", "2.1 Create a Lakehouse", "2.2 Create Notebooks"], 
             icons = ["list", "file-earmark"], 
             default_index = 0,
             orientation = "horizontal",
@@ -113,6 +114,8 @@ if selected == "Microsoft Fabric" :
             st.markdown(Fabric_2_Data_Engineering_Lakehouse)
         elif selected_lakehouse == "2.1 Create a Lakehouse" :
             st.markdown(Fabric_2_1_Create_a_Lakehouse)
+        elif selected_lakehouse == "2.2 Create Notebooks" :
+            st.markdown(Fabric_2_2_Create_Notebooks)
 
 
 # ---------------------------------------------------------------------------------------------------
