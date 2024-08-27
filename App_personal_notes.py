@@ -171,8 +171,8 @@ elif selected == "Microsoft Fabric" :
             if selected_notebook == "Introduction" :
                 st.markdown(Fabric_2_2_Create_Notebooks)
             elif selected_notebook == "Create tables" :
-                code = 
-                """def hello():
+                code = """
+                def hello():
                     print("Hello, Streamlit!")
                 """
                 st.code(code, language = "python")
