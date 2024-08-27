@@ -119,31 +119,20 @@ elif selected == "Microsoft Fabric" :
 
     # Title and logo
     col1, col2, col3 = st.columns(3)
-    #with col1:
-    #st.write(' ')
     with col2:
         st.image(Image.open(r'images/Logo_Fabric.png'), width = 480)
-    #with col3:
-    #st.write(' ')
-    
 
     # Introduction
     st.markdown(Fabric_0_Introduction)
 
-    menu_fabric = st.radio(
-        "",
-        Section_Fabric,
-        label_visibility = "collapsed",
-        horizontal = True
+    menu_fabric = option_menu(
+        None, 
+        Section_Fabric, 
+        icons = Section_Fabric_icons, 
+        default_index = 0, 
+        orientation = "horizontal",
+        styles = Nav_styles
     )
-    #menu_fabric = option_menu(
-    #    None, 
-    #    Section_Fabric, 
-    #    icons = Section_Fabric_icons, 
-    #    default_index = 0, 
-    #    orientation = "horizontal",
-    #    styles = Nav_styles
-    #)
 
     if menu_fabric == "1. Fabric OneLake" :
         st.markdown(Fabric_1_OneLake)
