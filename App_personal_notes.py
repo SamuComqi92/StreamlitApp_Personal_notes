@@ -56,6 +56,8 @@ with st.sidebar:
         }
     )
 
+
+########### Microsoft Fabric ############
 if selected == "Microsoft Fabric" :
     menu_fabric = option_menu(
         None, 
@@ -102,6 +104,7 @@ if selected == "Microsoft Fabric" :
         st.write("gnigni2")
 
 
+########### Qlik ############
 elif selected == "Qlik":
     menu_qlik = option_menu(
         None, 
@@ -112,7 +115,20 @@ elif selected == "Qlik":
         styles = Nav_styles
     )
 
-    st.write("Text Text Text")
+    # General notes description
+    st.markdown("""
+    **Notes description**
+
+    **Work in Progress**
+    """)
+
+    st.divider() 
+    
+    if menu_fabric == "" :
+        st.markdown("""
+        **Work in Progress**
+        """
+        )
 
 
 
