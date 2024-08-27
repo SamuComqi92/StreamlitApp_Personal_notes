@@ -114,7 +114,7 @@ elif selected == "Microsoft Fabric" :
         selected_lakehouse = option_menu(
             None, 
             ["Introduction", "2.1 Create a Lakehouse", "2.2 Create Notebooks"], 
-            icons = ["list", "file-earmark"], 
+            icons = ["list", "file-earmark", "file-earmark"], 
             default_index = 0,
             orientation = "horizontal",
             styles = {
@@ -128,7 +128,25 @@ elif selected == "Microsoft Fabric" :
         elif selected_lakehouse == "2.1 Create a Lakehouse" :
             st.markdown(Fabric_2_1_Create_a_Lakehouse)
         elif selected_lakehouse == "2.2 Create Notebooks" :
-            st.markdown(Fabric_2_2_Create_Notebooks)
+
+            selected_notebook = option_menu(
+                None, 
+                ["Introduction", "2.2.1 Create tables", "2.2.2 Time travel", "2.2.3 print and display", "2.2.4 Update a table", "2.2.5 Add columns", "2.2.6 Use SQL", "2.2.7 Data Wrangler", "2.2.8 Sempy (Semantic link)", "2.2.9 Other Spark functions & utilities"], 
+                icons = ["list", "file-earmark", "file-earmark", "file-earmark", "file-earmark", "file-earmark", "file-earmark", "file-earmark", "file-earmark", "file-earmark"], 
+                default_index = 0,
+                orientation = "horizontal",
+                styles = {
+                    "nav-link": {"font-size": "12px", "text-align": "center", "margin": "0px", "--hover-color": "#dbdbdb"},
+                    "nav-link-selected": {"background-color": "#479e92"},
+                }
+            )
+
+            if selected_lakehouse == "Introduction" :
+                st.markdown(Fabric_2_2_Create_Notebooks)
+            #elif selected_lakehouse == "2.1 Create a Lakehouse" :
+            #    st.markdown(Fabric_2_1_Create_a_Lakehouse)
+            #elif selected_lakehouse == "2.2 Create Notebooks" :
+            #    st.markdown(Fabric_2_2_Create_Notebooks)
 
 
 # ---------------------------------------------------------------------------------------------------
