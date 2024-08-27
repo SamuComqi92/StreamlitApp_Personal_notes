@@ -58,7 +58,7 @@ if selected == "Microsoft Fabric" :
         orientation = "horizontal",
         styles={
             "container": {"padding": "0!important", "background-color": "lightgrey"},
-            "nav-link": {"font-size": "17px", "text-align": "center", "margin":"0px", "--hover-color": "lightgrey"},
+            "nav-link": {"font-size": "17px", "text-align": "center", "margin":"0px", "--hover-color": "grey"},
             "nav-link-selected": {"background-color": "#239583"},
         }
     )
@@ -75,7 +75,7 @@ elif selected == "Qlik":
         orientation = "horizontal",
         styles={
             "container": {"padding": "0!important", "background-color": "lightgrey"},
-            "nav-link": {"font-size": "17px", "text-align": "center", "margin":"0px", "--hover-color": "lightgrey"},
+            "nav-link": {"font-size": "17px", "text-align": "center", "margin":"0px", "--hover-color": "grey"},
             "nav-link-selected": {"background-color": "#6eb241"},
         }
     )
