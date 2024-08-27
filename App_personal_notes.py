@@ -29,7 +29,7 @@ Section_Qlik_icons = ['caret-right-fill', 'caret-right-fill']
 st.set_page_config(layout = "wide")
 
 # Sidebar width
-st.markdown( """<style>section[data-testid = "stSidebar"] {width: 500px !important;}</style>""", unsafe_allow_html = True )
+st.markdown( """<style>section[data-testid = "stSidebar"] {width: 510px !important;}</style>""", unsafe_allow_html = True )
 
 # Radio button formatting (from web)
 st.html("""
