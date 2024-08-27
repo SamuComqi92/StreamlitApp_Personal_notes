@@ -11,7 +11,7 @@ from htbuilder.units import percent, px
 Menu_icon = "menu-up"
 Main_topics = ["Microsoft Fabric", 'Qlik']
 Main_icons = ['clipboard-data', 'graph-up-arrow']
-Section_Fabric = ["Fabric section 1", "Fabric section 2"]
+Section_Fabric = ["Fabric OneLake", "Fabric section 2"]
 Section_Fabric_icons = ['caret-right-fill', 'caret-right-fill']
 Section_Qlik = ["Qlik section 1", "Qlik section 2"]
 Section_Qlik_icons = ['caret-right-fill', 'caret-right-fill']
@@ -77,7 +77,16 @@ if selected == "Microsoft Fabric" :
     st.divider() 
     
     if menu_fabric == "Fabric section 1" :
-        st.write("gnigni")
+        st.markdown("""
+        ### OneLake
+
+        ***OneLake*** is a single, unified *data lake* for the whole organization.
+        It hosts only **one copy of data** for the entire organization to use in multiple analytica engines.[^1]
+        
+        
+        
+        [^1]: OneLake is similar to an *Azure Data Lake Storage*.
+        """)
         
     if menu_fabric == "Fabric section 2" :
         st.write("gnigni2")
