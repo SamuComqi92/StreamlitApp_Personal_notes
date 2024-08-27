@@ -134,8 +134,6 @@ elif selected == "Microsoft Fabric" :
         styles = Nav_styles
     )
 
-    st.divider()
-
     if menu_fabric == "1. Fabric OneLake" :
         st.markdown(Fabric_1_OneLake)
         
@@ -153,9 +151,7 @@ elif selected == "Microsoft Fabric" :
                 "nav-link-selected": {"background-color": "#479e92"},
             }
         )
-
-        st.divider()
-        
+      
         if selected_lakehouse == "Introduction" :
             st.markdown(Fabric_2_Data_Engineering_Lakehouse)
         elif selected_lakehouse == "2.1 Create a Lakehouse" :
@@ -169,8 +165,6 @@ elif selected == "Microsoft Fabric" :
                 label_visibility = "collapsed",
                 horizontal = True
             )
-
-            st.divider()
             
             if selected_notebook == "Introduction" :
                 st.markdown(Fabric_2_2_Create_Notebooks)
