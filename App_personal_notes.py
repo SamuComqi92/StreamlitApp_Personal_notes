@@ -126,6 +126,13 @@ if selected == "Microsoft Fabric" :
         2. Using *Dataflows*, for additional data transformations (with Power Query Online - see next).
         3. Using *Notebooks* (in an *Apache Soark pool*); notebooks can be used to manipulated table using SQL.
         4. Through *Pipelines* (using the **Copy activity** in *Data Factory*).
+
+
+        #### 2.1 Create a Lakehouse
+
+        First, to create a Lakehouse, one must have a **Premium/Fabric Workspace**.
+        Once created, on the bottom left, there is an icon to switch between the different services providede by Microsoft Fabric.
+        In this case, "***Data Engineering***" is the appropriate one to create a new Lakehouse.
         """)
 
 
