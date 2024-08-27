@@ -1,3 +1,5 @@
+### 2.2 Create Notebooks
+
 ***Notebooks*** are a very useful tool to perform specific operations on data using programming languages like Python or R.
 
 .......
