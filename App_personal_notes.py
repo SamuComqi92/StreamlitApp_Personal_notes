@@ -18,7 +18,7 @@ def load_text(filename):
 Menu_icon = "menu-up"
 Main_topics = ["Landing page", "Microsoft Fabric", 'Qlik (work in progress)']
 Main_icons = ['house', 'clipboard-data', 'graph-up-arrow']
-Section_Fabric = ["1. Fabric OneLake", "2. Data Engineering - Lakehouse"]
+Section_Fabric = ["<i class="bi bi-file-earmark"></i> 1. Fabric OneLake", "2. Data Engineering - Lakehouse"]
 Section_Fabric_icons = ['caret-right-fill', 'caret-right-fill']
 Section_Qlik = [""]
 Section_Qlik_icons = ['caret-right-fill', 'caret-right-fill']
