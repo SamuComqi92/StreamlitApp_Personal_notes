@@ -41,7 +41,7 @@ st.html("""
         input[type="radio"] + div {
             background: #e8e8e8  !important;
             color: #FFF;
-            border-radius: 15px !important;
+            border-radius: 10px !important;
             padding: 8px 18px !important;
         }
         input[type="radio"][tabindex="0"] + div {
