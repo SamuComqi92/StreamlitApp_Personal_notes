@@ -11,12 +11,7 @@ from htbuilder.units import percent, px
 def load_text(filename):
     with open(filename, 'r') as f:
         return f.read()
-
-Fabric_1_OneLake = load_text("Fabric_1_OneLake.txt")
-Fabric_2_Data_Engineering_Lakehouse = load_text("Fabric_2_Data_Engineering_Lakehouse.txt")
-
-#    st.markdown(page3_text)
-    
+  
 # --------------------------------------------------------------------------------------------------------------------------------------------
 # Titles & Icons
 Menu_icon = "menu-up"
@@ -66,6 +61,11 @@ with st.sidebar:
             "nav-link-selected": {"background-color": "#479e92"},
         }
     )
+
+
+# --------------------------------------------------------------------------------------------------------------------------------------------------------
+# Text loader
+Fabric_1_OneLake = load_text("Text/Fabric_1_OneLake.txt")
 
 
 ########### Microsoft Fabric ############
