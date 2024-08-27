@@ -40,7 +40,7 @@ st.html("""
         }
         input[type="radio"] + div {
             background: #e8e8e8  !important;
-            color: #FFF;
+            color: #000000;
             border-radius: 10px !important;
             padding: 8px 18px !important;
         }
