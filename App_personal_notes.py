@@ -70,6 +70,25 @@ Fabric_2_2_Create_Notebooks = load_text("Text/Fabric_2.2_Create_Notebooks.txt")
 
 ########### Microsoft Fabric ############
 if selected == "Microsoft Fabric" :
+
+    # General notes description
+    st.markdown("""
+    ## Microsoft Fabric
+    
+    **Notes description**
+    
+    **Microsoft Fabric** is *web-based platform all-in-one solution* to work with data, from the ingestion to the data trasformation and the final visualization and delivery. 
+    It offers the possibility to see and work with every aspect of data, including the possibility to implement Machine Learning models.
+
+    These notes have been collected after following the Microsoft eLearning materials and while exploring the main *Fabric* features using a *Trial licence*.
+
+    ---
+
+    Use the below menus to navigation between each section and sub-sections.
+    """)
+
+    st.divider() 
+
     menu_fabric = option_menu(
         None, 
         Section_Fabric, 
@@ -79,23 +98,13 @@ if selected == "Microsoft Fabric" :
         styles = Nav_styles
     )
 
-    # General notes description
-    st.markdown("""
-    **Notes description**
-    
-    **Microsoft Fabric** is *web-based platform all-in-one solution* to work with data, from the ingestion to the data trasformation and the final visualization and delivery. 
-    It offers the possibility to see and work with every aspect of data, including the possibility to implement Machine Learning models.
-
-    These notes have been collected after following the Microsoft eLearning materials and while exploring the main *Fabric* features using a *Trial licence*.
-    """)
-
-    st.divider() 
-    
     if menu_fabric == "1. Fabric OneLake" :
         st.markdown(Fabric_1_OneLake)
         
     if menu_fabric == "2. Data Engineering - Lakehouse" :
 
+        st.divider() 
+        
         selected_lakehouse = option_menu(
             None, 
             ["Introduction", "2.1 Create a Lakehouse", "2.2 Create Notebooks"], 
