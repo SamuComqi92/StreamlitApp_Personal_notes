@@ -109,7 +109,24 @@ if selected == "Microsoft Fabric" :
         """)
         
     if menu_fabric == "2. Data Engineering - Lakehouse" :
-        st.write("gnigni2")
+        st.markdown("""
+        ### Data Engineering - Lakehouse
+
+        **Data engineering** in Microsoft Fabric enables users to design, build, and maitain infrastructures and systems that enable thier organizations to collect, store, process, and analyze large volumes of data.
+
+        A ***Lakehouse*** is a storage (based on the Microsoft Fabric *OneLake*) for files and tables. When a Lakehouse is created, Fabric produces 3 items:
+
+        - *Lakehouse*: **storage** of metadata, files, folders, and data.
+        - *Semantic model*: automatic **data model** that can be used in Power BI for reporting.
+        - *SQL Endpoint*: **read-only**, to connect to the Lakehouse and query its data using *T-SQL*.
+
+        Data can be added to the Lakehouse (i.e. ingestion) in 4 ways:
+
+        1. Simple *Upload* (manual upload).
+        2. Using *Dataflows*, for additional data transformations (with Power Query Online - see next).
+        3. Using *Notebooks* (in an *Apache Soark pool*); notebooks can be used to manipulated table using SQL.
+        4. Through *Pipelines* (using the **Copy activity** in *Data Factory*).
+        """)
 
 
 ########### Qlik ############
