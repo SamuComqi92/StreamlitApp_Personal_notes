@@ -65,7 +65,7 @@ st.html("""
 
 # Section navigation style
 Nav_styles = {
-    "nav-link": {"font-size": "14px", "text-align": "center", "margin": "3px", "--hover-color": "#c7c5c5"},
+    "nav-link": {"font-size": "14px", "text-align": "left", "margin": "3px", "--hover-color": "#c7c5c5"},
     "nav-link-selected": {"background-color": "#239583"},
 }
 
@@ -137,6 +137,7 @@ elif selected == "Microsoft Fabric" :
     st.write("Navigate using the below menu:")
 
     with st.sidebar:
+        st.write("Navigation")
         menu_fabric = option_menu(
             None, 
             Section_Fabric, 
@@ -212,15 +213,17 @@ elif selected == "Qlik to Power BI (WIP)":
     col_1, col_2, col_3 = st.columns(3)
     with col_2:
         st.image(Image.open(r'images/Qlik_to_PBI_2.png'), width = 450)
-        
-    menu_qlik = option_menu(
-        None, 
-        Section_Qlik, 
-        icons = Section_Qlik_icons, 
-        default_index = 0, 
-        orientation = "horizontal",
-        styles = Nav_styles
-    )
+
+    with st.sidebar:
+        st.write("Navigation")
+        menu_qlik = option_menu(
+            None, 
+            Section_Qlik, 
+            icons = Section_Qlik_icons, 
+            default_index = 0, 
+            orientation = "horizontal",
+            styles = Nav_styles
+        )
 
     # General notes description
     st.markdown("""
