@@ -66,7 +66,7 @@ with st.sidebar:
 # --------------------------------------------------------------------------------------------------------------------------------------------------------
 # Text loader
 Fabric_1_OneLake = load_text("Text/Fabric_1_OneLake.txt")
-
+Fabric_2_Data_Engineering_Lakehouse = load_text("Text/Fabric_2_Data_Engineering_Lakehouse.txt")
 
 ########### Microsoft Fabric ############
 if selected == "Microsoft Fabric" :
@@ -95,34 +95,10 @@ if selected == "Microsoft Fabric" :
         st.markdown(Fabric_1_OneLake)
         
     if menu_fabric == "2. Data Engineering - Lakehouse" :
-        st.markdown("""
-        ## Data Engineering - Lakehouse
-
-        **Data engineering** in Microsoft Fabric enables users to design, build, and maitain infrastructures and systems that enable thier organizations to collect, store, process, and analyze large volumes of data.
-
-        A ***Lakehouse*** is a storage (based on the Microsoft Fabric *OneLake*) for files and tables. When a Lakehouse is created, Fabric produces 3 items:
-
-        - *Lakehouse*: **storage** of metadata, files, folders, and data.
-        - *Semantic model*: automatic **data model** that can be used in Power BI for reporting.
-        - *SQL Endpoint*: **read-only**, to connect to the Lakehouse and query its data using *T-SQL*.
-
-        Data can be added to the Lakehouse (i.e. ingestion) in 4 ways:
-
-        1. Simple *Upload* (manual upload).
-        2. Using *Dataflows*, for additional data transformations (with Power Query Online - see next).
-        3. Using *Notebooks* (in an *Apache Soark pool*); notebooks can be used to manipulated table using SQL.
-        4. Through *Pipelines* (using the **Copy activity** in *Data Factory*).
-
-        .
-
-        ##### 2.1 Create a Lakehouse
-
-        First, to create a Lakehouse, one must have a **Premium/Fabric Workspace**.
-        Once created, on the bottom left, there is an icon to switch between the different services providede by Microsoft Fabric.
-        In this case, "***Data Engineering***" is the appropriate one to create a new Lakehouse.
-        """)
+        st.markdown(Fabric_2_Data_Engineering_Lakehouse)
 
 
+# ---------------------------------------------------------------------------------------------------
 ########### Qlik ############
 elif selected == "Qlik (work in progress)":
     menu_qlik = option_menu(
