@@ -209,7 +209,7 @@ elif selected == "Qlik to Power BI (WIP)":
     # Title and logo
     col_1, col_2, col_3 = st.columns(3)
     with col_2:
-        st.image(Image.open(r'images/Qlik_to_PBI_2.png'), width = 400)
+        st.image(Image.open(r'images/Qlik_to_PBI_2.png'), width = 450)
         
     menu_qlik = option_menu(
         None, 
