@@ -120,7 +120,7 @@ if selected == "Landing page" :
     st.markdown(Fabric_0_Introduction)
 
     # Qlik to Power BI introduction
-    st.image(Image.open(r'images/Qlik_to_PBI.png'), width = 130)
+    st.image(Image.open(r'images/Qlik_to_PBI.png'), width = 140)
     st.markdown(Fabric_0_Introduction)
 
 
