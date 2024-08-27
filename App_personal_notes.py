@@ -129,10 +129,6 @@ if selected == "Microsoft Fabric" :
 
         .
 
-        .
-
-        .
-
         ##### 2.1 Create a Lakehouse
 
         First, to create a Lakehouse, one must have a **Premium/Fabric Workspace**.
