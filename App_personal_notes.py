@@ -25,25 +25,17 @@ Section_Qlik_icons = ['caret-right-fill', 'caret-right-fill']
 
 # --------------------------------------------------------------------------------------------------------------------------------------------
 # Page settings
-st.set_page_config(layout="wide")
+st.set_page_config(layout = "wide")
 
 # Sidebar width
-st.markdown(
-    """
-    <style>
-        section[data-testid = "stSidebar"] {
-            width: 400px !important;
-        }
-    </style>
-    """,
-    unsafe_allow_html = True,
-)
+st.markdown( """<style>section[data-testid = "stSidebar"] {width: 400px !important;}</style>""", unsafe_allow_html = True )
 
 # Section navigation style
 Nav_styles = {
     "nav-link": {"font-size": "17px", "text-align": "center", "margin": "3px", "--hover-color": "#c7c5c5"},
     "nav-link-selected": {"background-color": "#239583"},
 }
+
 
 # --------------------------------------------------------------------------------------------------------------------------------------------
 # Menu laterale
@@ -71,6 +63,11 @@ Fabric_2_2_Create_Notebooks = load_text("Text/Fabric_2.2_Create_Notebooks.txt")
 
 ########### Microsoft Fabric ############
 if selected == "Microsoft Fabric" :
+    # Title and logo
+    st.image(Logo_Fabric, use_column_width = 'always')
+    st.markdown("<h1 style='text-align: center; color: red;'>Microsoft Fabric</h1>", unsafe_allow_html = True)
+
+
     st.markdown(Fabric_0_Introduction)
 
     menu_fabric = option_menu(
