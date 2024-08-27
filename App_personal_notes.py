@@ -70,7 +70,8 @@ if selected == "Microsoft Fabric" :
     st.markdown("""
     **Notes description**
     
-    These notes *describe* the main ***Microsoft Fabric*** features with **code snippets** and external links.
+    **Microsoft Fabric** is *web-based platform all-in-one solution* to work with data, from the ingestion to the data trasformation and the final visualization and delivery. 
+    It offers the possibility to see and work with every aspect of data, including the possibility to implement Machine Learning models.
     """)
 
     st.divider() 
