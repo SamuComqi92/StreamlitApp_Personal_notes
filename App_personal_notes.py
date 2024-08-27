@@ -131,7 +131,7 @@ elif selected == "Microsoft Fabric" :
 
             selected_notebook = st.radio(
                 "",
-                ["Introduction", "Create tables", "Time travel", "Print and display", "Update a table", "Add columns", "Use SQL", "Data Wrangler", "Sempy (Semantic link)", "Other Spark functions & utilities"],
+                ["Introduction", "Create tables", "Time travel", "Print and display", "Update a table", "Add columns", "Use SQL", "Data Wrangler", "Sempy", "Other functions & utilities"],
                 label_visibility = "collapsed",
                 horizontal = True
             )
