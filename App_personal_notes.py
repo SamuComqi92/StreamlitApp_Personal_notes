@@ -135,15 +135,15 @@ elif selected == "Microsoft Fabric" :
         st.image(Image.open(r'images/Logo_Fabric.png'), width = 480)
 
     st.write("Navigate using the below menu:")
-    
-    menu_fabric = option_menu(
-        None, 
-        Section_Fabric, 
-        icons = Section_Fabric_icons, 
-        default_index = 0, 
-        orientation = "horizontal",
-        styles = Nav_styles
-    )
+
+    with st.sidebar:
+        menu_fabric = option_menu(
+            None, 
+            Section_Fabric, 
+            icons = Section_Fabric_icons, 
+            default_index = 0, 
+            styles = Nav_styles
+        )
 
     if menu_fabric == "1. Fabric OneLake" :
         st.markdown(Fabric_1_OneLake)
