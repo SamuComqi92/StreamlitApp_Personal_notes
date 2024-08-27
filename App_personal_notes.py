@@ -17,7 +17,7 @@ def load_text(filename):
 # Titles & Icons
 Menu_icon = "menu-up"
 Main_topics = ["Landing page", "Microsoft Fabric", 'Qlik (work in progress)']
-Main_icons = ['clipboard-data', 'graph-up-arrow']
+Main_icons = ['house', 'clipboard-data', 'graph-up-arrow']
 Section_Fabric = ["1. Fabric OneLake", "2. Data Engineering - Lakehouse"]
 Section_Fabric_icons = ['caret-right-fill', 'caret-right-fill']
 Section_Qlik = [""]
