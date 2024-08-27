@@ -134,9 +134,6 @@ elif selected == "Microsoft Fabric" :
     with col2:
         st.image(Image.open(r'images/Logo_Fabric.png'), width = 480)
 
-    # Introduction
-    st.markdown(Fabric_0_Introduction)
-
     menu_fabric = option_menu(
         None, 
         Section_Fabric, 
@@ -208,6 +205,12 @@ elif selected == "Microsoft Fabric" :
 # ---------------------------------------------------------------------------------------------------
 ########### Qlik ############
 elif selected == "Qlik to Power BI (WIP)":
+
+    # Title and logo
+    col_1, col_2, col_3 = st.columns(3)
+    with col_2:
+        st.image(Image.open(r'images/Qlik_to_PBI.png'), width = 480)
+        
     menu_qlik = option_menu(
         None, 
         Section_Qlik, 
