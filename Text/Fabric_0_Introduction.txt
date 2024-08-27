@@ -5,4 +5,4 @@ These notes have been collected after following the Microsoft eLearning material
 
 .
 
-Use the belo menu to navigate between each section and sub-sections.
+Use the below menu to navigate between each section and sub-sections.
