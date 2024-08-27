@@ -78,7 +78,7 @@ Fabric_2_Data_Engineering_Lakehouse = load_text("Text/Fabric_2_Data_Engineering_
 Fabric_2_1_Create_a_Lakehouse = load_text("Text/Fabric_2.1_Create_a_Lakehouse.txt")
 Fabric_2_2_Create_Notebooks = load_text("Text/Fabric_2.2_Create_Notebooks.txt")
 Fabric_2_2_1_Create_tables = load_text("Text/Fabric_2.2.1_Create_tables.txt")
-
+Qlik2PBI_0_Introduction = load_text("Text/Qlik2PBI_0_Introduction.txt")
 
 # --------------------------------------------------------------------------------------------------------------------------------------------
 # Menu laterale
