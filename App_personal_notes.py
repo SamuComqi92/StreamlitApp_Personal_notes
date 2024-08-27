@@ -45,7 +45,7 @@ st.html("""
             padding: 8px 18px !important;
         }
         input[type="radio"][tabindex="0"] + div {
-            background: #E6FF4D !important;
+            background: #239583 !important;
             color: #17455C !important;
         }
         input[type="radio"][tabindex="0"] + div p {
