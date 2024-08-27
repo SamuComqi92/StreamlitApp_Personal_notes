@@ -180,27 +180,38 @@ elif selected == "Microsoft Fabric" :
                 st.markdown(Fabric_2_2_Create_Notebooks)
             elif selected_notebook == "Create tables" :
                 st.markdown(Fabric_2_2_1_Create_tables)
-                
-                #code_python = """
-                #def hello():
-                #    print("Hello, Streamlit!")
-                #"""
-                #st.code(code_python, language = "python")
-                #code_sql = """
-                #SELECT * FROM database.schema.table_name
-                #WHERE name = "Samuele"
-                #"""
-                #st.code(code_sql, language = "sql")
-                #code_dax = """
-                #CALCULATE(
-                #    SUM(table[column]),
-                #    table_dim[column_dim] IN {"casa", "chiesa"}
-                #)
-                #"""
-                #st.code(code_dax, language = "dax")
-            #    st.markdown(Fabric_2_1_Create_a_Lakehouse)
-            #elif selected_notebook == "2.2 Create Notebooks" :
-            #    st.markdown(Fabric_2_2_Create_Notebooks)
+
+    if menu_fabric == "3. Data Engineering - Data Factory: Pipelines" :
+
+        st.write("Navigate in one of these pages:")
+        selected_lakehouse = option_menu(
+            None,
+            ["Introduction", "3.1 Create a pipeline", "3.2 Pipeline to Notebook", "3.3 Delete Data Activity"], 
+            icons = ["list", "file-earmark", "file-earmark", "file-earmark"], 
+            default_index = 0,
+            orientation = "horizontal",
+            styles = {
+                "nav-link": {"font-size": "12px", "text-align": "center", "margin": "0px", "--hover-color": "#dbdbdb"},
+                "nav-link-selected": {"background-color": "#479e92"},
+            }
+        )
+
+
+    if menu_fabric == "4. Data Engineering - Data Factory: Dataflows" :
+
+        st.write("Navigate in one of these pages:")
+        selected_lakehouse = option_menu(
+            None,
+            ["Introduction", "4.1 Create a dataflow", "4.2 Publication and usage of a dataflow"], 
+            icons = ["list", "file-earmark", "file-earmark"], 
+            default_index = 0,
+            orientation = "horizontal",
+            styles = {
+                "nav-link": {"font-size": "12px", "text-align": "center", "margin": "0px", "--hover-color": "#dbdbdb"},
+                "nav-link-selected": {"background-color": "#479e92"},
+            }
+        )
+               
 
 
 # ---------------------------------------------------------------------------------------------------
