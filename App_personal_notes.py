@@ -119,14 +119,14 @@ elif selected == "Qlik":
     st.markdown("""
     **Notes description**
 
-    **Work in Progress**
+    *Work in Progress*
     """)
 
     st.divider() 
     
     if menu_qlik == "" :
         st.markdown("""
-        **Work in Progress**
+        *Work in Progress*
         """
         )
 
