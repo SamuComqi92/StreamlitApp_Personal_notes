@@ -70,7 +70,7 @@ if selected == "Microsoft Fabric" :
     #with col1:
     #st.write(' ')
     with col2:
-        st.image(Image.open(r'images/Logo_Fabric.png'), width = 300)
+        st.image(Image.open(r'images/Logo_Fabric.png'), width = 500)
     #with col3:
     #st.write(' ')
     
