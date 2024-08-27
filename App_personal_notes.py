@@ -9,7 +9,7 @@ from htbuilder.units import percent, px
 # --------------------------------------------------------------------------------------------------------------------------------------------
 # Titles & Icons
 Menu_icon = "menu-up"
-Main_topics = ["Microsoft Fabric", 'Qlik']
+Main_topics = ["Microsoft Fabric", 'Qlik (work in progress)']
 Main_icons = ['clipboard-data', 'graph-up-arrow']
 Section_Fabric = ["Fabric OneLake", "Fabric section 2"]
 Section_Fabric_icons = ['caret-right-fill', 'caret-right-fill']
