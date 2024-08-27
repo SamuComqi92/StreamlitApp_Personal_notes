@@ -68,7 +68,7 @@ if selected == "Microsoft Fabric" :
 
     # General notes description
     st.markdown("""
-    # These notes describe the main ***Microsoft Fabric*** features with **code snippets** and external links.
+    ### These notes describe the main ***Microsoft Fabric*** features with **code snippets** and external links.
     """)
     if menu_fabric == "Fabric section 1" :
         st.write("gnigni")
