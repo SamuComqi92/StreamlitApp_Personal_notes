@@ -12,7 +12,7 @@ Menu_icon = "menu-up"
 Main_topics = ["Microsoft Fabric", 'Qlik']
 Main_icons = ['clipboard-data', 'graph-up-arrow']
 Section_Fabric = ["Fabric section 1", "Fabric section 2"]
-Section_Fabric_icons = ['house', 'gear']
+Section_Fabric_icons = ['<img width="50" height="50" src="https://img.icons8.com/ios-filled/50/64.png" alt="64"/>', 'gear']
 Section_Qlik = ["Qlik section 1", "Qlik section 2"]
 Section_Qlik_icons = ['house', 'gear']
 
