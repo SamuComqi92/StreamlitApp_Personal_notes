@@ -139,7 +139,7 @@ elif selected == "Microsoft Fabric" :
         
     if menu_fabric == "2. Data Engineering - Lakehouse" :
 
-        st.write("Navigate one of these pages:")
+        st.write("Navigate in one of these pages:")
         selected_lakehouse = option_menu(
             None,
             ["Introduction", "2.1 Create a Lakehouse", "2.2 Create Notebooks"], 
@@ -158,6 +158,7 @@ elif selected == "Microsoft Fabric" :
             st.markdown(Fabric_2_1_Create_a_Lakehouse)
         elif selected_lakehouse == "2.2 Create Notebooks" :
 
+            st.write("Navigate in one of these sections:")
             selected_notebook = st.radio(
                 "",
                 ["Introduction", "Create tables", "Time travel", "Print and display", "Update a table", "Add columns", "Use SQL", "Data Wrangler", "Sempy", "Other functions & utilities"],
