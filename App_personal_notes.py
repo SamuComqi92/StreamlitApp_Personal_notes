@@ -147,7 +147,7 @@ elif selected == "Microsoft Fabric" :
     if menu_fabric == "1. Fabric OneLake" :
         st.markdown(Fabric_1_OneLake)
         
-    if menu_fabric == "2. Data Engineering - Lakehouse" :
+    elif menu_fabric == "2. Data Engineering - Lakehouse" :
 
         st.write("Navigate in one of these pages:")
         selected_lakehouse = option_menu(
@@ -182,7 +182,7 @@ elif selected == "Microsoft Fabric" :
                 st.markdown(Fabric_2_2_1_Create_tables)
 
     
-    if menu_fabric == "3. Data Engineering - Data Factory: Pipelines" :
+    elif menu_fabric == "3. Data Engineering - Data Factory: Pipelines" :
 
         st.write("Navigate in one of these pages:")
         selected_lakehouse = option_menu(
@@ -198,7 +198,7 @@ elif selected == "Microsoft Fabric" :
         )
 
 
-    if menu_fabric == "4. Data Engineering - Data Factory: Dataflows" :
+    elif menu_fabric == "4. Data Engineering - Data Factory: Dataflows" :
 
         st.write("Navigate in one of these pages:")
         selected_lakehouse = option_menu(
@@ -214,7 +214,7 @@ elif selected == "Microsoft Fabric" :
         )
 
 
-    if menu_fabric == "5. Data Warehouse" :
+    elif menu_fabric == "5. Data Warehouse" :
 
         st.write("Navigate in one of these pages:")
         selected_lakehouse = option_menu(
@@ -230,7 +230,7 @@ elif selected == "Microsoft Fabric" :
         )
 
 
-    if menu_fabric == "6. Data Science" :
+    elif menu_fabric == "6. Data Science" :
 
         st.write("Navigate in one of these pages:")
         selected_lakehouse = option_menu(
@@ -246,15 +246,15 @@ elif selected == "Microsoft Fabric" :
         )
 
 
-    if menu_fabric == "7. Real-Time Analytics" :
+    elif menu_fabric == "7. Real-Time Analytics" :
         st.markdown("***Notes on Real-Time Analytics: missing***")
 
 
-    if menu_fabric == "8. Data Activator" :
+    elif menu_fabric == "8. Data Activator" :
         st.markdown("***Notes on Data Activator: missing***")
 
 
-    if menu_fabric == "9. Administration aspects of Microsoft Fabric" :
+    elif menu_fabric == "9. Administration aspects of Microsoft Fabric" :
         
         st.write("Navigate in one of these pages:")
         selected_lakehouse = option_menu(
@@ -288,6 +288,86 @@ elif selected == "Qlik to Power BI (WIP)":
             styles = Nav_styles
         )
 
+    if menu_qlik == "1. Connections and Sources" :
+        
+        st.write("Navigate in one of these pages:")
+        selected_lakehouse = option_menu(
+            None,
+            ["Quick comparison", "Qlik qvds", "Power BI: Power Query and Dataflows", "Microsoft Fabric and Notebooks for ETLs"], 
+            icons = ["file-earmark", "file-earmark", "file-earmark", "file-earmark"], 
+            default_index = 0,
+            orientation = "horizontal",
+            styles = {
+                "nav-link": {"font-size": "12px", "text-align": "center", "margin": "0px", "--hover-color": "#dbdbdb"},
+                "nav-link-selected": {"background-color": "#479e92"},
+            }
+        )
+
+    
+    elif menu_fabric == "2. Semantic model" :
+
+        st.write("Navigate in one of these pages:")
+        selected_lakehouse = option_menu(
+            None,
+            ["Qlik associative model", "Power BI semantic model", "Power BI model limitations and performance"], 
+            icons = ["file-earmark", "file-earmark", "file-earmark"], 
+            default_index = 0,
+            orientation = "horizontal",
+            styles = {
+                "nav-link": {"font-size": "12px", "text-align": "center", "margin": "0px", "--hover-color": "#dbdbdb"},
+                "nav-link-selected": {"background-color": "#479e92"},
+            }
+        )
+
+
+    elif menu_fabric == "3. Visualizations and report layout" :
+
+        st.write("Navigate in one of these pages:")
+        selected_lakehouse = option_menu(
+            None,
+            ["Qlik extensions", "Power BI: native and custom visuals", "Qlik vs. Power BI: page layout and rendering"], 
+            icons = ["file-earmark", "file-earmark", "file-earmark"], 
+            default_index = 0,
+            orientation = "horizontal",
+            styles = {
+                "nav-link": {"font-size": "12px", "text-align": "center", "margin": "0px", "--hover-color": "#dbdbdb"},
+                "nav-link-selected": {"background-color": "#479e92"},
+            }
+        )
+
+
+    elif menu_fabric == "4. Measures and Expressions" :
+
+        st.write("Navigate in one of these pages:")
+        selected_lakehouse = option_menu(
+            None,
+            ["Analogies between Qlik and DAX", "Examples"], 
+            icons = ["file-earmark", "file-earmark"], 
+            default_index = 0,
+            orientation = "horizontal",
+            styles = {
+                "nav-link": {"font-size": "12px", "text-align": "center", "margin": "0px", "--hover-color": "#dbdbdb"},
+                "nav-link-selected": {"background-color": "#479e92"},
+            }
+        )
+
+
+    elif menu_fabric == "5. Advanced functionalities" :
+
+        st.write("Navigate in one of these pages:")
+        selected_lakehouse = option_menu(
+            None,
+            ["Section Access and OLS", "Object conditional visiblity", "Dynamic naming", "Custom ordering", "Page conditional visibility"], 
+            icons = ["file-earmark", "file-earmark", "file-earmark", "file-earmark", "file-earmark"], 
+            default_index = 0,
+            orientation = "horizontal",
+            styles = {
+                "nav-link": {"font-size": "12px", "text-align": "center", "margin": "0px", "--hover-color": "#dbdbdb"},
+                "nav-link-selected": {"background-color": "#479e92"},
+            }
+        )
+
+    
     # General notes description
     st.markdown("""
     **Notes description**
@@ -303,7 +383,7 @@ elif selected == "Qlik to Power BI (WIP)":
         """
         )
 
-
+    
 
 # --------------------------------------------------------------------------------------------------------------------------------------------------------
 # --------------------------------------------------------------------------------------------------------------------------------------------------------
