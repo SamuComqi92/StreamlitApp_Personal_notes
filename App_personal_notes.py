@@ -21,6 +21,18 @@ Section_Qlik_icons = ['house', 'gear']
 # Page settings
 st.set_page_config(layout="wide")
 
+# Sidebar width
+st.markdown(
+    """
+    <style>
+        section[data-testid = "stSidebar"] {
+            width: 500px !important;
+        }
+    </style>
+    """,
+    unsafe_allow_html = True,
+)
+
 
 # --------------------------------------------------------------------------------------------------------------------------------------------
 # Menu laterale
