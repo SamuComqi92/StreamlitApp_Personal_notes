@@ -136,7 +136,7 @@ elif selected == "Microsoft Fabric" :
                 default_index = 0,
                 orientation = "horizontal",
                 styles = {
-                    "nav-link": {"font-size": "12px", "text-align": "center", "margin": "0px", "--hover-color": "#dbdbdb"},
+                    "nav-link": {"font-size": "10px", "text-align": "center", "margin": "0px", "--hover-color": "#dbdbdb"},
                     "nav-link-selected": {"background-color": "#479e92"},
                 }
             )
