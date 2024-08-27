@@ -130,8 +130,9 @@ elif selected == "Microsoft Fabric" :
         elif selected_lakehouse == "2.2 Create Notebooks" :
 
             selected_notebook = st.radio(
-                None,
+                "",
                 ["Introduction", "Create tables", "Time travel", "Print and display", "Update a table", "Add columns", "Use SQL", "Data Wrangler", "Sempy (Semantic link)", "Other Spark functions & utilities"],
+                label_visibility = "collapsed"
             )
             #option_menu(
             #    None, 
