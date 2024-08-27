@@ -124,7 +124,7 @@ elif selected == "Qlik":
 
     st.divider() 
     
-    if menu_fabric == "" :
+    if menu_qlik == "" :
         st.markdown("""
         **Work in Progress**
         """
