@@ -105,7 +105,7 @@ if selected == "Microsoft Fabric" :
 
 
 ########### Qlik ############
-elif selected == "Qlik":
+elif selected == "Qlik (work in progress)":
     menu_qlik = option_menu(
         None, 
         Section_Qlik, 
