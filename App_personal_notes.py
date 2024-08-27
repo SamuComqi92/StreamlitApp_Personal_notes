@@ -134,8 +134,6 @@ elif selected == "Microsoft Fabric" :
     with col2:
         st.image(Image.open(r'images/Logo_Fabric.png'), width = 480)
 
-    st.write("Navigate using the below menu:")
-
     with st.sidebar:
         st.write("Navigation")
         menu_fabric = option_menu(
