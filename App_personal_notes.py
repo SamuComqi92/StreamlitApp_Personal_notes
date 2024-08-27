@@ -94,8 +94,14 @@ if selected == "Microsoft Fabric" :
         - **T-SQL** (Warehousing)
         - **Spark** (Synapse Data Engineering & Data Science)
         - **Analysis Services** (for Power BI)
-        - **KSQL** (real-time analytics).
-        
+        - **KQL** (real-time analytics).
+
+        Moreover, Microsoft Fabric can be integrated with **Git (Azure DevOps)** to manage Deployment Pipelines and *versioning*.
+        Finally, it is possible to use ***Microsoft Purview*** to have details on Fabric Workspaces and data.
+        In Fabric, it is possible to use ***Data Activator*** to set up alerts (e.g. from Power BI reports).
+
+        Each process in Fabric (e.g. refreshes, notebooks, pipelines) can be monitored in the ***Monitoring Hub***.
+        There is also an app called *Microsoft Fabric Capacity Metrics* ([link to the app](https://appsource.microsoft.com/en-us/product/power-bi/pbi_pcmm.microsoftpremiumfabricpreviewreport?tab=Overview)) to monitor resources usage across the Tenant (only for Admins).
         
         [^1]: OneLake is similar to an *Azure Data Lake Storage*.
         """)
