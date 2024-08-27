@@ -39,7 +39,7 @@ st.html("""
             flex-direction:row;
         }
         input[type="radio"] + div {
-            background: #ffffff  !important;
+            background: #e8e8e8  !important;
             color: #FFF;
             border-radius: 25px !important;
             padding: 8px 18px !important;
