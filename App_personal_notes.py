@@ -293,7 +293,7 @@ elif selected == "Qlik to Power BI (WIP)":
         st.write("Navigate in one of these pages:")
         selected_lakehouse = option_menu(
             None,
-            ["Quick comparison", "Qlik qvds", "Power BI: Power Query and Dataflows", "Microsoft Fabric and Notebooks for ETLs"], 
+            ["Quick comparison", "Qlik qvds", "Power BI: Power Query and Dataflows", "Microsoft Fabric: Notebooks for ETLs"], 
             icons = ["file-earmark", "file-earmark", "file-earmark", "file-earmark"], 
             default_index = 0,
             orientation = "horizontal",
