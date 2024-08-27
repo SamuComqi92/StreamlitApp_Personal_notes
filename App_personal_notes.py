@@ -38,6 +38,15 @@ Nav_styles = {
 }
 
 
+# --------------------------------------------------------------------------------------------------------------------------------------------------------
+# Text loader
+Fabric_0_Introduction = load_text("Text/Fabric_0_Introduction.txt")
+Fabric_1_OneLake = load_text("Text/Fabric_1_OneLake.txt")
+Fabric_2_Data_Engineering_Lakehouse = load_text("Text/Fabric_2_Data_Engineering_Lakehouse.txt")
+Fabric_2_1_Create_a_Lakehouse = load_text("Text/Fabric_2.1_Create_a_Lakehouse.txt")
+Fabric_2_2_Create_Notebooks = load_text("Text/Fabric_2.2_Create_Notebooks.txt")
+
+
 # --------------------------------------------------------------------------------------------------------------------------------------------
 # Menu laterale
 with st.sidebar:
@@ -71,13 +80,6 @@ if selected == "Landing page" :
     """
     )
 
-# --------------------------------------------------------------------------------------------------------------------------------------------------------
-# Text loader
-Fabric_0_Introduction = load_text("Text/Fabric_0_Introduction.txt")
-Fabric_1_OneLake = load_text("Text/Fabric_1_OneLake.txt")
-Fabric_2_Data_Engineering_Lakehouse = load_text("Text/Fabric_2_Data_Engineering_Lakehouse.txt")
-Fabric_2_1_Create_a_Lakehouse = load_text("Text/Fabric_2.1_Create_a_Lakehouse.txt")
-Fabric_2_2_Create_Notebooks = load_text("Text/Fabric_2.2_Create_Notebooks.txt")
 
 ########### Microsoft Fabric ############
 elif selected == "Microsoft Fabric" :
