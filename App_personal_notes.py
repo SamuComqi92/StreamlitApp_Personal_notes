@@ -74,6 +74,8 @@ if selected == "Microsoft Fabric" :
     
     **Microsoft Fabric** is *web-based platform all-in-one solution* to work with data, from the ingestion to the data trasformation and the final visualization and delivery. 
     It offers the possibility to see and work with every aspect of data, including the possibility to implement Machine Learning models.
+
+    These notes have been collected after following the Microfot eLearning materials and while exploring *Fabric* features using a *Trial licence*.
     """)
 
     st.divider() 
