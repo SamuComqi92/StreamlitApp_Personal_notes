@@ -67,6 +67,7 @@ with st.sidebar:
 # Text loader
 Fabric_1_OneLake = load_text("Text/Fabric_1_OneLake.txt")
 Fabric_2_Data_Engineering_Lakehouse = load_text("Text/Fabric_2_Data_Engineering_Lakehouse.txt")
+Fabric_2_1_Create_a_Lakehouse = load_text("Text/Fabric_2.1_Create_a_Lakehouse.txt")
 
 ########### Microsoft Fabric ############
 if selected == "Microsoft Fabric" :
@@ -96,6 +97,7 @@ if selected == "Microsoft Fabric" :
         
     if menu_fabric == "2. Data Engineering - Lakehouse" :
         st.markdown(Fabric_2_Data_Engineering_Lakehouse)
+        st.markdown(Fabric_2_1_Create_a_Lakehouse)
 
 
 # ---------------------------------------------------------------------------------------------------
