@@ -130,14 +130,20 @@ elif selected == "Microsoft Fabric" :
     # Introduction
     st.markdown(Fabric_0_Introduction)
 
-    menu_fabric = option_menu(
-        None, 
-        Section_Fabric, 
-        icons = Section_Fabric_icons, 
-        default_index = 0, 
-        orientation = "horizontal",
-        styles = Nav_styles
+    menu_fabric = st.radio(
+        "",
+        Section_Fabric,
+        label_visibility = "collapsed",
+        horizontal = True
     )
+    #menu_fabric = option_menu(
+    #    None, 
+    #    Section_Fabric, 
+    #    icons = Section_Fabric_icons, 
+    #    default_index = 0, 
+    #    orientation = "horizontal",
+    #    styles = Nav_styles
+    #)
 
     if menu_fabric == "1. Fabric OneLake" :
         st.markdown(Fabric_1_OneLake)
