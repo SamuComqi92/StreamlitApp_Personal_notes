@@ -25,7 +25,7 @@ Notice that a *Spark dataframe* is displayed with symbols like *+ - |* when usin
 Alternatively, one can define the magic ***%%sql*** and use a SQL query inside the notebook cell.
 
 In the first and last queries, it is possible to use *variables* defined elsewhere in the Notebook: 
-the syntax is <font color='blue'>spark.sql(f”SELECT * FROM table LIMIT {variable}”)</font>, where *variable* has been defined before this line.
+the syntax is <p style="color:blue;">spark.sql(f”SELECT * FROM table LIMIT {variable}”)</p>, where *variable* has been defined before this line.
 
 Finally, it is possible to create ***temporary views*** inside a Notebook:
 
