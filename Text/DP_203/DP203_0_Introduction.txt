@@ -1,2 +1,2 @@
-I took these notes while following the Microsoft eLearning materials and courses that you can find [here](https://learn.microsoft.com/en-us/training/courses/dp-203t00#course-syllabus).
+I took these notes while following the Microsoft eLearning materials and courses that you can find [here](https://learn.microsoft.com/en-us/training/courses/dp-203t00).
 The notes cover the main aspects of the **DP-203** course "*Data Engineering on Microsoft Azure*", valid for the certification "***Microsoft Certified: Azure Data Engineer Associate***".
