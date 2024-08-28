@@ -459,7 +459,7 @@ elif main_selected == "DP 2023 course notes":
     # Title and logo
     col_1, col_2, col_3 = st.columns(3)
     with col_2:
-        st.image(Image.open(r'images/DP_2023_notes_2.png'), width = 410)
+        st.image(Image.open(r'images/DP_203_notes_2.png'), width = 410)
 
     #with st.sidebar:
     #    st.write("")
