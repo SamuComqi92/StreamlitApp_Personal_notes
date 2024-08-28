@@ -4,26 +4,28 @@ In a notebook, it is possible to use a very larger number of *PySpark* functions
 
 - :blue[df.select(“*”)]: to select all columns from the dataframe. In general, the function is used to select one or more columns from a dataframe.
 - :blue[df.select(col(“col_name”).alias(“new_col_name))]: to define a dataframe from another one, select one column (or more) and rename it - Inside the *select*, it is possible to use functions and other transformations on :blue[col(“name_column”)].
-- :blue[withColumnRenamed(“name”,”new_name”)]: to rename columns in a dataframe (**Important: columns must not have spaces!**).
+- :blue[withColumnRenamed(“name”, ”new_name”)]: to rename columns in a dataframe (**Important: columns must not have spaces!**).
 - :blue[df.groupBy(“Column”).count()]: to ***aggregate*** values and count occurrences (other functions are *min, max, average*, etc.).
-- :blue[df.groupBy(“column”).agg(max(“column2”).alias(“new_name”): to ***aggregate*** and give a name to the new column. In the *groupBy* function, it is possible to specify more than one column.
-- :blue[first_df.join(second_df, first_df.key == second_df.key, “how”): to perform ***join*** operations. The “how” can be substituted with “*inner*”, ”*left*”, “*right*”, “*outer*”, ”*full*”, ”*leftouter*”, etc.
-- :blue[To deal with null/empty values, there are several functions:
-  - :blue[df.na.drop()] or :blue[df.na.drop(how=”any”)] to drop rows with at least one null values.
-o	df.na.drop(how=”all”) to drop rows if all values are null.
-o	df.na.drop(thresh = 5) to drop rows with at least 5 null values.
-o	df.na.drop(subset = “column”) to drop rows when a null value is present in the column (use […] for more columns).
-o	df.na.fill(value=”value”, subset=[“column”]) to fill null value in a specific column (optional).
-o	df.fillna(value=”value”, subset=[“column”]) to fill null value in a specific column (optional).
-•	There are several function to filter a dataframe:
-o	df.filter(df[“column”] == “value”): this is a method to filter a dataframe using one column. More conditions (written between round brackets) can be added by using the operators & or |.
-o	df.filter(df.Column.like(“%value%”)): this is a method to filter a dataframe using the like function (similar to the LIKE in SQL). The use of % depends on the kind of string to filter (starting with, ending with, in the middle, etc.).
-o	df.filter(“column == ‘value’”): this is a method to filter a dataframe by writing an expression similar to the one used in SQL (after WHERE). 
-o	df.where (df.column == ‘value’): this is a method to simply filter a dataframe.
-•	When there are two or more dataframes with different schemas, PySpark gives the possibility to merge the schemas (for example, to add new columns that are only in one dataframe) or to modify an existing schema (for example, to modify the column name or the data type):
-o	spark.read.option(“mergeSchema”,”true”).parquet(“path/to/folder”): to load and merge schemas of tables located in the same folder.
-o	(“overwriteSchema”,“true”): to modify the current schema with a new one (e.g. new names, new data type BUT no new columns!).
-•	To visualize a dataframe and info about its columns in a Notebook:
-o	df.show() to show the Spark dataframe
-o	display(df) to show the spark dataframe with interactive view (with the possibility to export data and visualize data in charts).
-o	df.dtypes to show a list of tuples made of column and data type.
+- :blue[df.groupBy(“column”).agg(max(“column2”).alias(“new_name”)]: to ***aggregate*** and give a name to the new column. In the *groupBy* function, it is possible to specify more than one column.
+- :blue[first_df.join(second_df, first_df.key == second_df.key, “how”)]: to perform ***join*** operations. The “how” can be substituted with “*inner*”, ”*left*”, “*right*”, “*outer*”, ”*full*”, ”*leftouter*”, etc.
+- To deal with null/empty values, there are several functions:
+  - :blue[df.na.drop()] or :blue[df.na.drop(how = ”any”)] to drop rows with at least one null values.
+  - :blue[df.na.drop(how = ”all”)]: to drop rows if all values are null.
+  - :blue[df.na.drop(thresh = 5)]: to drop rows with at least 5 null values.
+  - :blue[df.na.drop(subset = “column”)]: to drop rows when a null value is present in *column* (use […] for more columns).
+  - :blue[df.na.fill(value = ”value”, subset = [“column”])]: to fill null value in a specific column (optional).
+
+- There are several functions to filter a dataframe:
+  - :blue[df.filter(df[“column”] == “value”)]: to filter a dataframe using one column. More conditions (written between round brackets) can be added by using the operators & or |.
+  - :blue[df.filter(“column == ‘value’”)]: to filter a dataframe by writing an expression similar to the one used in SQL (after **WHERE**). 
+  - :blue[df.where(df.column == ‘value’)]: to filter a dataframe.
+  - :blue[df.filter(df.Column.like(“%value%”)): to filter a dataframe using the *like* function (similar to the **LIKE** in SQL). The use of *%* depends on the kind of string to filter (e.g., starting with, ending with, in the middle, etc.).
+
+- When there are two or more dataframes with different schemas, PySpark gives the possibility to merge the schemas (for example, to add new columns that are only in one dataframe) or to modify an existing schema (for example, to modify the column name or the data type):
+  - :blue[spark.read.option(“mergeSchema”, ”true”).parquet(“path/to/folder”)]: to load and merge schemas of tables located in the same folder (if new columns are present, the schema is updated).
+  - :blue[(“overwriteSchema”, “true”)]: to modify the current schema with a new one (e.g. new names, new data type **but* no new columns!).
+
+- To visualize a dataframe and info about its columns in a Notebook:
+  - :blue[df.show()}: to show the Spark dataframe.
+  - :blue[display(df)]: to show the Spark dataframe with interactive view (with the possibility to export data and visualize data in charts).
+  - :blue[df.dtypes]: to show a list of tuples made of column and data type.
