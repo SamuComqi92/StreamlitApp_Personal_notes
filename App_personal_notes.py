@@ -106,7 +106,7 @@ if selected == "Landing page" :
     I have collected a lot of notes over the last 2-3 years and decided to collect them here in an orderly manner.
     Obviously, it will take some time to write everything down and what I include will be subject to future changes and additions, based on my explorations and testing.
 
-    >**Improtant**: some of these notes are very detailed, others are just a simple list or few senteces. 
+    >***Important**: some of these notes are very detailed, while others are just a simple list or few sentences.*
     
     The web page is public so anyone can have access.
     
