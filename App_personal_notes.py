@@ -161,10 +161,12 @@ elif selected == "Microsoft Fabric" :
             styles = Nav_styles
         )
 
+    ##### 1. Onelake
     if menu_fabric == "1. Fabric OneLake" :
         st.divider()
         st.markdown(Fabric_1_OneLake)
-        
+
+    ##### 2. Data Engineering - Lakehouse
     elif menu_fabric == "2. Data Engineering - Lakehouse" :
 
         st.write("Navigate in one of these pages:")
@@ -227,8 +229,7 @@ elif selected == "Microsoft Fabric" :
             st.markdown(Fabric_2_4_Create_report)
 
 
-
-    
+    ##### 3. Data Engineering - Data Factory - Pipelines
     elif menu_fabric == "3. Data Engineering - Data Factory: Pipelines" :
 
         st.write("Navigate in one of these pages:")
@@ -248,7 +249,7 @@ elif selected == "Microsoft Fabric" :
             st.markdown(Fabric_3_Data_Engineering_DataFactory_Pipelines)
 
     
-
+    ##### 4. Data Engineering - Data Factory - Dataflows
     elif menu_fabric == "4. Data Engineering - Data Factory: Dataflows" :
 
         st.write("Navigate in one of these pages:")
@@ -265,6 +266,7 @@ elif selected == "Microsoft Fabric" :
         )
 
 
+    ##### 5. Data Warehouse
     elif menu_fabric == "5. Data Warehouse" :
 
         st.write("Navigate in one of these pages:")
@@ -281,6 +283,7 @@ elif selected == "Microsoft Fabric" :
         )
 
 
+    ##### 6. Data Science
     elif menu_fabric == "6. Data Science" :
 
         st.write("Navigate in one of these pages:")
@@ -297,14 +300,17 @@ elif selected == "Microsoft Fabric" :
         )
 
 
+    ##### 7. Real-Time Analytics
     elif menu_fabric == "7. Real-Time Analytics" :
         st.markdown("***Notes on Real-Time Analytics: missing***")
 
 
+    ##### 8. Data Activator
     elif menu_fabric == "8. Data Activator" :
         st.markdown("***Notes on Data Activator: missing***")
 
 
+    ##### 9. Administration aspects of Microsoft Fabric
     elif menu_fabric == "9. Administration aspects of Microsoft Fabric" :
         
         st.write("Navigate in one of these pages:")
@@ -319,6 +325,7 @@ elif selected == "Microsoft Fabric" :
                 "nav-link-selected": {"background-color": "#479e92"},
             }
         )
+
 
 # =============================================================================================================================================================================
 ########### Qlik ############
@@ -339,6 +346,7 @@ elif selected == "Qlik to Power BI (WIP)":
             styles = Nav_styles
         )
 
+    ##### 1. Connections and Sources
     if menu_qlik == "1. Connections and Sources" :
         
         st.write("Navigate in one of these pages:")
@@ -355,6 +363,7 @@ elif selected == "Qlik to Power BI (WIP)":
         )
 
     
+    ##### 2. Semantic model
     elif menu_qlik == "2. Semantic model" :
 
         st.write("Navigate in one of these pages:")
@@ -371,6 +380,7 @@ elif selected == "Qlik to Power BI (WIP)":
         )
 
 
+    ##### 3. Visualizations and report layout
     elif menu_qlik == "3. Visualizations and report layout" :
 
         st.write("Navigate in one of these pages:")
@@ -387,6 +397,7 @@ elif selected == "Qlik to Power BI (WIP)":
         )
 
 
+    ##### 4. Measures and Expressions
     elif menu_qlik == "4. Measures and Expressions" :
 
         st.write("Navigate in one of these pages:")
@@ -403,6 +414,7 @@ elif selected == "Qlik to Power BI (WIP)":
         )
 
 
+    ##### 5. Advanced functionalities
     elif menu_qlik == "5. Advanced functionalities" :
 
         st.write("Navigate in one of these pages:")
@@ -440,6 +452,6 @@ elif selected == "Qlik to Power BI (WIP)":
 # --------------------------------------------------------------------------------------------------------------------------------------------------------
 # Footer (le funzioni utilizzate sono in functions.py)
 if __name__ == "__main__":
-    myargs = [ "Made in ", footer.image_render('https://avatars3.githubusercontent.com/u/45109972?s=400&v=4', width = px(25), height = px(25)), 
+    myargs = [ "Made in ", footer.image_render('https://avatars3.githubusercontent.com/u/45109972?s=400&v=4', width = px(25), height = px(15)), 
         " by ", footer.link_render("https://www.linkedin.com/in/samuele-campitiello-ph-d-913b90104/", "Samuele Campitiello") ]
     footer.footer(*myargs)
