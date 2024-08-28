@@ -1,0 +1,40 @@
+### 2.2.3 *print* and *display*
+
+In a Notebook, it is possible to use two functions to display results: *display* (for dataframes) and *print* (for variables and strings).
+Using Python:
+
+```python
+# Read and store data into a dataframe
+df = spark.read.load("Files/orders/2019.csv")
+
+# Display the content of the dataframe
+display(df)
+
+# Select columns from a dataframe
+customers = df['SalesOrderNumber', 'CustomerName']		  # Python
+customers = df.select("CustomerName", "Email")		      # PySpark
+
+# Print to show a number
+print(customers.count())		
+
+# Display distinct data
+display(customers.distinct())	
+```
+
+Transformed data can be saved into the *Files* folder in *Parquet* format:
+
+```python
+# Overwrite data and store results in Parquet format in the specified path
+customers.write.mode("overwrite").parquet('Files/My_customers')
+```
+
+The script above creates (if it does not exist) the folder “*My_customers*”. 
+Once saved, it is possible to display those data again in the Notebook using the *load* funtion:
+
+```python
+# Read data in "My_customers"
+customer = spark.read.format("parquet").load("Tables/My_customers")
+
+# Display data
+display(customer)
+```
