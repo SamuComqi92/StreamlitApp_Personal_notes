@@ -139,7 +139,7 @@ WHERE EXISTS (
   SELECT 1
   FROM [lakehouse].[dbo].[table_b]  b
   WHERE a.key = b.key
-)
+""")
 
 # Save results
 joined_df.write.mode("overwrite").format("delta").saveAsTable("joined_table")
