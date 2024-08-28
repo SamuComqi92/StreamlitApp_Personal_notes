@@ -3,7 +3,7 @@
 
 *Problem statement*
 
-> *The operation is to join two tables whose key columns had a ***high cardinality*** (with a many-to-many relationship) and whose values were created as a concatenation of three numeric codes separated by “||” (i.e. each value was like “61003952||60013161||20240302”). *
+> *The operation is to join two tables whose key columns had a ***high cardinality*** (with a many-to-many relationship) and whose values were created as a concatenation of three numeric codes separated by “||” (i.e. each value was like “61003952||60013161||20240302”).*
 > *The operation was a simple **inner join**.*
 > *A **inner join** is also the required operation to replicate the Qlik ***where exists*** clause.*
 > *The key-columns of the two tables have ~3mln and ~4mln distinct values.*
