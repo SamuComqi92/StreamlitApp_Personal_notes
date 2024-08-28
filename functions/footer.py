@@ -20,7 +20,7 @@ def footer(*args):
                        width = percent(100), 
                        color = "black", 
                        text_align = "center",
-                       height = px(35),
+                       height = px(40),
                        opacity = 1,
                        display="flex",
                        justify_content="center"
