@@ -1,0 +1,17 @@
+### 2.2.4 Update a table
+
+To update values inside a table, it is possible to use *PySpark* as follows:
+
+```python
+from delta.table import *
+from pyspark.sql.functions import *
+
+# Create a Delta table object
+delta_path = "Files/Mytable"
+delta_table = DeltaTable.forPath(spark, delta_path)
+
+# Update the table   
+delta_table.update(condition = "column == value", set = {"col2", "col2 + 10"})
+```
+
+Notice that, it is possible to update a table using SQL too (and the *magic command* ***%%sql***).
