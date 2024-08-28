@@ -94,6 +94,7 @@ Fabric_3_Data_Engineering_DataFactory_Pipelines = load_text("Text/Fabric/Fabric_
 # Qlik to Power BI
 Qlik2PBI_0_Introduction = load_text("Text/Qlik2PBI/Qlik2PBI_0_Introduction.txt")
 Qlik2PBI_1_Connection_sources = load_text("Text/Qlik2PBI/Qlik2PBI_1_Connection_sources.txt")
+Qlik2PBI_1_PowerQuery_dataflows_Fabric = load_text("Text/Qlik2PBI/Qlik2PBI_1_PowerQuery_dataflows_Fabric.txt")
 
 # --------------------------------------------------------------------------------------------------------------------------------------------
 # Menu laterale
@@ -354,7 +355,7 @@ elif selected == "Qlik to Power BI (WIP)":
         st.write("Navigate in one of these pages:")
         selected_qlik = option_menu(
             None,
-            ["Quick comparison", "Power BI: Power Query and Dataflows", "Microsoft Fabric: Notebooks for ETLs"], 
+            ["Quick comparison", "Power Query and Dataflows vs. T-SQL and Microsoft Fabric Notebooks"], 
             icons = ["file-earmark", "file-earmark", "file-earmark", "file-earmark"], 
             default_index = 0,
             orientation = "horizontal",
@@ -366,7 +367,9 @@ elif selected == "Qlik to Power BI (WIP)":
 
         if selected_qlik == "Quick comparison" :
             st.markdown(Qlik2PBI_1_Connection_sources)
-
+        elif selected_qlik == "Power Query and Dataflows vs. T-SQL and Microsoft Fabric Notebooks" :
+            st.markdown(Qlik2PBI_1_PowerQuery_dataflows_Fabric)
+            
     
     ##### 2. Semantic model
     elif menu_qlik == "2. Semantic model" :
