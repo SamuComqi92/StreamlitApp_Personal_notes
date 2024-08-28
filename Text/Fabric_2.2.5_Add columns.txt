@@ -1,0 +1,16 @@
+### 2.2.5 Add columns
+
+In a dataframe, it is possible to add new columns based on existing ones. Using *PySpark* and ***withColumn***:
+
+```python
+# Add month and year columns
+df = df.withColumn("Year", year(col("OrderDate"))).withColumn("Month", month(col("OrderDate")))
+
+# Derive FirstName and LastName columns
+df = df.withColumn("FirstName", split(col("CustomerName"), " ").getItem(0)).withColumn( "LastName", split(col("CustomerName"), " ").getItem(1))
+```
+
+In the first case, the “*Year*” and “*Month*” columns are derived from the “*OrderDate*” column, using the functions ***year*** and ***month***.
+In the second case, the ***split*** function is used to split strings (using space as delimiter) and retrieve the first (name) and second (surname) parts, respectively.
+
+Notice that, it is possible to update a table using SQL too (and the *magic command* ***%%sql***).
