@@ -1,6 +1,12 @@
 ### Power Query, dataflows vs. Microsoft Fabric notebooks
 #### A simple table-join case analysis
 
+Qlik has the capability of orchestrating and handling complex ETL processes, enve with hundreds of millions of records. 
+Those operations cannot be managed neither by Power BI (i.e. the Power Query Editor) or Dataflows (i.e. Power Query Online).
+A valid alternative may be **Microsoft Fabric**, using T-SQL and Spark to handle complex operations and transformations.
+
+.
+
 *Problem statement*
 
 > *The operation is to join two tables whose key columns had a ***high cardinality*** (with a many-to-many relationship) and whose values were created as a concatenation of three numeric codes separated by “||” (i.e. each value was like “61003952||60013161||20240302”).*
