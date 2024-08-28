@@ -1,0 +1,13 @@
+### 2.2.8 Sempy (Semantic - link)
+
+The Python library ***sempy*** can be used in a Notebook to create the so-called **Semantic - link**: 
+it is a new feature to access *Power BI semantic models* within Python notebooks, as also other kind of information such as measures, dependencies and dependency violations, datasets, tables, and relationships. 
+With this library, it is possible to:
+
+- Plot the model inside a Notebook.
+- Read and show tables.
+- Evaluate measures within the notebooks, and DAX expressions.
+- Validate relationships, finding missing values in key columns (between facts and dimensions) that can alter the final computations.
+- Use Power BI semantic models to apply ML models, calculate predictions, extract information about semantic models (e.g., create an alerting report for relationships violations, data quality, etc.), and store them into a Lakehouse, to use them in a new report.
+
+To use the library, in the Notebook, it is necessary to add a Data Lakehouse where semantic models (and tables) are located.
