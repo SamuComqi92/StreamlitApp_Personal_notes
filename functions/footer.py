@@ -12,7 +12,7 @@ def link_render(link, text, **style):
     return a(_href = link, _target = "_blank", style = styles(**style))(text)
 
 def footer(*args):
-    style = """<style> # MainMenu {visibility: hidden;} footer {visibility: hidden;} .stApp { bottom: 80px; } </style>"""
+    style = """<style> # MainMenu {visibility: hidden;} footer {visibility: hidden;} .stApp { bottom: 60px; } </style>"""
     style_div = styles(position = "fixed", 
                        left = 0, 
                        bottom = 0, 
@@ -20,7 +20,7 @@ def footer(*args):
                        width = percent(100), 
                        color = "black", 
                        text_align = "center",
-                       height = px(25),
+                       height = px(30),
                        opacity = 1,
                        display="flex",
                        justify_content="center"
