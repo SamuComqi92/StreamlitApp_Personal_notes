@@ -1,5 +1,5 @@
 ### Power Query, dataflows vs. Microsoft Fabric notebooks
-#### A quick comparison
+#### A simple table-join case analysis
 
 *Problem statement*
 
