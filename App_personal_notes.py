@@ -89,6 +89,7 @@ Fabric_2_2_8_Sempy = load_text("Text/Fabric_2.2.8_Sempy.txt")
 Fabric_2_2_9_Other_functions = load_text("Text/Fabric_2.2.9_Other_functions.txt")
 Fabric_2_3_SQL_Endpoint = load_text("Text/Fabric_2.3_SQL_Endpoint.txt")
 Fabric_2_4_Create_report = load_text("Text/Fabric_2.4_Create_report.txt")
+Fabric_3_Data_Engineering_DataFactory_Pipelines = load_text("Text/Fabric_3_Data_Engineering_DataFactory_Pipelines.txt")
 
 # Qlik to Power BI
 Qlik2PBI_0_Introduction = load_text("Text/Qlik2PBI_0_Introduction.txt")
@@ -243,6 +244,10 @@ elif selected == "Microsoft Fabric" :
             }
         )
 
+        if selected_lakehouse == "Introduction" :
+            st.markdown(Fabric_3_Data_Engineering_DataFactory_Pipelines)
+
+    
 
     elif menu_fabric == "4. Data Engineering - Data Factory: Dataflows" :
 
