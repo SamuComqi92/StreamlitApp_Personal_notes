@@ -25,7 +25,7 @@ Notice that a *Spark dataframe* is displayed with symbols like *+ - |* when usin
 Alternatively, one can define the magic ***%%sql*** and use a SQL query inside the notebook cell.
 
 In the first and last queries, it is possible to use *variables* defined elsewhere in the Notebook: 
-the syntax is <p style="color:blue;">spark.sql(f”SELECT * FROM table LIMIT {variable}”)</p>, where *variable* has been defined before this line.
+the syntax is :blue[spark.sql(f”SELECT * FROM table LIMIT {variable}”)], where *variable* has been defined before this line.
 
 Finally, it is possible to create ***temporary views*** inside a Notebook:
 
@@ -34,7 +34,7 @@ df.createOrReplaceTempView(“name_temp_view”)
 ```
 
 where ***df*** is the dataframe created with *spark.sql*. 
-At this point, it is possible to use the temporary view inside the Notebook with <font color='blue'>spark.sql(“SELECT * from name_temp_view")</font>.
+At this point, it is possible to use the temporary view inside the Notebook with :blue[spark.sql(“SELECT * from name_temp_view")].
 
-**Important**: in a Notebook connected to a Lakehouse, it is possible to use <font color='blue'>DROP TABLE, ALTER TABLE</font> to remove/modify tables in *Tables/Files* folder. 
+**Important**: in a Notebook connected to a Lakehouse, it is possible to use :blue[**DROP TABLE, ALTER TABLE**] to remove/modify tables in *Tables/Files* folder. 
 Remember: this is not possible in the SQL Endpoint of the Lakehouse which is read-only. Pay attention to managed and external tables.
