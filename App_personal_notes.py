@@ -183,6 +183,8 @@ elif selected == "Microsoft Fabric" :
                 label_visibility = "collapsed",
                 horizontal = True
             )
+
+            st.divider()
             
             if selected_notebook == "Introduction" :
                 st.markdown(Fabric_2_2_Create_Notebooks)
