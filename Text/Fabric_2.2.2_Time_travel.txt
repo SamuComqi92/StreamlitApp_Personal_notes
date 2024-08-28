@@ -18,4 +18,4 @@ current_data = spark.read.format("delta").load(delta_table_path)
 
 # Get the version 0 (first version of the file)
 original_data = spark.read.format("delta").option("versionAsOf",0).load(delta_table_path)
-```python
+```
