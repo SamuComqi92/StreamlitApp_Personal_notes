@@ -99,7 +99,7 @@ with st.sidebar:
 ########### Landing page ############
 if selected == "Landing page" :
     st.markdown("""
-    ### **Welcome to My Digital Notebook**
+    # **Welcome to My Digital Notebook**
     
     I designed this space to collect *my notes* on different topics, from programming to machine learning and systems dedicated to data management, manipulation and visualization.
     
