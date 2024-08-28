@@ -11,7 +11,7 @@ df = spark.read.load("Files/orders/2019.csv")
 display(df)
 
 # Select columns from a dataframe
-customers = df['SalesOrderNumber', 'CustomerName']		  # Python
+customers = df['SalesOrderNumber', 'CustomerName']	# Python
 customers = df.select("CustomerName", "Email")		      # PySpark
 
 # Print to show a number
