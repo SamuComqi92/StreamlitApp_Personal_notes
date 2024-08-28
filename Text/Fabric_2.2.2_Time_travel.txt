@@ -1,0 +1,21 @@
+### 2.2.2 Time travel 
+
+The ***time-travel*** option is typical of *Delta* tables. It can be used to visualize the modifications history. Using SQL:
+
+```sql
+%%sql
+DESCRIBE HISTORY products
+DESCRIBE HISTORY 'Files/mytable'
+```
+
+With Fabric, in a Notebook, it is possible to access different versions of the same file using the following syntax:
+
+```python
+delta_table_path = 'Files/external_products'
+
+# Get the current data
+current_data = spark.read.format("delta").load(delta_table_path)
+
+# Get the version 0 (first version of the file)
+original_data = spark.read.format("delta").option("versionAsOf",0).load(delta_table_path)
+```python
