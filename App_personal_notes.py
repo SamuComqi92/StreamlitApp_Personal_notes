@@ -119,7 +119,7 @@ with st.sidebar:
 
 
 ########### Landing page ############
-if selected == "Landing page" :
+if main_selected == "Landing page" :
     st.markdown("""
     # **Welcome to My Digital Notebook**
     
