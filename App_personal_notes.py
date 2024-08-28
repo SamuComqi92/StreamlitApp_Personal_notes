@@ -143,6 +143,13 @@ if selected == "Landing page" :
     st.image(Image.open(r'images/Qlik_to_PBI.png'), width = 150)
     st.markdown(Qlik2PBI_0_Introduction)
 
+    st.write("")
+    st.write("")
+    
+    # DP-203 exam notes
+    st.image(Image.open(r'images/DP_203_notes.png'), width = 150)
+    st.markdown("casa")
+
 
 ########### Microsoft Fabric ############
 elif selected == "Microsoft Fabric" :
