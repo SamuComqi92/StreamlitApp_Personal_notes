@@ -337,7 +337,8 @@ elif selected == "Qlik to Power BI (WIP)":
         st.image(Image.open(r'images/Qlik_to_PBI_2.png'), width = 450)
 
     with st.sidebar:
-        st.write("Navigation")
+        st.write("")
+        st.markdown("**Navigation**")
         menu_qlik = option_menu(
             None, 
             Section_Qlik, 
