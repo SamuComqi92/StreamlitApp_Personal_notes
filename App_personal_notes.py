@@ -72,12 +72,16 @@ Nav_styles = {
 
 # --------------------------------------------------------------------------------------------------------------------------------------------------------
 # Text loader
+# Fabric
 Fabric_0_Introduction = load_text("Text/Fabric_0_Introduction.txt")
 Fabric_1_OneLake = load_text("Text/Fabric_1_OneLake.txt")
 Fabric_2_Data_Engineering_Lakehouse = load_text("Text/Fabric_2_Data_Engineering_Lakehouse.txt")
 Fabric_2_1_Create_a_Lakehouse = load_text("Text/Fabric_2.1_Create_a_Lakehouse.txt")
 Fabric_2_2_Create_Notebooks = load_text("Text/Fabric_2.2_Create_Notebooks.txt")
 Fabric_2_2_1_Create_tables = load_text("Text/Fabric_2.2.1_Create_tables.txt")
+Fabric_2_2_2_Time_travel = load_text("Text/Fabric_2.2.2_Time_travel.txt")
+
+# Qlik to Power BI
 Qlik2PBI_0_Introduction = load_text("Text/Qlik2PBI_0_Introduction.txt")
 
 # --------------------------------------------------------------------------------------------------------------------------------------------
@@ -181,6 +185,8 @@ elif selected == "Microsoft Fabric" :
                 st.markdown(Fabric_2_2_Create_Notebooks)
             elif selected_notebook == "Create tables" :
                 st.markdown(Fabric_2_2_1_Create_tables)
+            elif selected_notebook == "Time travel" :
+                st.markdown(Fabric_2_2_2_Time_travel)
 
     
     elif menu_fabric == "3. Data Engineering - Data Factory: Pipelines" :
