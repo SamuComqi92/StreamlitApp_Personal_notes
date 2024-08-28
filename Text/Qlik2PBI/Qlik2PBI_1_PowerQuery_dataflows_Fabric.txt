@@ -1,7 +1,7 @@
 ### Power Query, dataflows vs. Microsoft Fabric notebooks
 #### A quick comparison
 
-> *Problem statement*
+*Problem statement*
 
 > The operation is to join two tables whose key columns had a ***high cardinality*** (with a many-to-many relationship) and whose values were created as a concatenation of three numeric codes separated by “||” (i.e. each value was like “61003952||60013161||20240302”). 
 > The operation was a simple **inner join**. 
@@ -70,6 +70,7 @@ joined_df = spark.sql("""SELECT
 FROM lakehouse_table_a        a
 INNER JOIN lakehouse.table_b  b
 ON a.key = b.key
+""")
 
 joined_df.write.mode("overwrite").format("delta").saveAsTable("joined_table")
 ```
