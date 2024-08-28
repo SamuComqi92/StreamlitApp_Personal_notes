@@ -86,6 +86,7 @@ Fabric_2_2_5_Add_columns = load_text("Text/Fabric_2.2.5_Add columns.txt")
 Fabric_2_2_6_Use_SQL = load_text("Text/Fabric_2.2.6_Use_SQL.txt")
 Fabric_2_2_7_Data_Wrangler = load_text("Text/Fabric_2.2.7_Data_Wrangler.txt")
 Fabric_2_2_8_Sempy = load_text("Text/Fabric_2.2.8_Sempy.txt")
+Fabric_2_2_9_Other_functions = load_text("Text/Fabric_2.2.9_Other_functions.txt")
 
 # Qlik to Power BI
 Qlik2PBI_0_Introduction = load_text("Text/Qlik2PBI_0_Introduction.txt")
@@ -213,6 +214,8 @@ elif selected == "Microsoft Fabric" :
                 st.markdown(Fabric_2_2_7_Data_Wrangler)
             elif selected_notebook == "Sempy" :
                 st.markdown(Fabric_2_2_8_Sempy)
+            elif selected_notebook == "Other functions" :
+                st.markdown(Fabric_2_2_9_Other_functions)
 
     
     elif menu_fabric == "3. Data Engineering - Data Factory: Pipelines" :
