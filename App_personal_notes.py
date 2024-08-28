@@ -170,7 +170,10 @@ elif selected == "Microsoft Fabric" :
                 "nav-link-selected": {"background-color": "#479e92"},
             }
         )
-      
+
+        if selected_lakehouse != "2.2 Create Notebooks":
+            st.divider()
+            
         if selected_lakehouse == "Introduction" :
             st.markdown(Fabric_2_Data_Engineering_Lakehouse)
         elif selected_lakehouse == "2.1 Create a Lakehouse" :
