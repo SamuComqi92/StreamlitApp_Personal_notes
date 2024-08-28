@@ -1,0 +1,32 @@
+### Data Engineering - Data Factory: Pipelines
+
+In the *Pipeline section* of Microsoft Fabric, it is possible to build a *Pipelineé *with minimal code or no-code (i.e. *drag&drop*), using a graphical interface (canvas). 
+Fabric Pipelines are similar to those created with *Azure Data Factory* but with some limitations (for example: there are no triggers, one can only schedule a periodic refresh). 
+To create one, just click on the **Data Factory** icon. 
+In a *Pipeline*, it is possible to create two kinds of ***Activity***:
+
+- *Data transformations*: through Notebook, Stored Procedure, Dataflows.
+- *Control flows*: to implement loops, conditional branching, to manage variables and parameters. It is also possible to de-activate a particular activity for debugging (Dec 2023 update).
+
+Each activity corresponds to a *step* of the pipeline that can be edited in the interactive canvas. 
+The activity properties can be configured/edited in the *Settings* pane on the bottom of the canvas (once the activity is selected). 
+Moreover, in Fabric, ***pipeline templates*** are available to be used (and edited, if necessary - section "*Choose a task to start*" in the Pipeline hub).[^1] 
+
+One of the most important (and most used) activities is the **Copy Activity**: 
+it is the activity set to ***ingest data from an external source*** (in Fabric, there are many available connectors) to a specific destination that can be a file or a table in the Lakehouse (it is possible to see a data preview of the output in the destination).[^2] 
+This kind of activity is useful when data must only be copied from the source (if transformations are involved, it is better to rely on *Dataflows* and *Notebooks* - see Next). 
+Once a pipeline is ready, it is possible to:
+
+- ***Validate*** the pipeline (a sort of debugging process).
+- ***Run the pipeline***: In this case, it is possible to see details of each pipeline step/activity along with a Gantt chart to visualize the execution duration of each one of them.
+- ***Schedule*** the pipeline. *Currently, pipelines can be triggered manually or periodically (by scheduling them).
+- ***View Run History*** of the pipeline, to see all executions.
+
+In a pipeline it is possible to include Dataflows, notebooks, and stored-procedures[^3] (to run periodically). 
+
+
+
+
+[^1]: In pipelines, there is the *Failure activity* to manage failures and customize errors and actions.
+[^2]: It is possible to use **API calls** with the “Copy Data” activity (in “Generic protocol” set “REST”). It is important to use the first part of the URL, without the last part where possible parameters must be defined. When that’s the case, those parameters must be defined in the pipeline going into the section “Parameters” in the bottom menu: in the “Source” section, define the relative URL with a dynamic function (using a function *@concat*).
+[^3]: To execute a Stored-Procedure created in a Warehouse, data pipelines can be used: 1) Select the name of the activity called “Stored procedure”; 2) select the data Warehouse and the available stored-procedure; 3) schedule the pipeline.
