@@ -1,0 +1,11 @@
+### 2.2.7 Data Wrangler
+
+In a notebook, it is possible to use the so-called ***Data Wrangler*** with *Pandas dataframes*. 
+Once a *Pandas dataframe* has been defined in the notebook, from the top menu, click on “*Data*” and then “**Data Wrangler**”:
+a small window will appear telling you to choose an existing dataframe (created inside the Notebook). 
+Once chosen, the dataframe can be modified in the *Data Wrangler window*.
+
+The *Data Wrangler* is like Power Query Editor: 
+data is shown with statistics, and columns can be modified using the menu on the left. 
+Once a transformation has been chosen, it is possible to “Apply” it, generating a new piece of code. 
+This code can be saved directly into the new Notebook as a new step.
