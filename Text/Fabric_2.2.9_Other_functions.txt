@@ -4,12 +4,12 @@ In a notebook, it is possible to use a very larger number of *PySpark* functions
 
 - :blue[df.select(“*”)]: to select all columns from the dataframe. In general, the function is used to select one or more columns from a dataframe.
 - :blue[df.select(col(“col_name”).alias(“new_col_name))]: to define a dataframe from another one, select one column (or more) and rename it - Inside the *select*, it is possible to use functions and other transformations on :blue[col(“name_column”)].
-•	withColumnRenamed(“name”,”new_name”): to rename columns in a dataframe (Important: columns must not have spaces!).
-•	df.groupBy(“Column”).count(): to aggregate values and count occurrences (other functions are min, max, average, etc.).
-•	df.groupBy(“column”).agg(max(“column2”).alias(“new_name”): to aggregate and give a name to the new column. In the groupBy function, it is possible to specify more than one column.
-•	first_df.join(second_df, first_df.key == second_df.key, “how”): to perform join operations. The “how” can substituted with “inner”, ”left”, “right”, “outer”, ”full”, ”leftouter”, etc.
-•	To deal with null/empty values, there are several functions:
-o	df.na.drop() or df.na.drop(how=”any”) to drop rows with at least one null values.
+- :blue[withColumnRenamed(“name”,”new_name”)]: to rename columns in a dataframe (**Important: columns must not have spaces!**).
+- :blue[df.groupBy(“Column”).count()]: to ***aggregate*** values and count occurrences (other functions are *min, max, average*, etc.).
+- :blue[df.groupBy(“column”).agg(max(“column2”).alias(“new_name”): to ***aggregate*** and give a name to the new column. In the *groupBy* function, it is possible to specify more than one column.
+- :blue[first_df.join(second_df, first_df.key == second_df.key, “how”): to perform ***join*** operations. The “how” can be substituted with “*inner*”, ”*left*”, “*right*”, “*outer*”, ”*full*”, ”*leftouter*”, etc.
+- :blue[To deal with null/empty values, there are several functions:
+  - :blue[df.na.drop()] or :blue[df.na.drop(how=”any”)] to drop rows with at least one null values.
 o	df.na.drop(how=”all”) to drop rows if all values are null.
 o	df.na.drop(thresh = 5) to drop rows with at least 5 null values.
 o	df.na.drop(subset = “column”) to drop rows when a null value is present in the column (use […] for more columns).
