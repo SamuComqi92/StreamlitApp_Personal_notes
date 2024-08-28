@@ -16,12 +16,15 @@ def load_text(filename):
 # --------------------------------------------------------------------------------------------------------------------------------------------
 # Titles & Icons
 Menu_icon = "menu-up"
-Main_topics = ["Landing page", "Microsoft Fabric", 'Qlik to Power BI (WIP)']
-Main_icons = ['house', 'clipboard-data', 'graph-up-arrow']
+Main_topics = ["Landing page", "Microsoft Fabric", 'Qlik to Power BI', 'DP 2023 course notes']
+Main_icons = ['house', 'clipboard-data', 'graph-up-arrow', 'award']
 Section_Fabric = ["1. Fabric OneLake", "2. Data Engineering - Lakehouse", "3. Data Engineering - Data Factory: Pipelines", "4. Data Engineering - Data Factory: Dataflows", "5. Data Warehouse", "6. Data Science", "7. Real-Time Analytics", "8. Data Activator", "9. Administration aspects of Microsoft Fabric"]
 Section_Fabric_icons = ['caret-right-fill', 'caret-right-fill', 'caret-right-fill', 'caret-right-fill', 'caret-right-fill', 'caret-right-fill', 'caret-right-fill', 'caret-right-fill', 'caret-right-fill']
 Section_Qlik = ["1. Connections and Sources", "2. Semantic model", "3. Visualizations and report layout", "4. Measures and Expressions", "5. Advanced functionalities"]
 Section_Qlik_icons = ['caret-right-fill', 'caret-right-fill', 'caret-right-fill', 'caret-right-fill', 'caret-right-fill']
+
+#Section_DP203 = ["1. Connections and Sources", "2. Semantic model", "3. Visualizations and report layout", "4. Measures and Expressions", "5. Advanced functionalities"]
+#Section_DP203 = ['caret-right-fill', 'caret-right-fill', 'caret-right-fill', 'caret-right-fill', 'caret-right-fill']
 
 
 # --------------------------------------------------------------------------------------------------------------------------------------------
@@ -102,7 +105,7 @@ DP203_0_Introduction = load_text("Text/DP_203/DP203_0_Introduction.txt")
 # --------------------------------------------------------------------------------------------------------------------------------------------
 # Menu laterale
 with st.sidebar:
-    selected = option_menu(
+    main_selected = option_menu(
         "Topics", 
         Main_topics, 
         icons = Main_icons, 
@@ -155,7 +158,7 @@ if selected == "Landing page" :
 
 
 ########### Microsoft Fabric ############
-elif selected == "Microsoft Fabric" :
+elif main_selected == "Microsoft Fabric" :
 
     # Title and logo
     col1, col2, col3 = st.columns(3)
@@ -341,7 +344,7 @@ elif selected == "Microsoft Fabric" :
 
 # =============================================================================================================================================================================
 ########### Qlik ############
-elif selected == "Qlik to Power BI (WIP)":
+elif main_selected == "Qlik to Power BI":
 
     # Title and logo
     col_1, col_2, col_3 = st.columns(3)
@@ -448,6 +451,29 @@ elif selected == "Qlik to Power BI (WIP)":
             }
         )
 
+
+# =============================================================================================================================================================================
+########### DP 203 ############
+elif main_selected == "DP 2023 course notes":
+
+    # Title and logo
+    col_1, col_2, col_3 = st.columns(3)
+    with col_2:
+        st.image(Image.open(r'images/DP_2023_notes_2.png'), width = 410)
+
+    #with st.sidebar:
+    #    st.write("")
+    #    st.markdown("**Navigation**")
+    #    menu_qlik = option_menu(
+    #        None, 
+    #        Section_Qlik, 
+    #        icons = Section_Qlik_icons, 
+    #        default_index = 0, 
+    #        styles = Nav_styles
+    #    )
+
+    ##### 1. Connections and Sources
+    #if menu_qlik == "1. Connections and Sources" 
   
 # ================================================================================================================================================================
 # ================================================================================================================================================================
