@@ -1,0 +1,40 @@
+### 2.2.6 Use SQL
+
+If tables are stored in the *Tables* folder of the Lakehouse, it is possible to use **SQL** inside a notebook to retrieve them using SQL:
+
+```python
+# Define the SQL query inside brackets
+df = spark.sql("SELECT * FROM My_Lakehouse.my_table LIMIT 100")
+display(df)
+
+# To visualize a Spark dataframe (the query is stored in a variable)
+sqlQuery = "SELECT * FROM My_Lakehouse.my_table LIMIT 100"
+df_spark = spark.sql(sqlQuery)
+df_spark.show()
+```
+
+Or using SQL with the *magic command*:
+
+```sql
+# Using the "magic"
+%%sql
+SELECT * FROM My_Lakehouse.my_table LIMIT 100
+```
+
+Notice that a *Spark dataframe* is displayed with symbols like *+ - |* when using the function ***show()***. 
+Alternatively, one can define the magic ***%%sql*** and use a SQL query inside the notebook cell.
+
+In the first and last queries, it is possible to use *variables* defined elsewhere in the Notebook: 
+the syntax is <font color='blue'>spark.sql(f”SELECT * FROM table LIMIT {variable}”)</font>, where *variable* has been defined before this line.
+
+Finally, it is possible to create ***temporary views*** inside a Notebook:
+
+```python
+df.createOrReplaceTempView(“name_temp_view”)
+```
+
+where ***df*** is the dataframe created with *spark.sql*. 
+At this point, it is possible to use the temporary view inside the Notebook with <font color='blue'>spark.sql(“SELECT * from name_temp_view")</font>.
+
+**Important**: in a Notebook connected to a Lakehouse, it is possible to use <font color='blue'>DROP TABLE, ALTER TABLE</font> to remove/modify tables in *Tables/Files* folder. 
+Remember: this is not possible in the SQL Endpoint of the Lakehouse which is read-only. Pay attention to managed and external tables.
