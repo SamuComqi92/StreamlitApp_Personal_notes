@@ -81,22 +81,69 @@ joined_df.write.mode("overwrite").format("delta").saveAsTable("joined_table")
 
 ***Qlik “where exists” using T-SQL***
 
-The first test was inside the Fabric Warehouse. I ran the following T-SQL script that was incredibly fast:
+The translation of the Qlik *where exists* clause corresponds to an **inner join** that retrieves only the values already present in another column of another loaded table. 
+For the test, key-columns were always complex string-type but with a lower cardinality (i.e. 350k distinct values in the left table, and 3k in the right table).
 
+Power Query in Power BI Desktop and Online (in a dataflow) was unsuccessful and not able to perform the join (not even showing the preview).
 
-Just 3 seconds to do something that Power Query was not able to do (or even to show in the preview), producing a small table of ~22k rows (values both in Table A and Table B).
+Instead, the following **T-SQL** script was incredibly fast:
 
-E. Qlik “where exists” using PySpark
+```sql
+CREATE TABLE [dbo.new_table] AS
+SELECT
+a.*
+FROM [lakehouse].[dbo].[table_a]    a
+WHERE EXISTS (
+  SELECT 1
+  FROM [lakehouse].[dbo].[table_b]  b
+  WHERE a.key = b.key
+)
+```
 
-Doing a normal inner join will produce a bigger table because the operation will retrieve several rows from the right table for each key in the left table. To reproduce the where exists operation, I needed to use the dropDuplicates() on the joined table which I knew would take some seconds more. The final result was achieved in almost 20 seconds:
+It took 3 seconds to produce a small table of ~22k rows (i.e. values both in *table_a* and *table_b*).
 
+.
+
+***Qlik “where exists” using PySpark***
+
+Doing a normal inner join will produce a bigger table because the operation will retrieve several rows from the right table for each key in the left table. To reproduce the *where exists* operation, it is necessary to use the *dropDuplicates()* on the joined table. The final result was achieved in ~20 seconds:
+
+```python
+# Upload tables
+table_a = spark.sql('SELECT * FROM lakehouse.table_a')
+table_b = spark.sql('SELECT * FROM lakehouse.table_b')
+
+# Inner join
+joined_df = table_a.join(table_b, on = "key", how = "inner")
+
+# Remove duplicates
+joined_df = joined_df.dropDuplicates()
+
+# Save results
+joined_df.write.mode("overwrite").format("delta").saveAsTable("joined_table")
+```
 
 However, using an explicit SQL query (without loading the tables) led to a faster response (less than 10 seconds):
 
+```python
+joined_df = spark.sql("""SELECT
+a.*
+FROM [lakehouse].[dbo].[table_a]    a
+WHERE EXISTS (
+  SELECT 1
+  FROM [lakehouse].[dbo].[table_b]  b
+  WHERE a.key = b.key
+)
 
-Conclusions
+# Save results
+joined_df.write.mode("overwrite").format("delta").saveAsTable("joined_table")
+```
 
-Power Query is good for simple transformations (e.g. renaming, creating a new column with a simple logic, replacing values), both in Power BI Desktop and a Dataflow. Moreover, some of those operations can lead to query folding, “pushing” everything to the source to optimize the query execution (see Query Folding).
-Power Query can’t handle complex transformation operations, such as joining tables (such operations are not “pushed” to the source by the query folding process), especially when dealing with very large tables and high cardinality columns (of the order of millions of values). For this reason, the best practice is to let the back-end handle those operations and leave only the final step (i.e. reading the table) to Power BI.
-Using Microsoft Fabric might be the solution to solve many problems regarding those complex operations. The same operations are handled perfectly using T-SQL (in a Warehouse) and/or PySpark (in a Notebook), combining millions of values and in a small amount of time.
-Fabric Warehousing and Notebooks can be your ace up your sleeve to host and manage a back-end environment with ease.
+.
+.
+
+**Conclusions**
+
+- Power Query is good for simple transformations (e.g. renaming, creating a new column with a simple logic, replacing values), both in Power BI Desktop and a Dataflow. Moreover, some of those operations can lead to ***query folding***, “pushing” everything to the source to optimize the query execution.
+- Power Query can’t handle complex transformation operations, such as *joining tables* (such operations are not “pushed” to the source by the *query folding* process), especially when dealing with very large tables and *high cardinality* columns (of the order of millions of values). For this reason, the best practice is to let the back-end handle those operations and leave only the final step (i.e. reading the table) to Power BI.
+- **Microsoft Fabric might be the solution to solve many problems regarding those complex operations**, using both *T-SQL* (in a Warehouse) and/or *PySpark* (in a Notebook), combining millions of values and in a small amount of time.
