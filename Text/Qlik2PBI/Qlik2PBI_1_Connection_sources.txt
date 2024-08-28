@@ -11,6 +11,6 @@ Both tools can connect to a large number of sources using the native connectors.
     - Operations like *join*, data trasnformations, etc. are easily done, even with hundreds of millions of rows and high cardinality columns.
 - In this context, **Power BI** has limited capabilities and less power BI than Qlik.
   - The same operations done in Qlik can be replicated in Power BI **but** they will be less performant (even impossible to do) especially when dealing with hundreds of millions of rows and high cardinality columns. 
-    - This is why one of the *best-practices* is to push those operations to the back-end and leave the original DB handle them.
+    - This is why one of the *best-practices* is to push those operations to the ***back-end*** and leave the original DB handle them.
 		- In these extreme cases, *Query-folding* is not applied on merge operations complex data tranformations: *Power Query* is not powerful enough (list of operations that are folded ---> [external link](https://itsnotaboutthecell.com/2023/01/27/the-almost-definitive-guide-to-query-folding/).
 		
