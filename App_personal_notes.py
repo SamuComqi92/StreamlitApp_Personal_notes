@@ -22,9 +22,8 @@ Section_Fabric = ["1. Fabric OneLake", "2. Data Engineering - Lakehouse", "3. Da
 Section_Fabric_icons = ['caret-right-fill', 'caret-right-fill', 'caret-right-fill', 'caret-right-fill', 'caret-right-fill', 'caret-right-fill', 'caret-right-fill', 'caret-right-fill', 'caret-right-fill']
 Section_Qlik = ["1. Connections and Sources", "2. Semantic model", "3. Visualizations and report layout", "4. Measures and Expressions", "5. Advanced functionalities"]
 Section_Qlik_icons = ['caret-right-fill', 'caret-right-fill', 'caret-right-fill', 'caret-right-fill', 'caret-right-fill']
-
-#Section_DP203 = ["1. Connections and Sources", "2. Semantic model", "3. Visualizations and report layout", "4. Measures and Expressions", "5. Advanced functionalities"]
-#Section_DP203 = ['caret-right-fill', 'caret-right-fill', 'caret-right-fill', 'caret-right-fill', 'caret-right-fill']
+Section_DP203 = ["1. Introduction", "2. ADLS Gen2 & Big Data processing stages", "3. Azure Synapse Analytics", "4. Lakehouse", "5. Apache Spark", "6. Relational Data Warehouse", "7. Pipelines", "8. Hybrid Transactional/Analytical Processing", "9. Data Streaming", "10. Azure Databricks"]
+Section_DP203_icons = ['caret-right-fill', 'caret-right-fill', 'caret-right-fill', 'caret-right-fill', 'caret-right-fill', 'caret-right-fill', 'caret-right-fill', 'caret-right-fill', 'caret-right-fill', 'caret-right-fill']
 
 
 # --------------------------------------------------------------------------------------------------------------------------------------------
@@ -461,16 +460,16 @@ elif main_selected == "DP 2023 course notes":
     with col_2:
         st.image(Image.open(r'images/DP_203_notes_2.png'), width = 410)
 
-    #with st.sidebar:
-    #    st.write("")
-    #    st.markdown("**Navigation**")
-    #    menu_qlik = option_menu(
-    #        None, 
-    #        Section_Qlik, 
-    #        icons = Section_Qlik_icons, 
-    #        default_index = 0, 
-    #        styles = Nav_styles
-    #    )
+    with st.sidebar:
+        st.write("")
+        st.markdown("**Navigation**")
+        menu_dp_203 = option_menu(
+            None, 
+            Section_DP203, 
+            icons = Section_DP203_icons, 
+            default_index = 0, 
+            styles = Nav_styles
+        )
 
     ##### 1. Connections and Sources
     #if menu_qlik == "1. Connections and Sources" 
