@@ -1,0 +1,11 @@
+### 2.3 SQL Endpoint
+
+In the Lakehouse hub, on the top right menu, there is a button to switch between the Lakehouse view (tables and files) and the **SQL Endpoint**.
+
+In this latter section, on the left side, *schemas*, *tables* (default: ***dbo*** schema), *views*, *functions*, and *stored procedures* are listed, while on the right side, it is possible to query data using **T-SQL**.
+
+To create a new query, click on "*New SQL query*" on the top menu. 
+The query can also be built using a *visual interface* in ***Power Query online***, where it is possible to filter, transform, merge, etc. 
+The query will be visualized as a sort of flow. 
+
+All queries are stored in the folder “*My queries*” on the left side menu.
