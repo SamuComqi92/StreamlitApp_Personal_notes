@@ -8,7 +8,7 @@
 > A **inner join** is also the required operation to replicate the Qlik ***where exists*** clause. 
 > The key-columns of the two tables have ~3mln and ~4mln distinct values.
 
-To conduct the tests, I used:
+Tools and services used to conduct the tests:
 - **Power Query** (online on Power BI Service using a Dataflow, and on Power BI Desktop).
 - A Microsoft Fabric **Lakehouse** (created to store the source tables to be joined).
 - A Microsoft Fabric **Warehouse** (created to use *T-SQL* to join the two tables and create a new one).
