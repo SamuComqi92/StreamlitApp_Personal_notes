@@ -96,6 +96,9 @@ Qlik2PBI_0_Introduction = load_text("Text/Qlik2PBI/Qlik2PBI_0_Introduction.txt")
 Qlik2PBI_1_Connection_sources = load_text("Text/Qlik2PBI/Qlik2PBI_1_Connection_sources.txt")
 Qlik2PBI_1_PowerQuery_dataflows_Fabric = load_text("Text/Qlik2PBI/Qlik2PBI_1_PowerQuery_dataflows_Fabric.txt")
 
+# DP-203 exam notes
+DP203_0_Introduction = load_text("Text/DP_203/DP203_0_Introduction.txt")
+
 # --------------------------------------------------------------------------------------------------------------------------------------------
 # Menu laterale
 with st.sidebar:
@@ -148,7 +151,7 @@ if selected == "Landing page" :
     
     # DP-203 exam notes
     st.image(Image.open(r'images/DP_203_notes.png'), width = 150)
-    st.markdown("casa")
+    st.markdown(DP203_0_Introduction)
 
 
 ########### Microsoft Fabric ############
