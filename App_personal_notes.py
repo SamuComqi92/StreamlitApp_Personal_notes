@@ -153,6 +153,7 @@ elif selected == "Microsoft Fabric" :
         )
 
     if menu_fabric == "1. Fabric OneLake" :
+        st.divider()
         st.markdown(Fabric_1_OneLake)
         
     elif menu_fabric == "2. Data Engineering - Lakehouse" :
