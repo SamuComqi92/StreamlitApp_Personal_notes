@@ -27,7 +27,7 @@ Alternatively, one can define the magic ***%%sql*** and use a SQL query inside t
 In the first and last queries, it is possible to use *variables* defined elsewhere in the Notebook: 
 the syntax is :blue[spark.sql(f”SELECT * FROM table LIMIT {variable}”)], where *variable* has been defined before this line.
 
-Finally, it is possible to create ***temporary views*** inside a Notebook:
+Finally, it is possible to create ***temporary views*** inside a Notebook (which will be drop automatically when the Spark session ends):
 
 ```python
 df.createOrReplaceTempView(“name_temp_view”)
