@@ -34,7 +34,7 @@ df.createOrReplaceTempView(“name_temp_view”)
 ```
 
 where ***df*** is the dataframe created with *spark.sql*. 
-At this point, it is possible to use the temporary view inside the Notebook with :blue[spark.sql(“SELECT * from name_temp_view")].
+At this point, it is possible to use the temporary view inside the Notebook with :blue[spark.sql(“SELECT * FROM name_temp_view")].
 
 **Important**: in a Notebook connected to a Lakehouse, it is possible to use :blue[**DROP TABLE, ALTER TABLE**] to remove/modify tables in *Tables/Files* folder. 
 Remember: this is not possible in the SQL Endpoint of the Lakehouse which is read-only. Pay attention to managed and external tables.
