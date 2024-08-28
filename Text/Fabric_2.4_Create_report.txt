@@ -1,0 +1,9 @@
+### 2.4 Create a Report
+
+With enough data, it is possible to create a report by clicking on “*New report*” on the top menu. 
+The report is created in **Power BI** using the data model provided by the tables of the Lakehouse (the model can be visualized by clicking on “*Model*” in the bottom left menu).
+
+**VERY IMPORTANT: when a table has been uploaded and connected in a data model, eventual schema modifications (e.g., a new column, or a new data type for an existing column) in that table will not be integrated in the data model immediately!*
+*It is necessary to refresh the schema from the “*Edit tables Modeling*” menu on top.*
+
+The report can be saved in the same Workspace or in another Workspace.
