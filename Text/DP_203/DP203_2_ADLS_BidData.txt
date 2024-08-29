@@ -1,0 +1,23 @@
+### Azure DataLake Storage Gen 2
+
+It is a cloud-based storage for raw files (blob and files), **massive scalable** for high performance analytics.
+It is built on *Azure Blob Storage* for real-time and batch solutions.
+
+It is possible to connect to its data (organized in *hierarchies*) through:
+
+- Azure Databricks
+- Azure HDInsight
+- Azure Synapse Analytics
+
+*Permissions* are set at directory or file level: security is configurable through technologies like *Azure Storage Explorer*.
+
+it is possible to enable an Azure DataLake Storage Gen 2 in an *Azure Storage Account* by selecting the option "enalbe hierarchical namespace".
+
+.
+
+### Bid Data Processing Stages
+
+1. *Ingest*: to acquire source data and store raw data into data lake.
+2. *Store*: where to store data (e.g. Azure DataLake Storage Gen 2).
+3. *Preparation & Training*: data preparation & Machine Learning training (e.g. Synapse, ML Studio).
+4. *Model & Serve*: to present data to users (e.g. Synapse, Power BI).
