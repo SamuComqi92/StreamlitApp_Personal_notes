@@ -100,6 +100,7 @@ Qlik2PBI_1_PowerQuery_dataflows_Fabric = load_text("Text/Qlik2PBI/Qlik2PBI_1_Pow
 
 # DP-203 exam notes
 DP203_0_Introduction = load_text("Text/DP_203/DP203_0_Introduction.txt")
+DP203_1_Introduction = load_text("Text/DP_203/DP203_1_Introduction.txt")
 
 # --------------------------------------------------------------------------------------------------------------------------------------------
 # Menu laterale
@@ -471,8 +472,9 @@ elif main_selected == "DP 2023 course notes":
             styles = Nav_styles
         )
 
-    ##### 1. Connections and Sources
-    #if menu_qlik == "1. Connections and Sources" 
+    ##### 1. Introduction
+    if menu_dp_203 == "1. Introduction" :
+        st.markdown(DP203_1_Introduction)
   
 # ================================================================================================================================================================
 # ================================================================================================================================================================
