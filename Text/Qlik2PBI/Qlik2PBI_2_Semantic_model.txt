@@ -2,7 +2,7 @@
 
 **Qlik overview**
 
-In Qlik, we talk about the ***associative model***
+In Qlik, we have the so-called ***associative model***:
   - Everything is connected and everything responds to any interactions.
   - At load time, the Qlik Associative Engine combines data sources, achieving a *many-to-many* full outer join without data loss or inaccuracy, creating a compressed, in-memory data store with indexed relationships.
   - In this context, high-cardinality columns are treated efficiently and the performance is high. 
