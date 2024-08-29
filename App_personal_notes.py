@@ -97,6 +97,7 @@ Fabric_3_Data_Engineering_DataFactory_Pipelines = load_text("Text/Fabric/Fabric_
 Qlik2PBI_0_Introduction = load_text("Text/Qlik2PBI/Qlik2PBI_0_Introduction.txt")
 Qlik2PBI_1_Connection_sources = load_text("Text/Qlik2PBI/Qlik2PBI_1_Connection_sources.txt")
 Qlik2PBI_1_PowerQuery_dataflows_Fabric = load_text("Text/Qlik2PBI/Qlik2PBI_1_PowerQuery_dataflows_Fabric.txt")
+Qlik2PBI_2_Semantic_model = load_text("Text/Qlik2PBI/Qlik2PBI_2_Semantic_model.txt")
 
 # DP-203 exam notes
 DP203_0_Introduction = load_text("Text/DP_203/DP203_0_Introduction.txt")
@@ -387,19 +388,7 @@ elif main_selected == "Qlik to Power BI":
     
     ##### 2. Semantic model
     elif menu_qlik == "2. Semantic model" :
-
-        st.write("Navigate in one of these pages:")
-        selected_lakehouse = option_menu(
-            None,
-            ["Qlik associative model", "Power BI semantic model", "Power BI model limitations and performance"], 
-            icons = ["file-earmark", "file-earmark", "file-earmark"], 
-            default_index = 0,
-            orientation = "horizontal",
-            styles = {
-                "nav-link": {"font-size": "12px", "text-align": "center", "margin": "0px", "--hover-color": "#dbdbdb"},
-                "nav-link-selected": {"background-color": "#479e92"},
-            }
-        )
+        st.markdown(Qlik2PBI_2_Semantic_model)
 
 
     ##### 3. Visualizations and report layout
