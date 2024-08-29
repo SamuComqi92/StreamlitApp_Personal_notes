@@ -20,7 +20,9 @@ In Power BI, the semantic model implementation has great importance:
 	- Single relationships ensure that filters are propagated in specific directions (i.e. from dimension tables to fact tables).
 	- Bi-directional relationships can mimic the Qlik associative model *but* such an implementation can raise severe performance issues.
 
-> In general, many-to-many and bi-directional relationships are discouraged to prevent data inconsistencies and performance issues.
+In general:
+
+> Mmany-to-many and bi-directional relationships are discouraged to prevent data inconsistencies and performance issues.
 
 Another Power BI issue that can lead to poor performance is represented by **high cardinality columns**: Power BI is less efficient than Qlik in handling them because of the less data compression.
 
