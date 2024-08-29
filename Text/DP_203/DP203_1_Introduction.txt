@@ -1,6 +1,6 @@
 ### Introduction
 
-***Data Engineering** for analytics solutions:
+**Data Engineering** for analytics solutions:
 
 - *Data Integration*: establishing *links* between services and data sources across multiple systems.
 - *Transforming data*: through ETLs and ELTs for analysis.
