@@ -1,6 +1,6 @@
 ### Introduction
 
-***Data Engineering* for analytics solutions:
+***Data Engineering** for analytics solutions:
 
 - *Data Integration*: establishing *links* between services and data sources across multiple systems.
 - *Transforming data*: through ETLs and ELTs for analysis.
@@ -13,7 +13,7 @@ Data is pulled from structured and unstructured sources and there are several la
 
 .
 
-**Import Data Engineering concepts**
+### Import Data Engineering concepts
 
 - *Operational & Analytical data*: *operational* data corresponds to transactional data, store in (non-)relational databases. *Analytical* data has been optimized for analysis and reporting (e.g. data warehouse).
 - *Streaming data*: refers to sources & real-time data (e.g. IoT devices).
