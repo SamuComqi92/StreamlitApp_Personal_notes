@@ -21,7 +21,3 @@ Data is pulled from structured and unstructured sources and there are several la
 - *Data Lake*: large repository of **raw data** from multiple sources.
 - *Data Warehouse*: repository of *integrated data* (historical data) with optimized schema (for fat reading and analysis).
 - *Apache Spark*: open-source tool for *big data processing*.
-
-.
-
-**Azure DataLake Storage Gen 2** ---> cloud-based storage
