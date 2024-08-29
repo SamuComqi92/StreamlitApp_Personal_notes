@@ -1,6 +1,6 @@
 ### Semantic model
 
-** Qlik overview**
+**Qlik overview**
 
 In Qlik, we talk about the ***associative model***
   - Everything is connected and everything responds to any interactions.
@@ -12,13 +12,13 @@ In other words, the *associative model* can be considered like a semantic model 
 
 .
 
-** Comparison with Power BI**
+**Comparison with Power BI**
 
 In Power BI, the semantic model implementation has great importance:
-  - In general, a **star-schema** is preferred but solutions like *snowflake-schema* and *flat table* may have comparable performances in some cases.
-	- In Power BI, it is possible to set the *direction* of a relationship (i.e. single or bi-directional).
-    - Single relationships ensure that filters are propagated in specific directions (i.e. from dimension tables to fact tables).
-		- Bi-directional relationships can mimic the Qlik associative model *but* such an implementation can raise severe performance issues.
+- In general, a **star-schema** is preferred but solutions like *snowflake-schema* and *flat table* may have comparable performances in some cases.
+- In Power BI, it is possible to set the *direction* of a relationship (i.e. single or bi-directional).
+	- Single relationships ensure that filters are propagated in specific directions (i.e. from dimension tables to fact tables).
+	- Bi-directional relationships can mimic the Qlik associative model *but* such an implementation can raise severe performance issues.
 
 > In general, many-to-many and bi-directional relationships are discouraged to prevent data inconsistencies and performance issues.
 
