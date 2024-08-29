@@ -7,6 +7,7 @@ In Qlik, we have the so-called ***associative model***:
   - At load time, the Qlik Associative Engine combines data sources, achieving a *many-to-many* full outer join without data loss or inaccuracy, creating a compressed, in-memory data store with indexed relationships.
   - In this context, high-cardinality columns are treated efficiently and the performance is high. 
 	- Qlik gives the possibility to see what values are filtered, what *can* be filtered, and what *cannot*.
+	- Moreover, each filter application is propagated in all pages of a report.
 
 In other words, the *associative model* can be considered like a semantic model with **many-to-many bi-directional relationships* set between tables.
 
