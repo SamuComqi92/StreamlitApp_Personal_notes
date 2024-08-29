@@ -1,1 +1,38 @@
-casa
+### Semantic model
+
+** Qlik overiew**
+
+In Qlik, we talk about the ***associative model***
+  - Everything is connected and everything responds to any interactions.
+  - At load time, the Qlik Associative Engine combines data sources, achieving a *many-to-many* full outer join without data loss or inaccuracy, creating a compressed, in-memory data store with indexed relationships.
+  - In this context, high-cardinality columns are treated with ease and with a high performance. 
+	- Qlik gives the possibility to see what values are filtered, what *can* be filtered and what *cannot*.
+
+In other words, the *associative model* can be considered as a semantic model with **many-to-many bi-directional relationships* set between tables.
+
+.
+
+** Comparison with Power BI**
+
+In Power BI, the semantic model implementation has a great importance:
+  - In general, a **star-schema** is preferred but solutions like *snowflake-schema* and *flat table* may have comparable performances in some cases.
+	- In Power BI, it is possible to set the *direction* of a relationship (i.e. single or bi-directional).
+    - Single relationships ensure that filters are propagated in specific directions (i.e. from dimension tables to fact tables).
+		- Bi-directional relationships can mimic the Qlik associative model *but* such an implementation can raise severe performance issues.
+
+> In general, many-to-many and bi-directional relationships are discouraged to prevent data inconsistencies and performance issues.
+
+Another Power BI issue that can lead to a poor performance is represented by **high cardinality columns**: Power BI is less efficient than Qlik in handling them because of the less data compression.
+
+> A Power BI semantic model with many-to-many and bi-directional relationships (with high-cardinality key-columns) can mimic the Qlik associative model *but* it can have severe performance issues, especially when dealing with a larger number of records.
+
+.
+
+**Filters**
+
+In order to mimic the Qlik associative model, *filters must be sinchronized on all pages in a Power BI report*. This can be achieved by:
+- *High-customizable solution*: create the same slicers on all pages (and possibly manage their visibility)
+- *Low-customizable solution*: Add relevant fields in the *Filter Pane*, in the "Filter on all pages" section.
+
+An hybrid solution is discouraged because the *Filter pane* filters interact with the canvas filters, but the viceversa is not valid.
+
