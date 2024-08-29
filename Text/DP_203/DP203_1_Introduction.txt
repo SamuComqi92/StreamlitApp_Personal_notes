@@ -1,0 +1,27 @@
+### Introduction
+
+***Data Engineering* for analytics solutions:
+
+- *Data Integration*: establishing *links* between services and data sources across multiple systems.
+- *Transforming data*: through ETLs and ELTs for analysis.
+- *Consolidating data*: to combine different data into a *consistent structure* for analysis and reporting.
+
+Data is pulled from structured and unstructured sources and there are several languages to use in **Notebooks**:
+- SQL
+- Python
+- Others (R, Scala, ...)
+
+.
+
+**Import Data Engineering concepts**
+
+- *Operational & Analytical data*: *operational* data corresponds to transactional data, store in (non-)relational databases. *Analytical* data has been optimized for analysis and reporting (e.g. data warehouse).
+- *Streaming data*: refers to sources & real-time data (e.g. IoT devices).
+- *Data Pipeline*: to implement ETL/ELT activities.
+- *Data Lake*: large repository of **raw data** from multiple sources.
+- *Data Warehouse*: repository of *integrated data* (historical data) with optimized schema (for fat reading and analysis).
+- *Apache Spark*: open-source tool for *big data processing*.
+
+.
+
+**Azure DataLake Storage Gen 2** ---> cloud-based storage
