@@ -15,7 +15,7 @@ it is possible to enable an Azure DataLake Storage Gen 2 in an *Azure Storage Ac
 
 .
 
-### Bid Data Processing Stages
+### Big Data Processing Stages
 
 1. *Ingest*: to acquire source data and store raw data into data lake.
 2. *Store*: where to store data (e.g. Azure DataLake Storage Gen 2).
