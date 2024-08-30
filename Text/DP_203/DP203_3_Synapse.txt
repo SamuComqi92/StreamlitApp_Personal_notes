@@ -1,1 +1,19 @@
-casa
+### Azure Synapse Analytics
+
+Service for *analytic tasks* in a web-based portal (**Synapse Studio**). This service can be easily integrated with other services.
+
+Synapse makes available notebooks and *Apache Spark* for big data processing. Data is managed in *Workspaces*.
+
+Data i stored in a *DataLake* (ADLS Gen 2) and it can be:
+- processed through **pipelines** (as in *Data Factory*).
+- queried using *SQL*.
+
+SQL can be used in two *pools*:
+1. *Serverless pool* (for Datalake).
+2. *Dedicated ppol* (for data Warehouse).
+
+.
+
+**Serverless Pool**
+
+d
