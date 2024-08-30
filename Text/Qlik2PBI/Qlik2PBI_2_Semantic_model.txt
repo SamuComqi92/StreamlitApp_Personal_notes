@@ -9,7 +9,7 @@ In Qlik, we have the so-called ***associative model***:
 	- Qlik gives the possibility to see what values are filtered, what *can* be filtered, and what *cannot*.
 	- Moreover, each filter application is propagated in all pages of a report.
 
-In other words, the *associative model* can be considered like a semantic model with **many-to-many bi-directional relationships* set between tables.
+In other words, the *associative model* can be considered like a semantic model with *many-to-many bi-directional relationships* set between tables.
 
 .
 
