@@ -46,6 +46,26 @@ For JSON files, values can be retrieved using the *JSON_VALUE* function along wi
 **Create objects**
 
 It is possible to create *databases*, *data sources*, *files*, and *tables* using the **T-SQL** syntax:
-- ```sql
-CREATE EXTERNAL TABLE AS SELECT (...OPENROWSET...)
-``` PER CREARE
+```sql
+CREATE EXTERNAL TABLE name AS SELECT (...OPENROWSET...)
+``` 
+to store the result of a query in a table in a serverless/dedicated pool. After *EXTERNAL TABLE*, it is possible to use *WITH* to define location, data source, format, etc.
+
+```sql
+CREATE EXTERNAL DATA SOURCE name 
+WITH(
+  LOCATION = 'link/to/location/'
+  ...
+)
+```
+
+to create a data source in a database.
+
+```sql
+CREATE PROCEDURE name @param INT
+AS BEGIN
+  ...
+END
+```
+
+to create a stored-procedure for data transformation, table creation and more.
