@@ -1,0 +1,7 @@
+### Visualizations & Report Layout
+
+	- Qlik: Buona integrazione con HTML, grafici nativi ed estensioni (sia visual che per navigazione, pulsanti, animazioni, etc.)
+	- Power BI: grafici nativi e dall'appsource, non uguali ma simili, Deneb potrebbe essere la soluzione potenzialmente per qualsiasi visual custom.
+	- In Qlik, buona gestione di pagine grandi con tanti grafici
+	- In Power BI, se la pagina contiene tanti grafici, i tempi di caricamento potrebbero aumentare
+		--- Best practice: ridurre il numero di visuals, creare più pagine e gestire navigazione
