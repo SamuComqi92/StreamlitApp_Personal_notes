@@ -115,7 +115,11 @@ with st.sidebar:
         placeholder = "Choose a topic...",
         label_visibility = "collapsed"
     )
-    st.markdown("*Clear selection to go back to the Landing page*")
+    
+    if main_selected != None :
+        st.markdown("*Clear selection to go back to the Landing page*")
+        st.write("")
+    
     #main_selected = option_menu(
     #    "Topics", 
     #    Main_topics, 
