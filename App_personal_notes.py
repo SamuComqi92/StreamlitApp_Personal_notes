@@ -16,7 +16,7 @@ def load_text(filename):
 # --------------------------------------------------------------------------------------------------------------------------------------------
 # Titles & Icons
 Menu_icon = "menu-up"
-Main_topics = ["Landing page", "Microsoft Fabric", 'Qlik to Power BI', 'DP 2023 course notes']
+Main_topics = ["Microsoft Fabric", 'Qlik to Power BI', 'DP 2023 course notes']
 Main_icons = ['house', 'clipboard-data', 'graph-up-arrow', 'award']
 Section_Fabric = ["1. Fabric OneLake", "2. Data Engineering - Lakehouse", "3. Data Engineering - Data Factory: Pipelines", "4. Data Engineering - Data Factory: Dataflows", "5. Data Warehouse", "6. Data Science", "7. Real-Time Analytics", "8. Data Activator", "9. Administration aspects of Microsoft Fabric"]
 Section_Fabric_icons = ['caret-right-fill', 'caret-right-fill', 'caret-right-fill', 'caret-right-fill', 'caret-right-fill', 'caret-right-fill', 'caret-right-fill', 'caret-right-fill', 'caret-right-fill']
@@ -129,7 +129,7 @@ with st.sidebar:
 
 
 ########### Landing page ############
-if main_selected == "Landing page" :
+if main_selected == None :#"Landing page" :
     st.markdown("""
     # **Welcome to My Digital Notebook**
     
