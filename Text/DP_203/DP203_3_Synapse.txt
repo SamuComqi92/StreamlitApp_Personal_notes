@@ -23,7 +23,7 @@ It used for querying data *on-demand* in a Datalake, using **T-SQL**. This pool 
 
 In this context, a veru useful function is **OPENROWSET** to work with files:
 
-```python
+```sql
 OPENROWSET(BULK = 'link', FORMAT = 'csv', FIRSTROW = 2, ...)
 ```
 
@@ -35,8 +35,17 @@ The first argument "*BULK*" will contain the link to files:
 
 The "*FIRSTROW = 2*" is used to skop file headers. With *OPENROWSET* it is possible to define columns:
 
-```python
+```sql
 OPENROWSET(...) WITH (col1 INT, col2 INT, ...) AS ROWS
 ```
 
 For JSON files, values can be retrieved using the *JSON_VALUE* function along with *(ALIAS, '$.key')*.
+
+.
+
+**Create objects**
+
+It is possible to create *databases*, *data sources*, *files*, and *tables* using the **T-SQL** syntax:
+- ```sql
+CREATE EXTERNAL TABLE AS SELECT (...OPENROWSET...)
+``` PER CREARE
