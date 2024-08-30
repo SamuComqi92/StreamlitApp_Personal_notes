@@ -1,7 +1,22 @@
 ### Visualizations & Report Layout
 
-	- Qlik: Buona integrazione con HTML, grafici nativi ed estensioni (sia visual che per navigazione, pulsanti, animazioni, etc.)
-	- Power BI: grafici nativi e dall'appsource, non uguali ma simili, Deneb potrebbe essere la soluzione potenzialmente per qualsiasi visual custom.
-	- In Qlik, buona gestione di pagine grandi con tanti grafici
-	- In Power BI, se la pagina contiene tanti grafici, i tempi di caricamento potrebbero aumentare
-		--- Best practice: ridurre il numero di visuals, creare più pagine e gestire navigazione
+Both Qlik and Power BI has native visuals to represent each data scenario.
+
+- **Qlik**
+	- It is possible to create visuals using HTML scripts, showing values from measures and custom expressions.
+	- It is possible to use extentions, both visuals and UI elements to enhance User Experience.
+		- For example, it is possible to use extentions with animations (e.g. rotating cards based on conditions, expandable navigation menu on mouse-hover).
+	
+- **Power BI**
+	- It is possible to use native visuals or *custom visuals* from the AppSource (not all visuals are free!)
+	- Some Qlik visuals cannot be replicated into Power BI without some workaround.
+	- To fill the gap (almost completely), the custom visual [Deneb](https://deneb-viz.github.io/) can be the best solutions to replicated/create any chart using Vega/Vega-Lite scripts.
+
+.
+
+**Page layout and rendering**
+
+Qlik handles *heavy pages* very well:
+- Many visuals can be created on the same page without severe performance and/or rendering issues.
+- In Power BI, one of the best-practise is to create small pages with a limited number of visuals in order to have the best performance.
+	- Heavy pages, especially when visuals have complex measures based on a large number of records, can have severe performance and rendering issues.
