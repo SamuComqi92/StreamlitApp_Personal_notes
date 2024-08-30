@@ -1,0 +1,16 @@
+### 3.1 Create a Pipeline
+
+To create a Pipeline, in the Data Factory hub (section “*New*”), click on “*Data pipeline*” and choose a name. 
+Once the pipeline has been created, it will be saved in the reference Workspace (**mind that pipeline can be also created from *templates*** – click on “*Choose a task to start*”). 
+For each pipeline, we have a bottom pane with:
+-	*Parameters*: to manage parameters (e.g., in Notebooks).
+-	*Variables*: to manage variables.
+-	*Settings*: general pipeline settings.
+-	*Output*: to check the activity output if it is failed/successful.
+
+If a pipeline activity is selected, the bottom pane will show the main properties and info connected to the selected activity, distributed in:
+-	*General*: general activity properties.
+-	*Source*: data source properties.
+-	*Destination*: target properties.
+-	*Mapping*: possible features mapping.
+-	*Settings*: general settings.
