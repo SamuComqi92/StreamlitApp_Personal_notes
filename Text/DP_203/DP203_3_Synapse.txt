@@ -30,5 +30,13 @@ OPENROWSET(BULK = 'link', FORMAT = 'csv', FIRSTROW = 2, ...)
 The first argument "*BULK*" will contain the link to files:
 - ***file_name.csv***: for one specific file.
 - ***file*.csv***: starting with 'file'.
-- *** * ***: all files in the folder.
-- *** ** ****: all files in the folder and subfolders.
+- *: all files in the folder.
+- **: all files in the folder and subfolders.
+
+The "*FIRSTROW = 2*" is used to skop file headers. With *OPENROWSET* it is possible to define columns:
+
+```python
+OPENROWSET(...) WITH (col1 INT, col2 INT, ...) AS ROWS
+```
+
+For JSON files, values can be retrieved using the *JSON_VALUE* function along with *(ALIAS, '$.key')*.
