@@ -115,6 +115,7 @@ with st.sidebar:
         placeholder = "Choose a topic...",
         label_visibility = "collapsed"
     )
+    st.markdown("*Clear selection to go back to the Landing page*")
     #main_selected = option_menu(
     #    "Topics", 
     #    Main_topics, 
@@ -131,7 +132,7 @@ with st.sidebar:
 ########### Landing page ############
 if main_selected == None :#"Landing page" :
     st.markdown("""
-    # **Welcome to My Digital Notebook**
+    # **Welcome to My Digital Notebook!**
     
     I designed this space to collect *my notes* on different topics, from programming to machine learning and systems dedicated to data management, manipulation and visualization.
     
