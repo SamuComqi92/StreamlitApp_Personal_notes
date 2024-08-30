@@ -107,6 +107,7 @@ Qlik2PBI_3_Visuals = load_text("Text/Qlik2PBI/Qlik2PBI_3_Visuals.txt")
 DP203_0_Introduction = load_text("Text/DP_203/DP203_0_Introduction.txt")
 DP203_1_Introduction = load_text("Text/DP_203/DP203_1_Introduction.txt")
 DP203_2_ADLS_BigData = load_text("Text/DP_203/DP203_2_ADLS_BigData.txt")
+DP203_3_Synapse = load_text("Text/DP_203/DP203_3_Synapse.txt")
 
 # --------------------------------------------------------------------------------------------------------------------------------------------
 # Menu laterale
@@ -463,6 +464,8 @@ elif main_selected == "DP 2023 course notes":
         st.markdown(DP203_1_Introduction)
     elif menu_dp_203 == "2. ADLS Gen2 & Big Data processing stages" :
         st.markdown(DP203_2_ADLS_BigData)
+    elif menu_dp_203 == "3. Azure Synapse Analytics" :
+        st.markdown(DP203_3_Synapse)
         
 
 
