@@ -1,0 +1,14 @@
+### 3.3 Delete Data activity
+
+One of the most used activities is the ***Delete Data*** Activity. 
+This activity can be used to remove old files from the *Files* folder when a *Copy Data* activity is in the pipeline (and/or when data are modified using a **Notebook**).
+
+Using the top menu, it is possible to add the activity in the pipeline. After that it is possible to:
+-	Define its name.
+-	Define the folder where files must be removed. The removal can be done by:
+  -	Specifying a file name (with “*File path*”).
+  -	Specifying a file list (with “*List of files*”).
+  - Specifying files based on a rule (with “*Wildcard file path*” - for example, use “*.csv” to remove all *.csv* files).
+
+One note to keep in mind: 
+if two activities are connected to another one, this latter will be executed only when **both** the previous activities are successful (it is a logical *AND* between events).
