@@ -10,10 +10,25 @@ Data i stored in a *DataLake* (ADLS Gen 2) and it can be:
 
 SQL can be used in two *pools*:
 1. *Serverless pool* (for Datalake).
-2. *Dedicated ppol* (for data Warehouse).
+2. *Dedicated pool* (for data Warehouse).
 
 .
 
 **Serverless Pool**
 
-d
+It used for querying data *on-demand* in a Datalake, using **T-SQL**. This pool is used for:
+- Data Exploration
+- Data Transformation
+- Creating a *logical Data Warehouse* (store in the Lake).
+
+In this context, a veru useful function is **OPENROWSET** to work with files:
+
+```python
+OPENROWSET(BULK = 'link', FORMAT = 'csv', FIRSTROW = 2, ...)
+```
+
+The first argument "*BULK*" will contain the link to files:
+- ***file_name.csv***: for one specific file.
+- ***file*.csv***: starting with 'file'.
+- *** * ***: all files in the folder.
+- *** ** ****: all files in the folder and subfolders.
