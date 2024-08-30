@@ -1,7 +1,7 @@
 ### 3.2 Pipeline to Notebook
 
 It is possible to **add a Notebook** in a pipeline as an *activity*. 
-In a Notebook, it is possible to create different **parameters** (by simply defining them, for example, as *table = “name_table”* - or even empty), and then modifying the cell by clicking on ther three dots and “***Toggle Parameter Cell***”).
+In a Notebook, it is possible to create different **parameters** (by simply defining them, for example, as *table = “name_table”* - or even empty), and then modifying the cell by clicking on the three dots and “***Toggle Parameter Cell***”).
 The rest of the code will apply transformations to the source data and possibly save the result into a Delta table (in the *Tables* folder of the Lakehouse).
 
 Once the notebook is ready and saved, it is possible to add it in the pipeline as an activity, by selecting the appropriate button on the top menu. 
