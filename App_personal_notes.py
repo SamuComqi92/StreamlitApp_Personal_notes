@@ -107,17 +107,21 @@ DP203_2_ADLS_BigData = load_text("Text/DP_203/DP203_2_ADLS_BigData.txt")
 # --------------------------------------------------------------------------------------------------------------------------------------------
 # Menu laterale
 with st.sidebar:
-    main_selected = option_menu(
-        "Topics", 
-        Main_topics, 
-        icons = Main_icons, 
-        menu_icon = Menu_icon, 
-        default_index = 0,
-        styles = {
-            "nav-link": {"font-size": "18px", "text-align": "left", "margin": "0px", "--hover-color": "#dbdbdb"},
-            "nav-link-selected": {"background-color": "#479e92"},
-        }
+    main_selected = st.selectbox(
+        "Choose a topic",
+        Main_topics
     )
+    #main_selected = option_menu(
+    #    "Topics", 
+    #    Main_topics, 
+    #    icons = Main_icons, 
+    #    menu_icon = Menu_icon, 
+    #    default_index = 0,
+    #    styles = {
+    #        "nav-link": {"font-size": "18px", "text-align": "left", "margin": "0px", "--hover-color": "#dbdbdb"},
+    #        "nav-link-selected": {"background-color": "#479e92"},
+    #    }
+    #)
 
 
 ########### Landing page ############
