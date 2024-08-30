@@ -14,7 +14,7 @@ Both Qlik and Power BI has native visuals to represent each data scenario.
 
 .
 
-**Page layout and rendering**
+**Report layout and rendering**
 
 Qlik handles *heavy pages* very well:
 - Many visuals can be created on the same page without severe performance and/or rendering issues.
