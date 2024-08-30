@@ -94,6 +94,7 @@ Fabric_2_4_Create_report = load_text("Text/Fabric/Fabric_2.4_Create_report.txt")
 Fabric_3_Data_Engineering_DataFactory_Pipelines = load_text("Text/Fabric/Fabric_3_Data_Engineering_DataFactory_Pipelines.txt")
 Fabric_3_1_Create_pipeline = load_text("Text/Fabric/Fabric_3.1_Create_pipeline.txt")
 Fabric_3_2_pipeline_notebook = load_text("Text/Fabric/Fabric_3.2_pipeline_notebook.txt")
+Fabric_3_3_Delete_data = load_text("Text/Fabric/Fabric_3.3_Delete_data.txt")
 
 # Qlik to Power BI
 Qlik2PBI_0_Introduction = load_text("Text/Qlik2PBI/Qlik2PBI_0_Introduction.txt")
@@ -272,6 +273,8 @@ elif main_selected == "Microsoft Fabric" :
             st.markdown(Fabric_3_1_Create_pipeline)
         elif selected_pipeline == "3.2 Pipeline to Notebook" :
             st.markdown(Fabric_3_2_pipeline_notebook)
+        elif selected_pipeline == "3.3 Delete Data Activity" :
+            st.markdown(Fabric_3_3_Delete_data)
     
     ##### 4. Data Engineering - Data Factory - Dataflows
     elif menu_fabric == "4. Data Engineering - Data Factory: Dataflows" :
