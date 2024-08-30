@@ -1,0 +1,18 @@
+### 3.2 Pipeline to Notebook
+
+It is possible to **add a Notebook** in a pipeline as an *activity*. 
+In a Notebook, it is possible to create different **parameters** (by simply defining them, for example, as *table = “name_table”* - or even empty), and then modifying the cell by clicking on ther three dots and “***Toggle Parameter Cell***”).
+The rest of the code will apply transformations to the source data and possibly save the result into a Delta table (in the *Tables* folder of the Lakehouse).
+
+Once the notebook is ready and saved, it is possible to add it in the pipeline as an activity, by selecting the appropriate button on the top menu. 
+After that, it is possible to:
+-	Define a name for the activity.
+-	Select the appropriate notebook (if existing).
+
+If a parameter has been created inside the notebook, in Data Factory it is crucial to create a ***Variable*** (from the top menu, go to “*Set variable*”) and then define its value or logic (e.g., a *concat* or something else). 
+After that, the variable can be used as a parameter of the Notebook, specifying:
+-	Name (the same one as defined in the notebook).
+-	Type of data.
+-	Value (that will overwrite the one defined in the Notebook).
+
+When the pipeline is ready, then it is possible to *validate* it, *run* it, and/or *schedule* it.
