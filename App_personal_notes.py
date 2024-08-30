@@ -107,7 +107,6 @@ DP203_2_ADLS_BigData = load_text("Text/DP_203/DP203_2_ADLS_BigData.txt")
 # --------------------------------------------------------------------------------------------------------------------------------------------
 # Menu laterale
 with st.sidebar:
-    st.logo(Image.open(r'images/Logo.png'))#, icon_image=main_body_logo)
     st.markdown("# My Digital Notebook")
     main_selected = st.selectbox(
         "Choose a topic",
@@ -120,18 +119,6 @@ with st.sidebar:
     if main_selected != None :
         st.markdown("*Clear selection to go back to the Landing page*")
         st.write("")
-    
-    #main_selected = option_menu(
-    #    "Topics", 
-    #    Main_topics, 
-    #    icons = Main_icons, 
-    #    menu_icon = Menu_icon, 
-    #    default_index = 0,
-    #    styles = {
-    #        "nav-link": {"font-size": "18px", "text-align": "left", "margin": "0px", "--hover-color": "#dbdbdb"},
-    #        "nav-link-selected": {"background-color": "#479e92"},
-    #    }
-    #)
 
 
 ########### Landing page ############
