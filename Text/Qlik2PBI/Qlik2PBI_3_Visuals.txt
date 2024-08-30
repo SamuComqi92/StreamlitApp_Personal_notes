@@ -18,5 +18,5 @@ Both Qlik and Power BI has native visuals to represent each data scenario.
 
 Qlik handles *heavy pages* very well:
 - Many visuals can be created on the same page without severe performance and/or rendering issues.
-- In Power BI, one of the best-practise is to create small pages with a limited number of visuals in order to have the best performance.
+- In Power BI, one of the best-practise is **to create small pages with a limited number of visuals** in order to have the best performance.
 	- Heavy pages, especially when visuals have complex measures based on a large number of records, can have severe performance and rendering issues.
