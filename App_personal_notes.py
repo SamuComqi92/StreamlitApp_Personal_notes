@@ -109,7 +109,8 @@ DP203_2_ADLS_BigData = load_text("Text/DP_203/DP203_2_ADLS_BigData.txt")
 with st.sidebar:
     main_selected = st.selectbox(
         "Choose a topic",
-        Main_topics
+        index = None,
+        placeholder = "Choose a topic..."
     )
     #main_selected = option_menu(
     #    "Topics", 
