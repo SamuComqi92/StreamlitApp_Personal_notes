@@ -69,3 +69,5 @@ END
 ```
 
 to create a stored-procedure for data transformation, table creation and more.
+
+***Synapse Authentication***: it is possible to use SQL (only for *pools*) or *Azure Active Directory (AAD)* (also for other services).
