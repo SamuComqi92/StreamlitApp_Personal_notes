@@ -1,1 +1,20 @@
 ### Relational Data Warehouse
+
+A *relational data Warehouse* can be created in a *dedicated SQL pool* in Azure Synapse Analytics. A data warehouse is made of **dimension tables** and **fact tables** connected through relationships in a *star schema* or a *snowflake schema*.
+
+Before creating a warehouse, it is necessary to create a *dedicated SQL pool* (going to "Manage" in Synapse).
+
+Tables can be created using the commands **CREATE TABLE** or **CREATE EXTERNAL TABLE** specifying name, columns, datatype, etc. Along with dimensions and fact tables, there can be the so-called **staging tables** that play a role in the *loading process* of data from different sources.
+
+Once tables are created, it is necessary to *load the data* inside them, and it is possible to use:
+
+```sql
+COPY INTO name FROM source_table
+```
+
+where the *source_table* is added with a link to the Lakehouse. In generale the process is the following:
+1. Datalake: pre-cleaning and tranformations
+2. Staging: updating rows or generating new ones
+3. Final tables: dimensions and facts usins ghe COPY INTO command from staing (supporting CRUD operations).
+
+Instead of using the *COPY INTO* command, it is possible to use **INSERT INTO** or **CREATE TABLE name AS SELECT ... FROM source_table** (*CTAS*).
