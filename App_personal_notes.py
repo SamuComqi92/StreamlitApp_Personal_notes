@@ -24,6 +24,8 @@ Section_Qlik = ["1. Connections and Sources", "2. Semantic model", "3. Visualiza
 Section_Qlik_icons = ['caret-right-fill', 'caret-right-fill', 'caret-right-fill', 'caret-right-fill', 'caret-right-fill']
 Section_DP203 = ["1. Introduction", "2. ADLS Gen2 & Big Data processing stages", "3. Azure Synapse Analytics", "4. Lakehouse", "5. Apache Spark", "6. Relational Data Warehouse", "7. Pipelines", "8. Hybrid Transactional/Analytical Processing", "9. Data Streaming", "10. Azure Databricks (base)"]
 Section_DP203_icons = ['caret-right-fill', 'caret-right-fill', 'caret-right-fill', 'caret-right-fill', 'caret-right-fill', 'caret-right-fill', 'caret-right-fill', 'caret-right-fill', 'caret-right-fill', 'caret-right-fill']
+Section_Python = ["1. What is Python?", "2. Installation & Execution", "3. Data Types & Variables", "4. Conditional statements & Cycles", "5. Comprehension & Functions", "6. Libraries & Modules", "7. Usefull libraries", "8. Work with files", "9. Object-Oriented Programming"]
+Section_Python_icons = ['caret-right-fill', 'caret-right-fill', 'caret-right-fill', 'caret-right-fill', 'caret-right-fill', 'caret-right-fill', 'caret-right-fill', 'caret-right-fill', 'caret-right-fill']
 
 
 # --------------------------------------------------------------------------------------------------------------------------------------------
@@ -500,8 +502,8 @@ elif main_selected == "Python notes" :
         st.markdown("**Navigation**")
         menu_python = option_menu(
             None, 
-            Section_Fabric, 
-            icons = Section_Fabric_icons, 
+            Section_Python, 
+            icons = Section_Python_icons, 
             default_index = 0, 
             styles = Nav_styles
         )
