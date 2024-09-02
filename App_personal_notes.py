@@ -16,8 +16,8 @@ def load_text(filename):
 # --------------------------------------------------------------------------------------------------------------------------------------------
 # Titles & Icons
 Menu_icon = "menu-up"
-Main_topics = ["Microsoft Fabric", 'Qlik to Power BI', 'DP 2023 course notes']
-Main_icons = ['house', 'clipboard-data', 'graph-up-arrow', 'award']
+Main_topics = ["Microsoft Fabric", 'Qlik to Power BI', 'DP 2023 course notes', "Python notes"]
+Main_icons = ['house', 'clipboard-data', 'graph-up-arrow', 'award', 'code-square']
 Section_Fabric = ["1. Fabric OneLake", "2. Data Engineering - Lakehouse", "3. Data Engineering - Data Factory: Pipelines", "4. Data Engineering - Data Factory: Dataflows", "5. Data Warehouse", "6. Data Science", "7. Real-Time Analytics", "8. Data Activator", "9. Administration aspects of Microsoft Fabric"]
 Section_Fabric_icons = ['caret-right-fill', 'caret-right-fill', 'caret-right-fill', 'caret-right-fill', 'caret-right-fill', 'caret-right-fill', 'caret-right-fill', 'caret-right-fill', 'caret-right-fill']
 Section_Qlik = ["1. Connections and Sources", "2. Semantic model", "3. Visualizations and report layout", "4. Measures and Expressions", "5. Advanced functionalities"]
@@ -167,6 +167,12 @@ if main_selected == None :#"Landing page" :
     st.image(Image.open(r'images/DP_203_notes.png'), width = 150)
     st.markdown(DP203_0_Introduction)
 
+    st.write("")
+    st.write("")
+    
+    # DP-203 exam notes
+    st.image(Image.open(r'images/Python_notes.png'), width = 150)
+    st.markdown(Python_0_Introduction)
 
 ########### Microsoft Fabric ############
 elif main_selected == "Microsoft Fabric" :
@@ -477,6 +483,25 @@ elif main_selected == "DP 2023 course notes":
         st.markdown(DP203_6_Warehouse)
         
 
+########### Microsoft Fabric ############
+elif main_selected == "Python notes" :
+    # Title and logo
+    col1, col2, col3 = st.columns(3)
+    with col2:
+        st.image(Image.open(r'images/Logo_Python.png'), width = 480)
+
+    with st.sidebar:
+        st.write("")
+        st.markdown("**Navigation**")
+        menu_python = option_menu(
+            None, 
+            Section_Fabric, 
+            icons = Section_Fabric_icons, 
+            default_index = 0, 
+            styles = Nav_styles
+        )
+
+    
 # ================================================================================================================================================================
 # ================================================================================================================================================================
 # Footer (le funzioni utilizzate sono in functions.py)
