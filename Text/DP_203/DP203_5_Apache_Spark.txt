@@ -1,1 +1,22 @@
 ### Apache Spark in Synapse
+
+It is an *open-source framework* for **big data** processing and analytics with multiplace languages.
+
+To work, a *serverless Pool* must be created (for on-demand usage). With Spark, it is possible to work in ***Notebooks*** to connect to different sources:
+- Common languages:
+  - Python (Pyspark - It is possible to use l'API SQL to use SQL with Python)
+  - Scala
+  - SQL
+- It is possible to use the *magic command* (i.e. ***%%language_name***) to define the language to use inside a notebook cell.
+
+To read data, it it possible to use the command **READ.LOAD** to read and load a file from a lakehouse to a dataframe.
+
+In a notebook, data can be visualized with a *notebook interface* (table chart) or Python (using e.g. *matplotlib*, *seaborn*, ...).
+
+With Apache Spark, it is possible **clean** and **transform** data that can be saved in a data lake table
+- To store data, one can use the Python command **WRITE.MODE(...).PARQUET(...)**
+  - *Mode*: how to save data (i.e., append, overwrite)
+  - *Parquet*: type of file with *path*.
+
+Another very useful command to use especially with big tables is **WRITE.PARTITIONBY(...)**:
+- Data is stored in a datalake in different files but partitioned by one or more specified columns.
