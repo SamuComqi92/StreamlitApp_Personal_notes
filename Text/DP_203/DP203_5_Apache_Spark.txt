@@ -9,9 +9,7 @@ To work, a *serverless Pool* must be created (for on-demand usage). With Spark, 
   - SQL
 - It is possible to use the *magic command* (i.e. ***%%language_name***) to define the language to use inside a notebook cell.
 
-To read data, it it possible to use the command **READ.LOAD** to read and load a file from a lakehouse to a dataframe.
-
-In a notebook, data can be visualized with a *notebook interface* (table chart) or Python (using e.g. *matplotlib*, *seaborn*, ...).
+To read data, it it possible to use the command **READ.LOAD** to read and load a file from a lakehouse to a dataframe. In a notebook, data can be visualized with a *notebook interface* (table chart) or Python (using e.g. *matplotlib*, *seaborn*, ...).
 
 With Apache Spark, it is possible **clean** and **transform** data that can be saved in a data lake table
 - To store data, one can use the Python command **WRITE.MODE(...).PARQUET(...)**
