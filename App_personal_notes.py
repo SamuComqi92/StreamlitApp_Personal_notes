@@ -108,6 +108,7 @@ DP203_0_Introduction = load_text("Text/DP_203/DP203_0_Introduction.txt")
 DP203_1_Introduction = load_text("Text/DP_203/DP203_1_Introduction.txt")
 DP203_2_ADLS_BigData = load_text("Text/DP_203/DP203_2_ADLS_BigData.txt")
 DP203_3_Synapse = load_text("Text/DP_203/DP203_3_Synapse.txt")
+DP203_4_Create_Lakehouse = load_text("Text/DP_203/DP203_4_Create_Lakehouse.txt")
 
 # --------------------------------------------------------------------------------------------------------------------------------------------
 # Menu laterale
@@ -466,6 +467,8 @@ elif main_selected == "DP 2023 course notes":
         st.markdown(DP203_2_ADLS_BigData)
     elif menu_dp_203 == "3. Azure Synapse Analytics" :
         st.markdown(DP203_3_Synapse)
+    elif menu_dp_203 == ""4. Lakehouse"" :
+        st.markdown(DP203_4_Create_Lakehouse)
         
 
 
