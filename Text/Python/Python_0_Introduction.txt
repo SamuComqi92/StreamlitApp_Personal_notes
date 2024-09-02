@@ -1,0 +1,1 @@
+It is a collection of Python notes to grasp the basics and understand how it works. Each section will explain specific concepts in order to use Python for both simple and complex data analysis and transformations.
