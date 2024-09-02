@@ -3,3 +3,22 @@
 It is possible to create a *Lakehouse* to store data and use the advantages of structured schemas.
 
 It is possible to use *templates* and define *relationships* using keys. A Lakehouse can be created with *Azure Synapse Analytics* with a graphical interface.
+
+In a Lakehouse, it is possible to work with data in a:
+- Serverless SQL pool.
+- Apache Spark pool (using SQL API).
+
+A *database* can be created using the ***designer*** in *Apache Syanapse studio*: it is a drag&drop process to create and edit tables, columns, and relationships (also from files).
+- **Using a Serverless SQL pool**. To use a database:
+
+```sql
+CREATE name_db
+GO
+```
+
+- **Apache Spark Pool (Notebook)**. Using a *magic* command:
+
+```sql
+%%sql
+SELECT * FROM name_db.schema.table ...
+```
