@@ -467,7 +467,7 @@ elif main_selected == "DP 2023 course notes":
         st.markdown(DP203_2_ADLS_BigData)
     elif menu_dp_203 == "3. Azure Synapse Analytics" :
         st.markdown(DP203_3_Synapse)
-    elif menu_dp_203 == ""4. Lakehouse"" :
+    elif menu_dp_203 == "4. Lakehouse" :
         st.markdown(DP203_4_Create_Lakehouse)
         
 
