@@ -1,1 +1,5 @@
 ### Create a Lake Database
+
+It is possible to create a *Lakehouse* to store data and use the advantages of structured schemas.
+
+It is possible to use *templates* and define *relationships* using keys. A Lakehouse can be created with *Azure Synapse Analytics* with a graphical interface.
