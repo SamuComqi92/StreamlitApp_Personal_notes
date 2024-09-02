@@ -110,6 +110,7 @@ DP203_2_ADLS_BigData = load_text("Text/DP_203/DP203_2_ADLS_BigData.txt")
 DP203_3_Synapse = load_text("Text/DP_203/DP203_3_Synapse.txt")
 DP203_4_Create_Lakehouse = load_text("Text/DP_203/DP203_4_Create_Lakehouse.txt")
 DP203_5_Apache_Spark = load_text("Text/DP_203/DP203_5_Apache_Spark.txt")
+DP203_6_Warehouse = load_text("Text/DP_203/DP203_6_Warehouse.txt")
 
 # --------------------------------------------------------------------------------------------------------------------------------------------
 # Menu laterale
@@ -472,7 +473,9 @@ elif main_selected == "DP 2023 course notes":
         st.markdown(DP203_4_Create_Lakehouse)
     elif menu_dp_203 == "5. Apache Spark" :
         st.markdown(DP203_5_Apache_Spark)
-
+    elif menu_dp_203 == "6. Relational Data Warehouse" :
+        st.markdown(DP203_6_Warehouse)
+        
 
 # ================================================================================================================================================================
 # ================================================================================================================================================================
