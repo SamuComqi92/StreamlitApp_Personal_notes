@@ -537,12 +537,34 @@ elif main_selected == "Python notes" :
                 label_visibility = "collapsed",
                 horizontal = True
             )
+            
         elif selected_python == "Operators":
-            st.markdown("")
+            st.write("Navigate in one of these sections:")
+            selected_operators = st.radio(
+                "",
+                ["Introduction", "Arithmetic operators", "Assignment operators", "Comparison operators", "Logical operators"],
+                label_visibility = "collapsed",
+                horizontal = True
+            )
+            
         elif selected_python == "Sequences" :
-            st.markdown("")
+            st.write("Navigate in one of these sections:")
+            selected_sequences = st.radio(
+                "",
+                ["Definition", "Access elements", "Add new elements", "Remove elements", "Modify elements"],
+                label_visibility = "collapsed",
+                horizontal = True
+            )
+            
         elif selected_python == "Sets & Dictionaries" :
-            st.markdown("")
+            st.write("Navigate in one of these sections:")
+            selected_dicts = st.radio(
+                "",
+                ["Definition", "Access elements", "Add new elements", "Remove elements", "Modify elements"],
+                label_visibility = "collapsed",
+                horizontal = True
+            )
+            
         elif selected_python == "Accessing elements" :
             st.markdown("")
         elif selected_python == "Data type conversion" :
