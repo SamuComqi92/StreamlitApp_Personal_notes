@@ -514,6 +514,20 @@ elif main_selected == "Python notes" :
         st.markdown(Python_1_What_Python)
     elif menu_python == "2. Installation & Execution" :
         st.markdown(Python_2_Installation)
+    elif menu_python == "3. Data Types & Variables" :
+
+        st.write("Navigate in one of these pages:")
+        selected_python = option_menu(
+            None,
+            ["Data types", "print & input", "Numbers, Strings & Boolean - Operators", "Sequences", "Sets & Dictionaries", "Accessing elements", "Data type conversion"], 
+            icons = ["file-earmark", "file-earmark", "file-earmark", "file-earmark", "file-earmark", "file-earmark", "file-earmark"], 
+            default_index = 0,
+            orientation = "horizontal",
+            styles = {
+                "nav-link": {"font-size": "12px", "text-align": "center", "margin": "0px", "--hover-color": "#dbdbdb"},
+                "nav-link-selected": {"background-color": "#479e92"},
+            }
+        )
         
 
 # ================================================================================================================================================================
