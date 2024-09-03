@@ -10,6 +10,18 @@ It has a very simple syntax, and it can be used for many tasks (for example, *Da
 
 .
 
+***Why using Python?***
+1. **Open-source**: it is free and available at no cost.
+2. **Easy to learn**: its syntax is very simple to understand.
+3. **Easy to read**: codes are defined in a simple way.
+4. **Easy to maintain**: due to its simplicity and easy-to-read feature.
+5. **Libraries**: it has a very broad collection of *libraries* for specific usage.
+6. **Interactive**: useful for testing and debugging.
+7. **Portable**: same interface on all platforms.
+8. **Extendable**: it can be extended with custom *modules* for specific usage.
+
+.
+
 Useful link:
 - [Official website](https://www.python.org/)
 - [Official documentation](https://docs.python.org/3/)
