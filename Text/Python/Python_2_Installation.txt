@@ -10,9 +10,7 @@ On *Windows*, it is only necessary to run the executable file to install it.[^1]
 
 .
 
-When a Python script is created, it can be saved in a file with a ***.py*** extension. The file can be further modified, or it can be executed directly from the command prompt. 
-
-To execute the file, it is necessary to go to the same directory of the *.py* script and write ***python file_with_script.py*** to display the result in the prompt.
+When a Python script is created, it can be saved in a file with a ***.py*** extension. The file can be further modified, or it can be executed directly from the command prompt. To execute the file, it is necessary to go to the same directory of the *.py* script and write ***python file_with_script.py*** to display the result in the prompt.
 
 .
 
