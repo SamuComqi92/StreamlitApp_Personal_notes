@@ -4,11 +4,25 @@ Python is available on a variety of platforms (e.g., Windows, Linux, Max, etc.).
 
 [https://www.python.org/downloads/](https://www.python.org/downloads/)
 
-.
-
 On *Windows*, it is only necessary to run the executable file to install it.[^1] Once installed, it is ready to use. In the command prompt:
 - Write *python* to use it.
 - Write *exit()* to close it.
+
+.
+
+When a Python script is created, it can be saved in a file with a ***.py*** extension. The file can be further modified, or it can be executed directly from the command prompt. 
+
+To execute the file, it is necessary to go to the same directory of the *.py* script and write ***python file_with_script.py*** to display the result in the prompt.
+
+.
+
+To write Python scripts in an interactive and colored version, it is possible to use **Visual Studio Code**, a Microsoft source-code editor. 
+
+All the necessary information regarding installation and usage can be found on the official website, including the *Python* extension:
+
+[https://code.visualstudio.com/](https://code.visualstudio.com/)
+
+The interactive version of Python is provided by **Jupyter Notebooks** which can be used to write and execute portions of code while displaying the results.
 
 
 [^1]: For the other systems, see the appropriate documentation for the installation.
