@@ -513,7 +513,10 @@ elif main_selected == "Python notes" :
     if menu_python == "1. What is Python?" :
         st.markdown(Python_1_What_Python)
     elif menu_python == "2. Installation & Execution" :
-        st.image(Image.open(r'images/Prompt_python.png'), width = 150)
+        st.markdown(
+    f'<img src="{"https://people.com/thmb/TzDJt_cDuFa_EShaPF1WzqC8cy0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(216x0:218x2)/michael-jordan-435-3-4fc019926b644905a27a3fc98180cc41.jpg"}" style="{style_image2}">',
+    unsafe_allow_html=True,
+)
         
 
 # ================================================================================================================================================================
