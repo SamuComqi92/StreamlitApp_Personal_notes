@@ -514,7 +514,10 @@ elif main_selected == "Python notes" :
         st.markdown(Python_1_What_Python)
     elif menu_python == "2. Installation & Execution" :
         st.markdown(Python_2_Installation)
-        st.markdown("![prompt](https://github.com/SamuComqi92/StreamlitApp_Personal_notes/blob/main/images/Prompt_python.png)")
+        st.image(
+            "https://github.com/SamuComqi92/StreamlitApp_Personal_notes/blob/main/images/Prompt_python.png)",
+            width = 400
+        )
 
 # ================================================================================================================================================================
 # ================================================================================================================================================================
