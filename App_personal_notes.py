@@ -528,7 +528,39 @@ elif main_selected == "Python notes" :
                 "nav-link-selected": {"background-color": "#479e92"},
             }
         )
-        
+
+        if selected_python == "Data types" :
+            st.write("Navigate in one of these sections:")
+            selected_datatypes = st.radio(
+                "",
+                ["Variables", "print", "input", "Formatting"],
+                label_visibility = "collapsed",
+                horizontal = True
+            )
+        elif selected_python == "Operators":
+            st.markdown("")
+        elif selected_python == "Sequences" :
+            st.markdown("")
+        elif selected_python == "Sets & Dictionaries" :
+            st.markdown("")
+        elif selected_python == "Accessing elements" :
+            st.markdown("")
+        elif selected_python == "Data type conversion" :
+            st.markdown("")
+
+    elif menu_python == "4. Conditional statements & Cycles" :
+        st.markdown("")
+    elif menu_python == "5. Comprehension & Functions" :
+        st.markdown("")
+    elif menu_python == "6. Libraries & Modules":
+        st.markdown("")
+    elif menu_python == "7. Usefull libraries":
+        st.markdown("")
+    elif menu_python == "8. Work with files" :
+        st.markdown("")
+    elif menu_python == "9. Object-Oriented Programming" :
+        st.markdown("")
+
 
 # ================================================================================================================================================================
 # ================================================================================================================================================================
