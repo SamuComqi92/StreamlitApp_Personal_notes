@@ -514,9 +514,9 @@ elif main_selected == "Python notes" :
         st.markdown(Python_1_What_Python)
     elif menu_python == "2. Installation & Execution" :
         st.markdown(
-    f'<img src="{"https://people.com/thmb/TzDJt_cDuFa_EShaPF1WzqC8cy0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(216x0:218x2)/michael-jordan-435-3-4fc019926b644905a27a3fc98180cc41.jpg"}" style="{style_image2}">',
-    unsafe_allow_html=True,
-)
+            f'<img src="{"https://github.com/SamuComqi92/StreamlitApp_Personal_notes/blob/main/images/Prompt_python.png"}">',
+            unsafe_allow_html=True,
+        )
         
 
 # ================================================================================================================================================================
