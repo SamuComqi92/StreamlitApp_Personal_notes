@@ -22,7 +22,7 @@ It has a very simple syntax, and it can be used for many tasks (for example, *Da
 
 .
 
-Useful link:
+***Useful links***:
 - [Official website](https://www.python.org/)
 - [Official documentation](https://docs.python.org/3/)
 - [Package repository](https://pypi.org)
