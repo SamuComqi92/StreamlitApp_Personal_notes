@@ -8,7 +8,7 @@ Python is available on a variety of platforms (e.g., Windows, Linux, Max, etc.).
 
 On *Windows*, it is only necessary to run the executable file to install it.[^1] Once installed, it is ready to use[^2]:
 
-![prompt](images/Prompt_python.png)
+![prompt](https://github.com/SamuComqi92/StreamlitApp_Personal_notes/blob/main/images/Prompt_python.png)
 
 [^1]: For the other systems, see the appropriate documentation for the installation.
 [^2]: Use ***exit()*** to exit the command prompt.
