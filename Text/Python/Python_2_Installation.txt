@@ -16,9 +16,7 @@ To execute the file, it is necessary to go to the same directory of the *.py* sc
 
 .
 
-To write Python scripts in an interactive and colored version, it is possible to use **Visual Studio Code**, a Microsoft source-code editor. 
-
-All the necessary information regarding installation and usage can be found on the official website, including the *Python* extension:
+To write Python scripts in an interactive and colored version, it is possible to use **Visual Studio Code**, a Microsoft source-code editor. All the necessary information regarding installation and usage can be found on the official website, including the *Python* extension:
 
 [https://code.visualstudio.com/](https://code.visualstudio.com/)
 
