@@ -116,6 +116,8 @@ DP203_6_Warehouse = load_text("Text/DP_203/DP203_6_Warehouse.txt")
 
 # Python notes
 Python_0_Introduction = load_text("Text/Python/Python_0_Introduction.txt")
+Python_1_What_Python = load_text("Text/Python/Python_1_What_Python.txt")
+Python_2_Installation = load_text("Text/Python/Python_2_Installation.txt")
 
 
 # --------------------------------------------------------------------------------------------------------------------------------------------
@@ -508,7 +510,12 @@ elif main_selected == "Python notes" :
             styles = Nav_styles
         )
 
-    
+    if menu_python == "1. What is Python?" :
+        st.markdown(Python_1_What_Python)
+    elif menu_python == "2. Installation & Execution" :
+        st.markdown(Python_2_Installation)
+
+
 # ================================================================================================================================================================
 # ================================================================================================================================================================
 # Footer (le funzioni utilizzate sono in functions.py)
