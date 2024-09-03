@@ -1,6 +1,6 @@
 ### Installation & Execution
 
-Python is available on a variety of platforms (e.g., Windows, Linux, Max, etc.). For the installation, it is possible to find the appropriate *.exe* file (or procedure) for a specific system on the official website:
+Python is available on a variety of platforms (e.g., Windows, Linux, etc.). For the installation, it is possible to find the appropriate *.exe* file (or procedure) for a specific system on the official website:
 
 [https://www.python.org/downloads/](https://www.python.org/downloads/)
 
