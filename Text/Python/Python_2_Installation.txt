@@ -1,1 +1,14 @@
 ### Installation & Execution
+
+Python is available on a variety of platforms (e.g., Windows, Linux, Max, etc.). For the installation, it is possible to find the appropriate *.exe* file (or procedure) for a specific system on the official website:
+
+[https://www.python.org/downloads/](https://www.python.org/downloads/)
+
+.
+
+On *Windows*, it is only necessary to run the executable file to install it.[^1] Once installed, it is ready to use[^2]:
+
+st.image
+
+[^1]: For the other systems, see the appropriate documentation for the installation.
+[^2]: Use ***exit()*** to exit the command prompt.
