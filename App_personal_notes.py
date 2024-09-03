@@ -513,7 +513,7 @@ elif main_selected == "Python notes" :
     if menu_python == "1. What is Python?" :
         st.markdown(Python_1_What_Python)
     elif menu_python == "2. Installation & Execution" :
-        st.markdown(Python_2_Installation)
+        st.markdown(Python_2_Installation, unsafe_allow_html = True)
         
 
 # ================================================================================================================================================================
