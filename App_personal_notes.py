@@ -519,8 +519,8 @@ elif main_selected == "Python notes" :
         st.write("Navigate in one of these pages:")
         selected_python = option_menu(
             None,
-            ["Data types", "print & input", "Operators", "Formatting", "Sequences", "Sets & Dictionaries", "Accessing elements", "Data type conversion"], 
-            icons = ["file-earmark", "file-earmark", "file-earmark", "file-earmark", "file-earmark", "file-earmark", "file-earmark", "file-earmark"], 
+            ["Data types", "Operators", "Formatting", "Sequences", "Sets & Dictionaries", "Accessing elements", "Data type conversion"], 
+            icons = ["file-earmark", "file-earmark", "file-earmark", "file-earmark", "file-earmark", "file-earmark", "file-earmark"], 
             default_index = 0,
             orientation = "horizontal",
             styles = {
