@@ -1,1 +1,19 @@
 ### What is Python?
+
+**Python** is a high-level programming language created by *Guido van Rossum* during the latest ‘80s and named after the BBC show “Monty Python’s Flying Circus”.
+
+It has a very simple syntax, and it can be used for many tasks (for example, *Data Visualization, Data Analysis, Machine Learning*, etc.).
+
+- ***Interpreted***: no need to compile before executing your program.
+- ***Interactive***: you can write a command and interact with it.
+- ***Object-Oriented***: encloses code within object
+
+.
+
+Useful link:
+- [Official website](https://www.python.org/)
+- [Official documentation](https://docs.python.org/3/)
+- [Package repository](https://pypi.org)
+- [Tutorial 1](https://www.html.it/guide/guida-python/)
+- [Tutorial 2](https://www.tutorialspoint.com/python/index.htm)
+- [Resources for certification](https://pythoninstitute.org/).
