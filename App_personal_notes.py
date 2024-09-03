@@ -513,7 +513,7 @@ elif main_selected == "Python notes" :
     if menu_python == "1. What is Python?" :
         st.markdown(Python_1_What_Python)
     elif menu_python == "2. Installation & Execution" :
-        st.markdown(Python_2_Installation, f'<img src="{"https://github.com/SamuComqi92/StreamlitApp_Personal_notes/blob/main/images/Prompt_python.png"}">', unsafe_allow_html = True)
+        st.markdown(f'<img src="{"https://github.com/SamuComqi92/StreamlitApp_Personal_notes/blob/main/images/Prompt_python.png"}">', unsafe_allow_html = True)
         
 
 # ================================================================================================================================================================
