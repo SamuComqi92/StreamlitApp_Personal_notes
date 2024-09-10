@@ -497,11 +497,11 @@ elif main_selected == "DP 2023 course notes":
     elif menu_dp_203 == "7. Pipelines" :
         st.markdown(DP203_7_Pipelines)
     elif menu_dp_203 == "8. Hybrid Transactional/Analytical Processing" :
-        st.markdown(DP203_7_HTAP)
+        st.markdown(DP203_8_HTAP)
     elif menu_dp_203 == "9. Data Streaming" :
-        st.markdown(DP203_7_Streaming)
+        st.markdown(DP203_9_Streaming)
     elif menu_dp_203 == "10. Azure Databricks (base)" :
-        st.markdown(DP203_7_Databricks)
+        st.markdown(DP203_10_Databricks)
 
 
 ########### Microsoft Fabric ############
