@@ -113,6 +113,7 @@ DP203_3_Synapse = load_text("Text/DP_203/DP203_3_Synapse.txt")
 DP203_4_Create_Lakehouse = load_text("Text/DP_203/DP203_4_Create_Lakehouse.txt")
 DP203_5_Apache_Spark = load_text("Text/DP_203/DP203_5_Apache_Spark.txt")
 DP203_6_Warehouse = load_text("Text/DP_203/DP203_6_Warehouse.txt")
+DP203_8_Pipelines = load_text("Text/DP_203/DP203_7_Pipelines.txt")
 
 # Python notes
 Python_0_Introduction = load_text("Text/Python/Python_0_Introduction.txt")
@@ -490,6 +491,8 @@ elif main_selected == "DP 2023 course notes":
         st.markdown(DP203_5_Apache_Spark)
     elif menu_dp_203 == "6. Relational Data Warehouse" :
         st.markdown(DP203_6_Warehouse)
+    elif menu_dp_203 == "7. Pipelines" :
+        st.markdown(DP203_7_Pipelines)
         
 
 ########### Microsoft Fabric ############
