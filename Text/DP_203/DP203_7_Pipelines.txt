@@ -1,1 +1,27 @@
 ### Pipelines in Azure Synapse Analytics
+
+Pipelines are systems to apply ETL processes on data. They are made of **Activities**, i.e. executable tasks connected in a *flow* with one or more branches (also depending on the success/failure of activities).
+
+Some tasks are:
+- Extraction: of data from a source.
+- Integration: of data to a target.
+- ETL processese.
+- Notebooks: using Spark
+- Control flow activities: loops, parameters, values, etc.
+
+To work with data, it is necesary to define **linked services** to access external sources and bring data in the pipeline.
+
+.
+
+A pipeline can be created in *Azure Synapse Studio* using the *graphical design interface* (drop & drop). Activities can be connected if **succeeded**, **failed**, or **completed**.
+
+A pipeline can be modified/updated from its JSON file where all activities and connections are defined with their properties.
+
+.
+
+In a pipeline, it is possible to add **dataflows** (sources > transformations > target) that can be created in a separated window.
+
+Pipelines can be executed:
+- Immediately (on demand).
+- Scheduled.
+- In response to events.
