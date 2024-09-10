@@ -1,1 +1,14 @@
+### Hybrid Transactional / Analytical Processing (HTAP)
 
+It is a type of data processing that combines *transactional data* and *analytical data* processings.
+
+In general, those two processings are separate in OLTP and OLAP. Given that they are separated, there is a **delay**: this delay is smaller with **HTAP**. It can be considered as a *rela-time analytics on OLTP data*.
+
+Basically, a copy of data is created automatically in an analytical store (with no impact on the source DB) with low-latency.
+
+In Azure Synapse Analytics, HTAP solutions are supported by *Azure Synapse Link* that is a general term for a set of *linked services* like:
+- Dataverse (to an Azure DataLake)
+- Cosmo DB (to workspace)
+- SQL DB (dedicated pool - Server, Azure).
+
+Once a link is created, it is possible to read data but also to write new data (for example, using *notebooks* or *Synapse SQL*).
