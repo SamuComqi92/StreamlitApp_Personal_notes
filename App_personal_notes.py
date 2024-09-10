@@ -114,6 +114,9 @@ DP203_4_Create_Lakehouse = load_text("Text/DP_203/DP203_4_Create_Lakehouse.txt")
 DP203_5_Apache_Spark = load_text("Text/DP_203/DP203_5_Apache_Spark.txt")
 DP203_6_Warehouse = load_text("Text/DP_203/DP203_6_Warehouse.txt")
 DP203_7_Pipelines = load_text("Text/DP_203/DP203_7_Pipelines.txt")
+DP203_8_HTAP = load_text("Text/DP_203/DP203_8_HTAP.txt")
+DP203_9_Streaming = load_text("Text/DP_203/DP203_9_Streaming.txt")
+DP203_10_Databricks = load_text("Text/DP_203/DP203_10_Databricks.txt")
 
 # Python notes
 Python_0_Introduction = load_text("Text/Python/Python_0_Introduction.txt")
@@ -493,7 +496,13 @@ elif main_selected == "DP 2023 course notes":
         st.markdown(DP203_6_Warehouse)
     elif menu_dp_203 == "7. Pipelines" :
         st.markdown(DP203_7_Pipelines)
-        
+    elif menu_dp_203 == "8. Hybrid Transactional/Analytical Processing" :
+        st.markdown(DP203_7_HTAP)
+    elif menu_dp_203 == "9. Data Streaming" :
+        st.markdown(DP203_7_Streaming)
+    elif menu_dp_203 == "10. Azure Databricks (base)" :
+        st.markdown(DP203_7_Databricks)
+
 
 ########### Microsoft Fabric ############
 elif main_selected == "Python notes" :
