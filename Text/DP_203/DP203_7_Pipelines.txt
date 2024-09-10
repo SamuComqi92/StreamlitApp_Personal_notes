@@ -1,8 +1,6 @@
 ### Pipelines in Azure Synapse Analytics
 
-Pipelines are systems to apply ETL processes on data. They are made of **Activities**, i.e. executable tasks connected in a *flow* with one or more branches (also depending on the success/failure of activities).
-
-Some tasks are:
+Pipelines are systems to apply ETL processes on data. They are made of **Activities**, i.e. executable tasks connected in a *flow* with one or more branches (also depending on the success/failure of activities). Some tasks are:
 - Extraction: of data from a source.
 - Integration: of data to a target.
 - ETL processese.
